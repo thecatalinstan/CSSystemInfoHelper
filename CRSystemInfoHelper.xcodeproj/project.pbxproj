@@ -15,6 +15,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AD990E691CB9AC45005746CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD990E571CB99F77005746CE /* CRSystemInfoHelperApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AD990E4D1CB99F77005746CE;
+			remoteInfo = CRSystemInfoHelperApp;
+		};
 		ADC2E7A11CB9772F00B27191 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
@@ -54,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD990E661CB9AC45005746CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD990E6A1CB9AC45005746CE /* CRSystemInfoHelperApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		ADC2E78B1CB9772F00B27191 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +184,12 @@
 			mainGroup = ADC2E78B1CB9772F00B27191;
 			productRefGroup = ADC2E7961CB9772F00B27191 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AD990E661CB9AC45005746CE /* Products */;
+					ProjectRef = AD990E571CB99F77005746CE /* CRSystemInfoHelperApp.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				ADC2E7941CB9772F00B27191 /* CRSystemInfoHelper */,
@@ -176,6 +197,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AD990E6A1CB9AC45005746CE /* CRSystemInfoHelperApp */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = CRSystemInfoHelperApp;
+			remoteRef = AD990E691CB9AC45005746CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ADC2E7931CB9772F00B27191 /* Resources */ = {
