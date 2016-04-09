@@ -11,12 +11,6 @@ import CRSystemInfoHelper
 
 let helper:CRSystemInfoHelper = CRSystemInfoHelper.sharedHelper()
 
-//@property (nonatomic, readonly, strong) NSDictionary<NSString *, NSString *> * systemInfo;
-//@property (nonatomic, readonly, strong) NSString * systemInfoString;
-//@property (nonatomic, readonly, strong) NSString * systemVersionString;
-//@property (nonatomic, readonly) vm_size_t memoryUsage;
-//@property (nonatomic, readonly, strong) NSString * memoryUsageString;
-
 // IPv4 Addresses
 print("IPv4 Interfaces")
 for (ifname, ipaddr) in helper.AllIPAddresses {
