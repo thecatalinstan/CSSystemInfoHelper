@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADC2E7991CB9772F00B27191 /* CRSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADC2E7A01CB9772F00B27191 /* CRSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC2E7951CB9772F00B27191 /* CRSystemInfoHelper.framework */; };
+		ADC2E7A51CB9772F00B27191 /* CRSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CRSystemInfoHelperTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADC2E7A11CB9772F00B27191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADC2E7941CB9772F00B27191;
+			remoteInfo = CRSystemInfoHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADC2E7951CB9772F00B27191 /* CRSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSystemInfoHelper.h; sourceTree = "<group>"; };
+		ADC2E79A1CB9772F00B27191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC2E79F1CB9772F00B27191 /* CRSystemInfoHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRSystemInfoHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC2E7A41CB9772F00B27191 /* CRSystemInfoHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSystemInfoHelperTests.m; sourceTree = "<group>"; };
+		ADC2E7A61CB9772F00B27191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADC2E7911CB9772F00B27191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADC2E79C1CB9772F00B27191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC2E7A01CB9772F00B27191 /* CRSystemInfoHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADC2E78B1CB9772F00B27191 = {
+			isa = PBXGroup;
+			children = (
+				ADC2E7971CB9772F00B27191 /* CRSystemInfoHelper */,
+				ADC2E7A31CB9772F00B27191 /* CRSystemInfoHelperTests */,
+				ADC2E7961CB9772F00B27191 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADC2E7961CB9772F00B27191 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADC2E7951CB9772F00B27191 /* CRSystemInfoHelper.framework */,
+				ADC2E79F1CB9772F00B27191 /* CRSystemInfoHelperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADC2E7971CB9772F00B27191 /* CRSystemInfoHelper */ = {
+			isa = PBXGroup;
+			children = (
+				ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */,
+				ADC2E79A1CB9772F00B27191 /* Info.plist */,
+			);
+			path = CRSystemInfoHelper;
+			sourceTree = "<group>";
+		};
+		ADC2E7A31CB9772F00B27191 /* CRSystemInfoHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADC2E7A41CB9772F00B27191 /* CRSystemInfoHelperTests.m */,
+				ADC2E7A61CB9772F00B27191 /* Info.plist */,
+			);
+			path = CRSystemInfoHelperTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ADC2E7921CB9772F00B27191 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC2E7991CB9772F00B27191 /* CRSystemInfoHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ADC2E7941CB9772F00B27191 /* CRSystemInfoHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADC2E7A91CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper" */;
+			buildPhases = (
+				ADC2E7901CB9772F00B27191 /* Sources */,
+				ADC2E7911CB9772F00B27191 /* Frameworks */,
+				ADC2E7921CB9772F00B27191 /* Headers */,
+				ADC2E7931CB9772F00B27191 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRSystemInfoHelper;
+			productName = CRSystemInfoHelper;
+			productReference = ADC2E7951CB9772F00B27191 /* CRSystemInfoHelper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ADC2E79E1CB9772F00B27191 /* CRSystemInfoHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADC2E7AC1CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelperTests" */;
+			buildPhases = (
+				ADC2E79B1CB9772F00B27191 /* Sources */,
+				ADC2E79C1CB9772F00B27191 /* Frameworks */,
+				ADC2E79D1CB9772F00B27191 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADC2E7A21CB9772F00B27191 /* PBXTargetDependency */,
+			);
+			name = CRSystemInfoHelperTests;
+			productName = CRSystemInfoHelperTests;
+			productReference = ADC2E79F1CB9772F00B27191 /* CRSystemInfoHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADC2E78C1CB9772F00B27191 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Criollo;
+				TargetAttributes = {
+					ADC2E7941CB9772F00B27191 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					ADC2E79E1CB9772F00B27191 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = ADC2E78F1CB9772F00B27191 /* Build configuration list for PBXProject "CRSystemInfoHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ADC2E78B1CB9772F00B27191;
+			productRefGroup = ADC2E7961CB9772F00B27191 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADC2E7941CB9772F00B27191 /* CRSystemInfoHelper */,
+				ADC2E79E1CB9772F00B27191 /* CRSystemInfoHelperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADC2E7931CB9772F00B27191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADC2E79D1CB9772F00B27191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADC2E7901CB9772F00B27191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADC2E79B1CB9772F00B27191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC2E7A51CB9772F00B27191 /* CRSystemInfoHelperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADC2E7A21CB9772F00B27191 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADC2E7941CB9772F00B27191 /* CRSystemInfoHelper */;
+			targetProxy = ADC2E7A11CB9772F00B27191 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ADC2E7A71CB9772F00B27191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADC2E7A81CB9772F00B27191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ADC2E7AA1CB9772F00B27191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		ADC2E7AB1CB9772F00B27191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		ADC2E7AD1CB9772F00B27191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADC2E7AE1CB9772F00B27191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADC2E78F1CB9772F00B27191 /* Build configuration list for PBXProject "CRSystemInfoHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADC2E7A71CB9772F00B27191 /* Debug */,
+				ADC2E7A81CB9772F00B27191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADC2E7A91CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADC2E7AA1CB9772F00B27191 /* Debug */,
+				ADC2E7AB1CB9772F00B27191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADC2E7AC1CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADC2E7AD1CB9772F00B27191 /* Debug */,
+				ADC2E7AE1CB9772F00B27191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADC2E78C1CB9772F00B27191 /* Project object */;
+}
