@@ -56,4 +56,32 @@
     XCTAssertNoThrow([CRSystemInfoHelper sharedHelper].IPAddress);
 }
 
+- (void)testSystemInfo {
+    XCTAssertNoThrow([CRSystemInfoHelper sharedHelper].systemInfo);
+
+    XCTAssertNotNil([CRSystemInfoHelper sharedHelper].systemInfo[CRSystemInfoSysnameKey], @"The key CRSystemInfoSysnameKey is not pressent");
+    XCTAssertNotNil([CRSystemInfoHelper sharedHelper].systemInfo[CRSystemInfoNodenameKey], @"The key CRSystemInfoNodenameKey is not pressent");
+    XCTAssertNotNil([CRSystemInfoHelper sharedHelper].systemInfo[CRSystemInfoReleaseKey], @"The key CRSystemInfoReleaseKey is not pressent");
+    XCTAssertNotNil([CRSystemInfoHelper sharedHelper].systemInfo[CRSystemInfoVersionKey], @"The key CRSystemInfoVersionKey is not pressent");
+    XCTAssertNotNil([CRSystemInfoHelper sharedHelper].systemInfo[CRSystemInfoMachineKey], @"The key CRSystemInfoMachineKey is not pressent");
+
+    XCTAssertGreaterThan([CRSystemInfoHelper sharedHelper].systemInfo[CRSystemInfoSysnameKey].length, 0, @"The key CRSystemInfoSysnameKey is empty");
+    XCTAssertGreaterThan([CRSystemInfoHelper sharedHelper].systemInfo[CRSystemInfoNodenameKey].length, 0, @"The key CRSystemInfoNodenameKey is empty");
+    XCTAssertGreaterThan([CRSystemInfoHelper sharedHelper].systemInfo[CRSystemInfoReleaseKey].length, 0, @"The key CRSystemInfoReleaseKey is empty");
+    XCTAssertGreaterThan([CRSystemInfoHelper sharedHelper].systemInfo[CRSystemInfoVersionKey].length, 0, @"The key CRSystemInfoVersionKey is empty");
+    XCTAssertGreaterThan([CRSystemInfoHelper sharedHelper].systemInfo[CRSystemInfoMachineKey].length, 0, @"The key CRSystemInfoMachineKey is empty");
+}
+
+- (void)testSystemInfoString {
+    XCTAssertNoThrow([CRSystemInfoHelper sharedHelper].systemInfoString);
+    XCTAssertNotNil([CRSystemInfoHelper sharedHelper].systemInfoString);
+    XCTAssertGreaterThan([CRSystemInfoHelper sharedHelper].systemInfoString.length, 0);
+}
+
+- (void)testSystemVersionString {
+    XCTAssertNoThrow([CRSystemInfoHelper sharedHelper].systemVersionString);
+    XCTAssertNotNil([CRSystemInfoHelper sharedHelper].systemVersionString);
+    XCTAssertGreaterThan([CRSystemInfoHelper sharedHelper].systemVersionString.length, 0);
+}
+
 @end

@@ -17,6 +17,13 @@
 #define CRBundleIdentifier          @"io.criollo.Criollo"
 #define CRCriolloVersionFallback    @"0.1.13"
 
+
+NSString * const CRSystemInfoSysnameKey = @"CRSystemInfoSysname";
+NSString * const CRSystemInfoNodenameKey = @"CRSystemInfoNodename";
+NSString * const CRSystemInfoReleaseKey = @"CRSystemInfoRelease";
+NSString * const CRSystemInfoVersionKey = @"CRSystemInfoVersion";
+NSString * const CRSystemInfoMachineKey = @"CRSystemInfoMachine";
+
 @interface CRSystemInfoHelper ()
 
 @property (nonatomic, readonly, strong) dispatch_queue_t isolationQueue;
@@ -78,17 +85,34 @@ static NSDate *processStartTime;
     return self.AllIPAddresses[@"en0"];
 }
 
-//+ (NSString *)systemInfo {
-//    static NSString* systemInfo;
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        struct utsname unameStruct;
-//        uname(&unameStruct);
-//        systemInfo = [NSString stringWithFormat:@"%s %s %s %s %s", unameStruct.sysname, unameStruct.nodename, unameStruct.release, unameStruct.version, unameStruct.machine];
-//    });
-//    return systemInfo;
-//}
-//
+- (NSDictionary<NSString *,NSString *> *)systemInfo {
+    static NSDictionary<NSString *, NSString *> * systemInfo;
+    if ( systemInfo == nil ) {
+        struct utsname unameStruct;
+        if ( uname(&unameStruct) != 0 ) {
+            @throw [NSException exceptionWithName:NSGenericException reason:[NSString stringWithUTF8String:strerror(errno)] userInfo:nil];
+            return nil;
+        }
+        systemInfo = @{CRSystemInfoSysnameKey: @(unameStruct.sysname), CRSystemInfoNodenameKey: @(unameStruct.nodename), CRSystemInfoReleaseKey: @(unameStruct.release), CRSystemInfoVersionKey: @(unameStruct.version), CRSystemInfoMachineKey: @(unameStruct.machine)};
+    }
+    return systemInfo;
+}
+
+- (NSString *)systemInfoString {
+    static NSString* systemInfoString;
+    if ( systemInfoString == nil ) {
+        systemInfoString = [NSString stringWithFormat:@"%@ %@ %@ %@ %@", self.systemInfo[CRSystemInfoSysnameKey], self.systemInfo[CRSystemInfoNodenameKey], self.systemInfo[CRSystemInfoReleaseKey], self.systemInfo[CRSystemInfoVersionKey], self.systemInfo[CRSystemInfoMachineKey]];
+    }
+    return systemInfoString;
+}
+
+- (NSString *)systemVersionString {
+    static NSString* systemVersionString;
+    if ( systemVersionString == nil ) {
+        systemVersionString = [NSString stringWithFormat:@"%@ %@ %@", self.systemInfo[CRSystemInfoSysnameKey], self.systemInfo[CRSystemInfoReleaseKey], self.systemInfo[CRSystemInfoMachineKey]];
+    }
+    return systemVersionString;
+}
 //+ (NSString *)systemVersion {
 //    static NSString* publicSystemInfo;
 //    static dispatch_once_t onceToken;
