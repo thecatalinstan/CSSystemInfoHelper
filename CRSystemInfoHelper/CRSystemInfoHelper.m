@@ -14,10 +14,6 @@
 #include <sys/utsname.h>
 #include <mach/mach.h>
 
-#define CRBundleIdentifier          @"io.criollo.Criollo"
-#define CRCriolloVersionFallback    @"0.1.13"
-
-
 NSString * const CRSystemInfoSysnameKey = @"CRSystemInfoSysname";
 NSString * const CRSystemInfoNodenameKey = @"CRSystemInfoNodename";
 NSString * const CRSystemInfoReleaseKey = @"CRSystemInfoRelease";
@@ -31,12 +27,6 @@ NSString * const CRSystemInfoMachineKey = @"CRSystemInfoMachine";
 @end
 
 @implementation CRSystemInfoHelper
-
-static NSDate *processStartTime;
-
-+ (void)load {
-    processStartTime = [NSDate date];
-}
 
 + (instancetype)sharedHelper {
     static CRSystemInfoHelper* sharedHelper;
