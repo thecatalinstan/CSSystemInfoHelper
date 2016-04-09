@@ -11,6 +11,10 @@
 		AD3913AC1CB9BA59001A31F6 /* CRSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */; };
 		AD3913AD1CB9BA62001A31F6 /* CRSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD3913AF1CB9BC37001A31F6 /* CRSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CRSystemInfoHelperTests.m */; };
+		AD3913C61CB9BD81001A31F6 /* CRSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3913891CB9B7EA001A31F6 /* CRSystemInfoHelper.framework */; };
+		AD3913CC1CB9BE1D001A31F6 /* CRSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD3913CD1CB9BE23001A31F6 /* CRSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */; };
+		AD3913CE1CB9BE3E001A31F6 /* CRSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CRSystemInfoHelperTests.m */; };
 		AD990E421CB97D99005746CE /* CRSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */; };
 		AD990E431CB97D99005746CE /* CRSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */; };
 		ADC2E7991CB9772F00B27191 /* CRSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,6 +24,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		AD3913941CB9B7EA001A31F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD3913881CB9B7EA001A31F6;
+			remoteInfo = "CRSystemInfoHelper-iOS";
+		};
+		AD3913C71CB9BD81001A31F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
 			proxyType = 1;
@@ -49,6 +60,8 @@
 		AD3913A31CB9B9E1001A31F6 /* CRSystemInfoHelper-OSX-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CRSystemInfoHelper-OSX-Info.plist"; sourceTree = "<group>"; };
 		AD3913A71CB9BA02001A31F6 /* CRSystemInfoHelper-iOSTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CRSystemInfoHelper-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		AD3913A81CB9BA02001A31F6 /* CRSystemInfoHelper-MacTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CRSystemInfoHelper-MacTests-Info.plist"; sourceTree = "<group>"; };
+		AD3913B51CB9BD5A001A31F6 /* CRSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3913C11CB9BD81001A31F6 /* CRSystemInfoHelper-watchOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CRSystemInfoHelper-watchOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSystemInfoHelper.m; sourceTree = "<group>"; };
 		AD990E571CB99F77005746CE /* CRSystemInfoHelperApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CRSystemInfoHelperApp.xcodeproj; path = CRSystemInfoHelperApp/CRSystemInfoHelperApp.xcodeproj; sourceTree = SOURCE_ROOT; };
 		ADC2E7951CB9772F00B27191 /* CRSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +83,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD3913931CB9B7EA001A31F6 /* CRSystemInfoHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3913B11CB9BD5A001A31F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3913BE1CB9BD81001A31F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3913C61CB9BD81001A31F6 /* CRSystemInfoHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +180,8 @@
 				ADC2E79F1CB9772F00B27191 /* CRSystemInfoHelper-OSXTests.xctest */,
 				AD3913891CB9B7EA001A31F6 /* CRSystemInfoHelper.framework */,
 				AD3913921CB9B7EA001A31F6 /* CRSystemInfoHelper-iOSTests.xctest */,
+				AD3913B51CB9BD5A001A31F6 /* CRSystemInfoHelper.framework */,
+				AD3913C11CB9BD81001A31F6 /* CRSystemInfoHelper-watchOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +203,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD3913AD1CB9BA62001A31F6 /* CRSystemInfoHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3913B21CB9BD5A001A31F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3913CC1CB9BE1D001A31F6 /* CRSystemInfoHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +259,42 @@
 			name = "CRSystemInfoHelper-iOSTests";
 			productName = "CRSystemInfoHelper-iOSTests";
 			productReference = AD3913921CB9B7EA001A31F6 /* CRSystemInfoHelper-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD3913B41CB9BD5A001A31F6 /* CRSystemInfoHelper-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD3913BA1CB9BD5A001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-watchOS" */;
+			buildPhases = (
+				AD3913B01CB9BD5A001A31F6 /* Sources */,
+				AD3913B11CB9BD5A001A31F6 /* Frameworks */,
+				AD3913B21CB9BD5A001A31F6 /* Headers */,
+				AD3913B31CB9BD5A001A31F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CRSystemInfoHelper-watchOS";
+			productName = "CRSystemInfoHelper-watchOS";
+			productReference = AD3913B51CB9BD5A001A31F6 /* CRSystemInfoHelper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD3913C01CB9BD81001A31F6 /* CRSystemInfoHelper-watchOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD3913C91CB9BD81001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-watchOSTests" */;
+			buildPhases = (
+				AD3913BD1CB9BD81001A31F6 /* Sources */,
+				AD3913BE1CB9BD81001A31F6 /* Frameworks */,
+				AD3913BF1CB9BD81001A31F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD3913C81CB9BD81001A31F6 /* PBXTargetDependency */,
+			);
+			name = "CRSystemInfoHelper-watchOSTests";
+			productName = "CRSystemInfoHelper-watchOSTests";
+			productReference = AD3913C11CB9BD81001A31F6 /* CRSystemInfoHelper-watchOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		ADC2E7941CB9772F00B27191 /* CRSystemInfoHelper-OSX */ = {
@@ -274,6 +348,12 @@
 					AD3913911CB9B7EA001A31F6 = {
 						CreatedOnToolsVersion = 7.3;
 					};
+					AD3913B41CB9BD5A001A31F6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					AD3913C01CB9BD81001A31F6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					ADC2E7941CB9772F00B27191 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -304,6 +384,8 @@
 				ADC2E79E1CB9772F00B27191 /* CRSystemInfoHelper-OSXTests */,
 				AD3913881CB9B7EA001A31F6 /* CRSystemInfoHelper-iOS */,
 				AD3913911CB9B7EA001A31F6 /* CRSystemInfoHelper-iOSTests */,
+				AD3913B41CB9BD5A001A31F6 /* CRSystemInfoHelper-watchOS */,
+				AD3913C01CB9BD81001A31F6 /* CRSystemInfoHelper-watchOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -327,6 +409,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AD3913901CB9B7EA001A31F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3913B31CB9BD5A001A31F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3913BF1CB9BD81001A31F6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -366,6 +462,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD3913B01CB9BD5A001A31F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3913CD1CB9BE23001A31F6 /* CRSystemInfoHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3913BD1CB9BD81001A31F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3913CE1CB9BE3E001A31F6 /* CRSystemInfoHelperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADC2E7901CB9772F00B27191 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,6 +502,11 @@
 			isa = PBXTargetDependency;
 			target = AD3913881CB9B7EA001A31F6 /* CRSystemInfoHelper-iOS */;
 			targetProxy = AD3913941CB9B7EA001A31F6 /* PBXContainerItemProxy */;
+		};
+		AD3913C81CB9BD81001A31F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD3913881CB9B7EA001A31F6 /* CRSystemInfoHelper-iOS */;
+			targetProxy = AD3913C71CB9BD81001A31F6 /* PBXContainerItemProxy */;
 		};
 		ADC2E7A21CB9772F00B27191 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -459,6 +576,74 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD3913BB1CB9BD5A001A31F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "CRSystemInfoHelper/CRSystemInfoHelper-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
+				PRODUCT_NAME = CRSystemInfoHelper;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		AD3913BC1CB9BD5A001A31F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "CRSystemInfoHelper/CRSystemInfoHelper-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
+				PRODUCT_NAME = CRSystemInfoHelper;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		AD3913CA1CB9BD81001A31F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "CRSystemInfoHelperTests/CRSystemInfoHelper-watchOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-watchOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD3913CB1CB9BD81001A31F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "CRSystemInfoHelperTests/CRSystemInfoHelper-watchOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-watchOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -628,6 +813,22 @@
 			buildConfigurations = (
 				AD39139C1CB9B7EA001A31F6 /* Debug */,
 				AD39139D1CB9B7EA001A31F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD3913BA1CB9BD5A001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD3913BB1CB9BD5A001A31F6 /* Debug */,
+				AD3913BC1CB9BD5A001A31F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD3913C91CB9BD81001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-watchOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD3913CA1CB9BD81001A31F6 /* Debug */,
+				AD3913CB1CB9BD81001A31F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
