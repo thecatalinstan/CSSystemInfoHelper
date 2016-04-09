@@ -42,7 +42,7 @@ FOUNDATION_EXPORT NSString * const CRSystemInfoMachineKey;
 @interface CRSystemInfoHelper : NSObject
 
 /**
- *  @task Accessing the shared helper instance
+ *  @name Accessing the shared helper instance
  */
 
 /**
@@ -53,7 +53,7 @@ FOUNDATION_EXPORT NSString * const CRSystemInfoMachineKey;
 + (instancetype)sharedHelper;
 
 /**
- *  @task Getting IP Addresses
+ *  @name Getting IP Addresses
  */
 
 /**
@@ -72,7 +72,7 @@ FOUNDATION_EXPORT NSString * const CRSystemInfoMachineKey;
 @property (nonatomic, readonly, strong) NSString * IPAddress;
 
 /**
- *  @task Getting `uname` System Information
+ *  @name Getting `uname` System Information
  */
 
 /**
@@ -96,7 +96,7 @@ FOUNDATION_EXPORT NSString * const CRSystemInfoMachineKey;
 @property (nonatomic, readonly, strong) NSString * systemVersionString;
 
 /**
- *  @task Getting Memory Usage
+ *  @name Getting Memory Usage
  */
 
 /**
