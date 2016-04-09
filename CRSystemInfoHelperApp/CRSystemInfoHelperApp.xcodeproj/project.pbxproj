@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD990E511CB99F77005746CE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD990E501CB99F77005746CE /* main.swift */; };
-		AD990E621CB9A814005746CE /* CRSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD990E611CB9A814005746CE /* CRSystemInfoHelper.framework */; };
+		AD990E651CB9A93B005746CE /* CRSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD990E641CB9A93B005746CE /* CRSystemInfoHelper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		AD990E4D1CB99F77005746CE /* CRSystemInfoHelperApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CRSystemInfoHelperApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD990E501CB99F77005746CE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		AD990E611CB9A814005746CE /* CRSystemInfoHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CRSystemInfoHelper.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CRSystemInfoHelper-acinrmcjgtnewqctqanqolrxvimq/Build/Products/Debug/CRSystemInfoHelper.framework"; sourceTree = "<group>"; };
+		AD990E641CB9A93B005746CE /* CRSystemInfoHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CRSystemInfoHelper.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CRSystemInfoHelper-acinrmcjgtnewqctqanqolrxvimq/Build/Products/Debug/CRSystemInfoHelper.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD990E621CB9A814005746CE /* CRSystemInfoHelper.framework in Frameworks */,
+				AD990E651CB9A93B005746CE /* CRSystemInfoHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +69,7 @@
 		AD990E631CB9A81C005746CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD990E611CB9A814005746CE /* CRSystemInfoHelper.framework */,
+				AD990E641CB9A93B005746CE /* CRSystemInfoHelper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
