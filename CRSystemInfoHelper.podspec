@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                        =  "CRSystemInfoHelper"
-  s.version                     =  "0.2.0"
+  s.version                     =  "1.0.0"
   s.license                     =  "MIT"
 
   s.summary                     =  "A utility library for getting system info."
@@ -14,10 +14,10 @@ Pod::Spec.new do |s|
 
   s.module_name                 = "CRSystemInfoHelper"
 
-  s.source_files                = "CRSystemInfoHelper/CRSystemInfoHelper.h", "CRSystemInfoHelper/Source/*.{h,m}"
+  s.source_files                = "CRSystemInfoHelper/CRSystemInfoHelper.{h,m}"
   s.public_header_files         = "CRSystemInfoHelper/CRSystemInfoHelper.h"
 
-  s.ios.deployment_target       = '6.0'
+  s.ios.deployment_target       = "6.0"
   s.osx.deployment_target       = "10.8"
   s.tvos.deployment_target      = "9.0"
   s.watchos.deployment_target   = "2.0"
