@@ -26,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSystemInfoHelper.m; sourceTree = "<group>"; };
+		AD990E571CB99F77005746CE /* CRSystemInfoHelperApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CRSystemInfoHelperApp.xcodeproj; path = CRSystemInfoHelperApp/CRSystemInfoHelperApp.xcodeproj; sourceTree = SOURCE_ROOT; };
 		ADC2E7951CB9772F00B27191 /* CRSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSystemInfoHelper.h; sourceTree = "<group>"; };
 		ADC2E79A1CB9772F00B27191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		ADC2E78B1CB9772F00B27191 = {
 			isa = PBXGroup;
 			children = (
+				AD990E571CB99F77005746CE /* CRSystemInfoHelperApp.xcodeproj */,
 				ADC2E7971CB9772F00B27191 /* CRSystemInfoHelper */,
 				ADC2E7A31CB9772F00B27191 /* CRSystemInfoHelperTests */,
 				ADC2E7961CB9772F00B27191 /* Products */,
