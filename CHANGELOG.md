@@ -6,6 +6,12 @@ This file includes all notable changes to CRSystemInfoHelper.
 
 ---
 
+## [1.0.0](https://github.com/thecatalinstan/CRSystemInfoHelper/releases/tag/1.0.0) (10/05/2016)
+
+**Released on Saturday, April 10, 2016**.
+
+First stable release, including all targets.
+
 ## [0.2.0](https://github.com/thecatalinstan/CRSystemInfoHelper/releases/tag/0.2.0) (09/05/2016)
 
 **Released on Saturday, April 9, 2016**.
