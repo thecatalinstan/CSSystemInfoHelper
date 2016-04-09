@@ -5,7 +5,7 @@
 
 A utility library for getting system info. It’s meant to provide a more straightforward way of accessing information only available through C APIs and to provide shorthands for most common usage scenarios.
 
-## Install through CocoaPods
+## Installation 
 
 Install using [CocoaPods](http://cocoapods.org) by adding this line to your Podfile:
 
