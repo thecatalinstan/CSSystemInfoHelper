@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD990E421CB97D99005746CE /* CRSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */; };
+		AD990E431CB97D99005746CE /* CRSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */; };
 		ADC2E7991CB9772F00B27191 /* CRSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ADC2E7A01CB9772F00B27191 /* CRSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC2E7951CB9772F00B27191 /* CRSystemInfoHelper.framework */; };
 		ADC2E7A51CB9772F00B27191 /* CRSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CRSystemInfoHelperTests.m */; };
@@ -23,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSystemInfoHelper.m; sourceTree = "<group>"; };
 		ADC2E7951CB9772F00B27191 /* CRSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSystemInfoHelper.h; sourceTree = "<group>"; };
 		ADC2E79A1CB9772F00B27191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */,
+				AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */,
 				ADC2E79A1CB9772F00B27191 /* Info.plist */,
 			);
 			path = CRSystemInfoHelper;
@@ -193,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD990E421CB97D99005746CE /* CRSystemInfoHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD990E431CB97D99005746CE /* CRSystemInfoHelper.m in Sources */,
 				ADC2E7A51CB9772F00B27191 /* CRSystemInfoHelperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +385,7 @@
 				ADC2E7AB1CB9772F00B27191 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADC2E7AC1CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -387,6 +394,7 @@
 				ADC2E7AE1CB9772F00B27191 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

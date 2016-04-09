@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "CRSystemInfoHelper.h"
 
 @interface CRSystemInfoHelperTests : XCTestCase
 
@@ -16,24 +17,43 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testSharedHelper {
+    XCTAssertNotNil([CRSystemInfoHelper sharedHelper]);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
+- (void)testSharedHelperSigleton {
+    CRSystemInfoHelper* helper1 = [CRSystemInfoHelper sharedHelper];
+    CRSystemInfoHelper* helper2 = [CRSystemInfoHelper sharedHelper];
+    XCTAssertEqual(helper1.hash, helper2.hash);
+}
+
+- (void)testAllIPAddresses {
+    XCTAssertNotNil([CRSystemInfoHelper sharedHelper].AllIPAddresses);
+    XCTAssertGreaterThan([CRSystemInfoHelper sharedHelper].AllIPAddresses.count, 0);
+}
+
+- (void)testPerformanceAllIPAddressesFirstRun {
     [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+        NSDictionary* addrs = [CRSystemInfoHelper sharedHelper].AllIPAddresses;
+        addrs = nil;
     }];
+}
+
+- (void)testPerformanceAllIPAddressesSecondRun {
+    [self measureBlock:^{
+        NSDictionary* addrs = [CRSystemInfoHelper sharedHelper].AllIPAddresses;
+        addrs = nil;
+    }];
+}
+
+- (void)testIPAddress {
+    XCTAssertNoThrow([CRSystemInfoHelper sharedHelper].IPAddress);
 }
 
 @end

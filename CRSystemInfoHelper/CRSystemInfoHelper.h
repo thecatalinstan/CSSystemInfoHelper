@@ -1,19 +1,41 @@
 //
 //  CRSystemInfoHelper.h
-//  CRSystemInfoHelper
+//  CriolloApp
 //
-//  Created by Cătălin Stan on 09/04/16.
-//  Copyright © 2016 Criollo. All rights reserved.
+//  Created by Cătălin Stan on 05/04/16.
+//  Copyright © 2016 Cătălin Stan. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
-//! Project version number for CRSystemInfoHelper.
 FOUNDATION_EXPORT double CRSystemInfoHelperVersionNumber;
-
-//! Project version string for CRSystemInfoHelper.
 FOUNDATION_EXPORT const unsigned char CRSystemInfoHelperVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <CRSystemInfoHelper/PublicHeader.h>
+NS_ASSUME_NONNULL_BEGIN
+
+@interface CRSystemInfoHelper : NSObject
+
+@property (nonatomic, readonly, strong) NSString * IPAddress;
+@property (nonatomic, readonly, strong) NSDictionary<NSString *, NSString *> * AllIPAddresses;
+
++ (instancetype)sharedHelper;
 
 
+//- (NSDictionary<NSString *, NSString *>* )systemInfo;
+//
+//- (NSString *)systemInfoString;
+//- (NSString *)systemVersionString;
+//
+//- (NSString *)processName;
+//- (NSString *)processRunningTime;
+//
+//- (NSNumber *)memoryInfo:(NSError * _Nullable __autoreleasing *)error;
+//
+//- (NSString *)criolloVersion;
+//- (NSString *)bundleVersion;
+//
+//- (NSString *)requestsServed;
+//- (void)addRequest;
+
+@end
+NS_ASSUME_NONNULL_END
