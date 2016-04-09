@@ -6,7 +6,6 @@ Pod::Spec.new do |s|
 
   s.summary                     =  "A utility library for getting system info."
 
-  s.homepage                    =  "https://github.com/thecatalinstan/CRSystemInfoHelper"
   s.author                      =   { "Cătălin Stan" => "catalin.stan@me.com" }
   s.social_media_url            =   "http://twitter.com/catalinstan"
 
