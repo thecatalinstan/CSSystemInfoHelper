@@ -95,11 +95,22 @@ FOUNDATION_EXPORT NSString * const CRSystemInfoMachineKey;
  */
 @property (nonatomic, readonly, strong) NSString * systemVersionString;
 
-//- (NSString *)processName;
+/**
+ *  @task Getting Memory Usage
+ */
+
+/**
+ *  Gets the resident memory size of the binary.
+ */
+@property (nonatomic, readonly) vm_size_t memoryUsage;
+
+/**
+ *  A human-readable formatted byte count string from the value returned by
+ `memoryUsage`
+ */
+@property (nonatomic, readonly, strong) NSString * memoryUsageString;
+
 //- (NSString *)processRunningTime;
-//
-//- (NSNumber *)memoryInfo:(NSError * _Nullable __autoreleasing *)error;
-//
 
 @end
 NS_ASSUME_NONNULL_END

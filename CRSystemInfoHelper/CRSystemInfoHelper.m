@@ -113,27 +113,22 @@ static NSDate *processStartTime;
     }
     return systemVersionString;
 }
-//+ (NSString *)systemVersion {
-//    static NSString* publicSystemInfo;
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        struct utsname unameStruct;
-//        uname(&unameStruct);
-//        publicSystemInfo = [NSString stringWithFormat:@"%s %s/%s", unameStruct.sysname, unameStruct.release, unameStruct.machine];
-//    });
-//    return publicSystemInfo;
-//}
-//
-//+ (NSString *)processName {
-//    static NSString* processName;
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        processName = [NSProcessInfo processInfo].processName;
-//    });
-//    return processName;
-//}
-//
-//+ (NSString *)processRunningTime {
+
+- (vm_size_t)memoryUsage {
+    struct task_basic_info info;
+    mach_msg_type_number_t size = sizeof(info);
+    kern_return_t kerr = task_info(mach_task_self(), TASK_BASIC_INFO, (task_info_t)&info, &size);
+    if( kerr != KERN_SUCCESS ) {
+        @throw [NSException exceptionWithName:NSGenericException reason:[NSString stringWithUTF8String:mach_error_string(kerr)] userInfo:nil];
+    }
+    return info.resident_size;
+}
+
+- (NSString *)memoryUsageString {
+    return [NSByteCountFormatter stringFromByteCount:self.memoryUsage countStyle:NSByteCountFormatterCountStyleMemory];
+}
+
+//+ (NSTimeInterval *)processRunningTime {
 //    NSTimeInterval processRunningTime = processStartTime.timeIntervalSinceNow;
 //    NSString* processRunningTimeString;
 //
@@ -151,17 +146,6 @@ static NSDate *processStartTime;
 //    return processRunningTimeString.lowercaseString;
 //}
 //
-//+ (NSString *)memoryInfo:(NSError * _Nullable __autoreleasing *)error {
-//    struct task_basic_info info;
-//    mach_msg_type_number_t size = sizeof(info);
-//    kern_return_t kerr = task_info(mach_task_self(), TASK_BASIC_INFO, (task_info_t)&info, &size);
-//    if( kerr == KERN_SUCCESS ) {
-//        return [NSByteCountFormatter stringFromByteCount:info.resident_size countStyle:NSByteCountFormatterCountStyleMemory];
-//    } else {
-//        *error = [NSError errorWithDomain:[NSProcessInfo processInfo].processName code:-1 userInfo:@{NSLocalizedDescriptionKey: [NSString stringWithFormat:@"%s",mach_error_string(kerr)]}];
-//        return nil;
-//    }
-//}
 //
 //+ (void)addRequest {
 //    dispatch_async(backgroundQueue, ^{

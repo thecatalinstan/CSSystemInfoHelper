@@ -38,20 +38,6 @@
     XCTAssertGreaterThan([CRSystemInfoHelper sharedHelper].AllIPAddresses.count, 0);
 }
 
-- (void)testPerformanceAllIPAddressesFirstRun {
-    [self measureBlock:^{
-        NSDictionary* addrs = [CRSystemInfoHelper sharedHelper].AllIPAddresses;
-        addrs = nil;
-    }];
-}
-
-- (void)testPerformanceAllIPAddressesSecondRun {
-    [self measureBlock:^{
-        NSDictionary* addrs = [CRSystemInfoHelper sharedHelper].AllIPAddresses;
-        addrs = nil;
-    }];
-}
-
 - (void)testIPAddress {
     XCTAssertNoThrow([CRSystemInfoHelper sharedHelper].IPAddress);
 }
@@ -82,6 +68,17 @@
     XCTAssertNoThrow([CRSystemInfoHelper sharedHelper].systemVersionString);
     XCTAssertNotNil([CRSystemInfoHelper sharedHelper].systemVersionString);
     XCTAssertGreaterThan([CRSystemInfoHelper sharedHelper].systemVersionString.length, 0);
+}
+
+- (void)testMemoryUsage {
+    XCTAssertNoThrow([CRSystemInfoHelper sharedHelper].memoryUsage);
+    XCTAssertGreaterThan([CRSystemInfoHelper sharedHelper].memoryUsage, 0);
+}
+
+- (void)testMemoryUsageString {
+    XCTAssertNoThrow([CRSystemInfoHelper sharedHelper].memoryUsageString);
+    XCTAssertNotNil([CRSystemInfoHelper sharedHelper].memoryUsageString);
+    XCTAssertGreaterThan([CRSystemInfoHelper sharedHelper].memoryUsageString.length, 0);
 }
 
 @end
