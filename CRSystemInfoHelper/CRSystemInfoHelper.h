@@ -100,7 +100,8 @@ FOUNDATION_EXPORT NSString * const CRSystemInfoMachineKey;
  */
 
 /**
- *  Gets the resident memory size of the binary.
+ *  Gets the resident memory size of the binary, as reported by 
+ [`task_info`](https://www.gnu.org/software/hurd/gnumach-doc/Task-Information.html)
  */
 @property (nonatomic, readonly) vm_size_t memoryUsage;
 
@@ -109,8 +110,6 @@ FOUNDATION_EXPORT NSString * const CRSystemInfoMachineKey;
  `memoryUsage`
  */
 @property (nonatomic, readonly, strong) NSString * memoryUsageString;
-
-//- (NSString *)processRunningTime;
 
 @end
 NS_ASSUME_NONNULL_END
