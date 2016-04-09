@@ -1,6 +1,6 @@
 //
 //  CRSystemInfoHelper.h
-//  CriolloApp
+//  CRSystemInfoHelper
 //
 //  Created by Cătălin Stan on 05/04/16.
 //  Copyright © 2016 Cătălin Stan. All rights reserved.

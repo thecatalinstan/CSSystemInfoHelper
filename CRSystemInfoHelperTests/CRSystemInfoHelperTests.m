@@ -3,7 +3,7 @@
 //  CRSystemInfoHelperTests
 //
 //  Created by Cătălin Stan on 09/04/16.
-//  Copyright © 2016 Criollo. All rights reserved.
+//  Copyright © 2016 Cătălin Stan. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

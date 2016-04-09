@@ -149,7 +149,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = Criollo;
+				ORGANIZATIONNAME = "Cătălin Stan";
 				TargetAttributes = {
 					ADC2E7941CB9772F00B27191 = {
 						CreatedOnToolsVersion = 7.3;
