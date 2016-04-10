@@ -8,11 +8,11 @@
 
 #import "CRSystemInfoHelper.h"
 
-#include <stdio.h>
-#include <ifaddrs.h>
-#include <arpa/inet.h>
-#include <sys/utsname.h>
-#include <mach/mach.h>
+#import <stdio.h>
+#import <ifaddrs.h>
+#import <arpa/inet.h>
+#import <sys/utsname.h>
+#import <mach/mach.h>
 
 NSString * const CRSystemInfoSysnameKey = @"CRSystemInfoSysname";
 NSString * const CRSystemInfoNodenameKey = @"CRSystemInfoNodename";
