@@ -6,6 +6,12 @@ This file includes all notable changes to CSSystemInfoHelper.
 
 ---
 
+## [1.2.0](https://github.com/thecatalinstan/CSSystemInfoHelper/releases/tag/1.2.0) (04/11/2016)
+
+**Released on Monday, April 11, 2016**.
+
+Project was renamed to CSSystemInfoHelper
+
 ## [1.1.0](https://github.com/thecatalinstan/CSSystemInfoHelper/releases/tag/1.1.0) (04/10/2016)
 
 **Released on Sunday, April 10, 2016**.
