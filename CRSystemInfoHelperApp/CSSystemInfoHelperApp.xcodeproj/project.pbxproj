@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD990E511CB99F77005746CE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD990E501CB99F77005746CE /* main.swift */; };
-		AD990E651CB9A93B005746CE /* CRSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD990E641CB9A93B005746CE /* CRSystemInfoHelper.framework */; };
+		ADFD12C71CBB92CA009A2E16 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADFD12C61CBB92CA009A2E16 /* CSSystemInfoHelper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,9 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AD990E4D1CB99F77005746CE /* CRSystemInfoHelperApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CRSystemInfoHelperApp; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD990E4D1CB99F77005746CE /* CSSystemInfoHelperApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CSSystemInfoHelperApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD990E501CB99F77005746CE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		AD990E641CB9A93B005746CE /* CRSystemInfoHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CRSystemInfoHelper.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CRSystemInfoHelper-acinrmcjgtnewqctqanqolrxvimq/Build/Products/Debug/CRSystemInfoHelper.framework"; sourceTree = "<group>"; };
+		ADFD12C61CBB92CA009A2E16 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSSystemInfoHelper.framework; path = ../build/Debug/CSSystemInfoHelper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD990E651CB9A93B005746CE /* CRSystemInfoHelper.framework in Frameworks */,
+				ADFD12C71CBB92CA009A2E16 /* CSSystemInfoHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +44,7 @@
 		AD990E441CB99F77005746CE = {
 			isa = PBXGroup;
 			children = (
-				AD990E4F1CB99F77005746CE /* CRSystemInfoHelperApp */,
+				AD990E4F1CB99F77005746CE /* CSSystemInfoHelperApp */,
 				AD990E4E1CB99F77005746CE /* Products */,
 				AD990E631CB9A81C005746CE /* Frameworks */,
 			);
@@ -53,23 +53,24 @@
 		AD990E4E1CB99F77005746CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD990E4D1CB99F77005746CE /* CRSystemInfoHelperApp */,
+				AD990E4D1CB99F77005746CE /* CSSystemInfoHelperApp */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD990E4F1CB99F77005746CE /* CRSystemInfoHelperApp */ = {
+		AD990E4F1CB99F77005746CE /* CSSystemInfoHelperApp */ = {
 			isa = PBXGroup;
 			children = (
 				AD990E501CB99F77005746CE /* main.swift */,
 			);
+			name = CSSystemInfoHelperApp;
 			path = CRSystemInfoHelperApp;
 			sourceTree = "<group>";
 		};
 		AD990E631CB9A81C005746CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD990E641CB9A93B005746CE /* CRSystemInfoHelper.framework */,
+				ADFD12C61CBB92CA009A2E16 /* CSSystemInfoHelper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,9 +78,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD990E4C1CB99F77005746CE /* CRSystemInfoHelperApp */ = {
+		AD990E4C1CB99F77005746CE /* CSSystemInfoHelperApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD990E541CB99F77005746CE /* Build configuration list for PBXNativeTarget "CRSystemInfoHelperApp" */;
+			buildConfigurationList = AD990E541CB99F77005746CE /* Build configuration list for PBXNativeTarget "CSSystemInfoHelperApp" */;
 			buildPhases = (
 				AD990E491CB99F77005746CE /* Sources */,
 				AD990E4A1CB99F77005746CE /* Frameworks */,
@@ -89,9 +90,9 @@
 			);
 			dependencies = (
 			);
-			name = CRSystemInfoHelperApp;
+			name = CSSystemInfoHelperApp;
 			productName = CRSystemInfoHelperApp;
-			productReference = AD990E4D1CB99F77005746CE /* CRSystemInfoHelperApp */;
+			productReference = AD990E4D1CB99F77005746CE /* CSSystemInfoHelperApp */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AD990E481CB99F77005746CE /* Build configuration list for PBXProject "CRSystemInfoHelperApp" */;
+			buildConfigurationList = AD990E481CB99F77005746CE /* Build configuration list for PBXProject "CSSystemInfoHelperApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -121,7 +122,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD990E4C1CB99F77005746CE /* CRSystemInfoHelperApp */,
+				AD990E4C1CB99F77005746CE /* CSSystemInfoHelperApp */,
 			);
 		};
 /* End PBXProject section */
@@ -223,21 +224,21 @@
 		AD990E551CB99F77005746CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CSSystemInfoHelperApp;
 			};
 			name = Debug;
 		};
 		AD990E561CB99F77005746CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CSSystemInfoHelperApp;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD990E481CB99F77005746CE /* Build configuration list for PBXProject "CRSystemInfoHelperApp" */ = {
+		AD990E481CB99F77005746CE /* Build configuration list for PBXProject "CSSystemInfoHelperApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD990E521CB99F77005746CE /* Debug */,
@@ -246,13 +247,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD990E541CB99F77005746CE /* Build configuration list for PBXNativeTarget "CRSystemInfoHelperApp" */ = {
+		AD990E541CB99F77005746CE /* Build configuration list for PBXNativeTarget "CSSystemInfoHelperApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD990E551CB99F77005746CE /* Debug */,
 				AD990E561CB99F77005746CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

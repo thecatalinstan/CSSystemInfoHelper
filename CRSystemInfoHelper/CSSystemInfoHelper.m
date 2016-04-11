@@ -1,12 +1,12 @@
 //
-//  CRSystemInfoHelper.m
-//  CRSystemInfoHelper
+//  CSSystemInfoHelper.m
+//  CSSystemInfoHelper
 //
 //  Created by Cătălin Stan on 05/04/16.
 //  Copyright © 2016 Cătălin Stan. All rights reserved.
 //
 
-#import "CRSystemInfoHelper.h"
+#import "CSSystemInfoHelper.h"
 
 #import <stdio.h>
 #import <ifaddrs.h>
@@ -14,25 +14,25 @@
 #import <sys/utsname.h>
 #import <mach/mach.h>
 
-NSString * const CRSystemInfoSysnameKey = @"CRSystemInfoSysname";
-NSString * const CRSystemInfoNodenameKey = @"CRSystemInfoNodename";
-NSString * const CRSystemInfoReleaseKey = @"CRSystemInfoRelease";
-NSString * const CRSystemInfoVersionKey = @"CRSystemInfoVersion";
-NSString * const CRSystemInfoMachineKey = @"CRSystemInfoMachine";
+NSString * const CSSystemInfoSysnameKey = @"CSSystemInfoSysname";
+NSString * const CSSystemInfoNodenameKey = @"CSSystemInfoNodename";
+NSString * const CSSystemInfoReleaseKey = @"CSSystemInfoRelease";
+NSString * const CSSystemInfoVersionKey = @"CSSystemInfoVersion";
+NSString * const CSSystemInfoMachineKey = @"CSSystemInfoMachine";
 
-@interface CRSystemInfoHelper ()
+@interface CSSystemInfoHelper ()
 
 @property (nonatomic, readonly, strong) dispatch_queue_t isolationQueue;
 
 @end
 
-@implementation CRSystemInfoHelper
+@implementation CSSystemInfoHelper
 
 + (instancetype)sharedHelper {
-    static CRSystemInfoHelper* sharedHelper;
+    static CSSystemInfoHelper* sharedHelper;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedHelper = [[CRSystemInfoHelper alloc] init];
+        sharedHelper = [[CSSystemInfoHelper alloc] init];
     });
     return sharedHelper;
 }
@@ -83,7 +83,7 @@ NSString * const CRSystemInfoMachineKey = @"CRSystemInfoMachine";
             @throw [NSException exceptionWithName:NSGenericException reason:[NSString stringWithUTF8String:strerror(errno)] userInfo:nil];
             return nil;
         }
-        systemInfo = @{CRSystemInfoSysnameKey: @(unameStruct.sysname), CRSystemInfoNodenameKey: @(unameStruct.nodename), CRSystemInfoReleaseKey: @(unameStruct.release), CRSystemInfoVersionKey: @(unameStruct.version), CRSystemInfoMachineKey: @(unameStruct.machine)};
+        systemInfo = @{CSSystemInfoSysnameKey: @(unameStruct.sysname), CSSystemInfoNodenameKey: @(unameStruct.nodename), CSSystemInfoReleaseKey: @(unameStruct.release), CSSystemInfoVersionKey: @(unameStruct.version), CSSystemInfoMachineKey: @(unameStruct.machine)};
     }
     return systemInfo;
 }
@@ -91,7 +91,7 @@ NSString * const CRSystemInfoMachineKey = @"CRSystemInfoMachine";
 - (NSString *)systemInfoString {
     static NSString* systemInfoString;
     if ( systemInfoString == nil ) {
-        systemInfoString = [NSString stringWithFormat:@"%@ %@ %@ %@ %@", self.systemInfo[CRSystemInfoSysnameKey], self.systemInfo[CRSystemInfoNodenameKey], self.systemInfo[CRSystemInfoReleaseKey], self.systemInfo[CRSystemInfoVersionKey], self.systemInfo[CRSystemInfoMachineKey]];
+        systemInfoString = [NSString stringWithFormat:@"%@ %@ %@ %@ %@", self.systemInfo[CSSystemInfoSysnameKey], self.systemInfo[CSSystemInfoNodenameKey], self.systemInfo[CSSystemInfoReleaseKey], self.systemInfo[CSSystemInfoVersionKey], self.systemInfo[CSSystemInfoMachineKey]];
     }
     return systemInfoString;
 }
@@ -99,7 +99,7 @@ NSString * const CRSystemInfoMachineKey = @"CRSystemInfoMachine";
 - (NSString *)systemVersionString {
     static NSString* systemVersionString;
     if ( systemVersionString == nil ) {
-        systemVersionString = [NSString stringWithFormat:@"%@ %@ %@", self.systemInfo[CRSystemInfoSysnameKey], self.systemInfo[CRSystemInfoReleaseKey], self.systemInfo[CRSystemInfoMachineKey]];
+        systemVersionString = [NSString stringWithFormat:@"%@ %@ %@", self.systemInfo[CSSystemInfoSysnameKey], self.systemInfo[CSSystemInfoReleaseKey], self.systemInfo[CSSystemInfoMachineKey]];
     }
     return systemVersionString;
 }
