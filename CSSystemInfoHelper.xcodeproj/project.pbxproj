@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD3913931CB9B7EA001A31F6 /* CRSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3913891CB9B7EA001A31F6 /* CRSystemInfoHelper.framework */; };
-		AD3913AC1CB9BA59001A31F6 /* CRSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */; };
-		AD3913AD1CB9BA62001A31F6 /* CRSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD3913AF1CB9BC37001A31F6 /* CRSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CRSystemInfoHelperTests.m */; };
-		AD3913C61CB9BD81001A31F6 /* CRSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3913891CB9B7EA001A31F6 /* CRSystemInfoHelper.framework */; };
-		AD3913CC1CB9BE1D001A31F6 /* CRSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD3913CD1CB9BE23001A31F6 /* CRSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */; };
-		AD3913CE1CB9BE3E001A31F6 /* CRSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CRSystemInfoHelperTests.m */; };
-		AD3913DE1CB9C003001A31F6 /* CRSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3913D41CB9C003001A31F6 /* CRSystemInfoHelper.framework */; };
-		AD3913EB1CB9C17D001A31F6 /* CRSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD3913EC1CB9C187001A31F6 /* CRSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */; };
-		AD3913ED1CB9C18B001A31F6 /* CRSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CRSystemInfoHelperTests.m */; };
-		AD990E421CB97D99005746CE /* CRSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */; };
-		AD990E431CB97D99005746CE /* CRSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */; };
-		ADC2E7991CB9772F00B27191 /* CRSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADC2E7A01CB9772F00B27191 /* CRSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC2E7951CB9772F00B27191 /* CRSystemInfoHelper.framework */; };
-		ADC2E7A51CB9772F00B27191 /* CRSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CRSystemInfoHelperTests.m */; };
+		AD3913931CB9B7EA001A31F6 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3913891CB9B7EA001A31F6 /* CSSystemInfoHelper.framework */; };
+		AD3913AC1CB9BA59001A31F6 /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
+		AD3913AD1CB9BA62001A31F6 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD3913AF1CB9BC37001A31F6 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */; };
+		AD3913C61CB9BD81001A31F6 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3913891CB9B7EA001A31F6 /* CSSystemInfoHelper.framework */; };
+		AD3913CC1CB9BE1D001A31F6 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD3913CD1CB9BE23001A31F6 /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
+		AD3913CE1CB9BE3E001A31F6 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */; };
+		AD3913DE1CB9C003001A31F6 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */; };
+		AD3913EB1CB9C17D001A31F6 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD3913EC1CB9C187001A31F6 /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
+		AD3913ED1CB9C18B001A31F6 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */; };
+		AD990E421CB97D99005746CE /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
+		AD990E431CB97D99005746CE /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
+		ADC2E7991CB9772F00B27191 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADC2E7A01CB9772F00B27191 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC2E7951CB9772F00B27191 /* CSSystemInfoHelper.framework */; };
+		ADC2E7A51CB9772F00B27191 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,53 +32,53 @@
 			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AD3913881CB9B7EA001A31F6;
-			remoteInfo = "CRSystemInfoHelper-iOS";
+			remoteInfo = "CSSystemInfoHelper-iOS";
 		};
 		AD3913C71CB9BD81001A31F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AD3913881CB9B7EA001A31F6;
-			remoteInfo = "CRSystemInfoHelper-iOS";
+			remoteInfo = "CSSystemInfoHelper-iOS";
 		};
 		AD3913DF1CB9C003001A31F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AD3913D31CB9C003001A31F6;
-			remoteInfo = "CRSystemInfoHelper-tvOS";
-		};
-		AD990E691CB9AC45005746CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD990E571CB99F77005746CE /* CRSystemInfoHelperApp.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AD990E4D1CB99F77005746CE;
-			remoteInfo = CRSystemInfoHelperApp;
+			remoteInfo = "CSSystemInfoHelper-tvOS";
 		};
 		ADC2E7A11CB9772F00B27191 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = ADC2E7941CB9772F00B27191;
-			remoteInfo = CRSystemInfoHelper;
+			remoteInfo = CSSystemInfoHelper;
+		};
+		ADFD12CB1CBB9915009A2E16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD990E571CB99F77005746CE /* CSSystemInfoHelperApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AD990E4D1CB99F77005746CE;
+			remoteInfo = CSSystemInfoHelperApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AD2A9E4D1CB9C3C0000A4432 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD2A9E4F1CB9C3C7000A4432 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD3913891CB9B7EA001A31F6 /* CRSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD3913921CB9B7EA001A31F6 /* CRSystemInfoHelper-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CRSystemInfoHelper-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD3913B51CB9BD5A001A31F6 /* CRSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD3913C11CB9BD81001A31F6 /* CRSystemInfoHelper-watchOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CRSystemInfoHelper-watchOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD3913D41CB9C003001A31F6 /* CRSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD3913DD1CB9C003001A31F6 /* CRSystemInfoHelper-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CRSystemInfoHelper-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSystemInfoHelper.m; sourceTree = "<group>"; };
-		AD990E571CB99F77005746CE /* CRSystemInfoHelperApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CRSystemInfoHelperApp.xcodeproj; path = CRSystemInfoHelperApp/CRSystemInfoHelperApp.xcodeproj; sourceTree = SOURCE_ROOT; };
-		ADC2E7951CB9772F00B27191 /* CRSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSystemInfoHelper.h; sourceTree = "<group>"; };
-		ADC2E79F1CB9772F00B27191 /* CRSystemInfoHelper-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CRSystemInfoHelper-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADC2E7A41CB9772F00B27191 /* CRSystemInfoHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSystemInfoHelperTests.m; sourceTree = "<group>"; };
+		AD3913891CB9B7EA001A31F6 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3913921CB9B7EA001A31F6 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3913B51CB9BD5A001A31F6 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3913C11CB9BD81001A31F6 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3913DD1CB9C003001A31F6 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelper.m; sourceTree = "<group>"; };
+		AD990E571CB99F77005746CE /* CSSystemInfoHelperApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CSSystemInfoHelperApp.xcodeproj; path = CSSystemInfoHelperApp/CSSystemInfoHelperApp.xcodeproj; sourceTree = SOURCE_ROOT; };
+		ADC2E7951CB9772F00B27191 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSystemInfoHelper.h; sourceTree = "<group>"; };
+		ADC2E79F1CB9772F00B27191 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelperTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913931CB9B7EA001A31F6 /* CRSystemInfoHelper.framework in Frameworks */,
+				AD3913931CB9B7EA001A31F6 /* CSSystemInfoHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913C61CB9BD81001A31F6 /* CRSystemInfoHelper.framework in Frameworks */,
+				AD3913C61CB9BD81001A31F6 /* CSSystemInfoHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913DE1CB9C003001A31F6 /* CRSystemInfoHelper.framework in Frameworks */,
+				AD3913DE1CB9C003001A31F6 /* CSSystemInfoHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +138,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC2E7A01CB9772F00B27191 /* CRSystemInfoHelper.framework in Frameworks */,
+				ADC2E7A01CB9772F00B27191 /* CSSystemInfoHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD3913A11CB9B8C2001A31F6 /* CRSystemInfoHelper */ = {
+		AD3913A11CB9B8C2001A31F6 /* CSSystemInfoHelper */ = {
 			isa = PBXGroup;
 			children = (
-				ADC2E7981CB9772F00B27191 /* CRSystemInfoHelper.h */,
-				AD990E411CB97D99005746CE /* CRSystemInfoHelper.m */,
+				ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */,
+				AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */,
 				AD3913A61CB9B9F3001A31F6 /* Supporting Files */,
 			);
-			path = CRSystemInfoHelper;
+			path = CSSystemInfoHelper;
 			sourceTree = "<group>";
 		};
 		AD3913A61CB9B9F3001A31F6 /* Supporting Files */ = {
@@ -174,24 +174,16 @@
 		AD3913AE1CB9BBED001A31F6 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
-				AD990E571CB99F77005746CE /* CRSystemInfoHelperApp.xcodeproj */,
+				AD990E571CB99F77005746CE /* CSSystemInfoHelperApp.xcodeproj */,
 			);
 			name = Apps;
-			sourceTree = "<group>";
-		};
-		AD990E661CB9AC45005746CE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AD990E6A1CB9AC45005746CE /* CRSystemInfoHelperApp */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		ADC2E78B1CB9772F00B27191 = {
 			isa = PBXGroup;
 			children = (
-				AD3913A11CB9B8C2001A31F6 /* CRSystemInfoHelper */,
-				ADC2E7A31CB9772F00B27191 /* CRSystemInfoHelperTests */,
+				AD3913A11CB9B8C2001A31F6 /* CSSystemInfoHelper */,
+				ADC2E7A31CB9772F00B27191 /* CSSystemInfoHelperTests */,
 				AD3913AE1CB9BBED001A31F6 /* Apps */,
 				ADC2E7961CB9772F00B27191 /* Products */,
 			);
@@ -200,25 +192,33 @@
 		ADC2E7961CB9772F00B27191 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADC2E7951CB9772F00B27191 /* CRSystemInfoHelper.framework */,
-				ADC2E79F1CB9772F00B27191 /* CRSystemInfoHelper-OSXTests.xctest */,
-				AD3913891CB9B7EA001A31F6 /* CRSystemInfoHelper.framework */,
-				AD3913921CB9B7EA001A31F6 /* CRSystemInfoHelper-iOSTests.xctest */,
-				AD3913B51CB9BD5A001A31F6 /* CRSystemInfoHelper.framework */,
-				AD3913C11CB9BD81001A31F6 /* CRSystemInfoHelper-watchOSTests.xctest */,
-				AD3913D41CB9C003001A31F6 /* CRSystemInfoHelper.framework */,
-				AD3913DD1CB9C003001A31F6 /* CRSystemInfoHelper-tvOSTests.xctest */,
+				ADC2E7951CB9772F00B27191 /* CSSystemInfoHelper.framework */,
+				ADC2E79F1CB9772F00B27191 /* CSSystemInfoHelper.xctest */,
+				AD3913891CB9B7EA001A31F6 /* CSSystemInfoHelper.framework */,
+				AD3913921CB9B7EA001A31F6 /* CSSystemInfoHelper.xctest */,
+				AD3913B51CB9BD5A001A31F6 /* CSSystemInfoHelper.framework */,
+				AD3913C11CB9BD81001A31F6 /* CSSystemInfoHelper.xctest */,
+				AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */,
+				AD3913DD1CB9C003001A31F6 /* CSSystemInfoHelper.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ADC2E7A31CB9772F00B27191 /* CRSystemInfoHelperTests */ = {
+		ADC2E7A31CB9772F00B27191 /* CSSystemInfoHelperTests */ = {
 			isa = PBXGroup;
 			children = (
-				ADC2E7A41CB9772F00B27191 /* CRSystemInfoHelperTests.m */,
+				ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */,
 				AD3913AB1CB9BA09001A31F6 /* Supporting Files */,
 			);
-			path = CRSystemInfoHelperTests;
+			path = CSSystemInfoHelperTests;
+			sourceTree = "<group>";
+		};
+		ADFD12C81CBB9915009A2E16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADFD12CC1CBB9915009A2E16 /* CSSystemInfoHelperApp */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +228,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913AD1CB9BA62001A31F6 /* CRSystemInfoHelper.h in Headers */,
+				AD3913AD1CB9BA62001A31F6 /* CSSystemInfoHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +236,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913CC1CB9BE1D001A31F6 /* CRSystemInfoHelper.h in Headers */,
+				AD3913CC1CB9BE1D001A31F6 /* CSSystemInfoHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +244,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913EB1CB9C17D001A31F6 /* CRSystemInfoHelper.h in Headers */,
+				AD3913EB1CB9C17D001A31F6 /* CSSystemInfoHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,16 +252,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC2E7991CB9772F00B27191 /* CRSystemInfoHelper.h in Headers */,
+				ADC2E7991CB9772F00B27191 /* CSSystemInfoHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AD3913881CB9B7EA001A31F6 /* CRSystemInfoHelper-iOS */ = {
+		AD3913881CB9B7EA001A31F6 /* CSSystemInfoHelper-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD39139F1CB9B7EA001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-iOS" */;
+			buildConfigurationList = AD39139F1CB9B7EA001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-iOS" */;
 			buildPhases = (
 				AD3913841CB9B7EA001A31F6 /* Sources */,
 				AD3913851CB9B7EA001A31F6 /* Frameworks */,
@@ -272,14 +272,14 @@
 			);
 			dependencies = (
 			);
-			name = "CRSystemInfoHelper-iOS";
-			productName = "CRSystemInfoHelper-iOS";
-			productReference = AD3913891CB9B7EA001A31F6 /* CRSystemInfoHelper.framework */;
+			name = "CSSystemInfoHelper-iOS";
+			productName = "CSSystemInfoHelper-iOS";
+			productReference = AD3913891CB9B7EA001A31F6 /* CSSystemInfoHelper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AD3913911CB9B7EA001A31F6 /* CRSystemInfoHelper-iOSTests */ = {
+		AD3913911CB9B7EA001A31F6 /* CSSystemInfoHelper-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD3913A01CB9B7EA001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-iOSTests" */;
+			buildConfigurationList = AD3913A01CB9B7EA001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-iOSTests" */;
 			buildPhases = (
 				AD39138E1CB9B7EA001A31F6 /* Sources */,
 				AD39138F1CB9B7EA001A31F6 /* Frameworks */,
@@ -290,14 +290,14 @@
 			dependencies = (
 				AD3913951CB9B7EA001A31F6 /* PBXTargetDependency */,
 			);
-			name = "CRSystemInfoHelper-iOSTests";
-			productName = "CRSystemInfoHelper-iOSTests";
-			productReference = AD3913921CB9B7EA001A31F6 /* CRSystemInfoHelper-iOSTests.xctest */;
+			name = "CSSystemInfoHelper-iOSTests";
+			productName = "CSSystemInfoHelper-iOSTests";
+			productReference = AD3913921CB9B7EA001A31F6 /* CSSystemInfoHelper.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AD3913B41CB9BD5A001A31F6 /* CRSystemInfoHelper-watchOS */ = {
+		AD3913B41CB9BD5A001A31F6 /* CSSystemInfoHelper-watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD3913BA1CB9BD5A001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-watchOS" */;
+			buildConfigurationList = AD3913BA1CB9BD5A001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-watchOS" */;
 			buildPhases = (
 				AD3913B01CB9BD5A001A31F6 /* Sources */,
 				AD3913B11CB9BD5A001A31F6 /* Frameworks */,
@@ -308,14 +308,14 @@
 			);
 			dependencies = (
 			);
-			name = "CRSystemInfoHelper-watchOS";
-			productName = "CRSystemInfoHelper-watchOS";
-			productReference = AD3913B51CB9BD5A001A31F6 /* CRSystemInfoHelper.framework */;
+			name = "CSSystemInfoHelper-watchOS";
+			productName = "CSSystemInfoHelper-watchOS";
+			productReference = AD3913B51CB9BD5A001A31F6 /* CSSystemInfoHelper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AD3913C01CB9BD81001A31F6 /* CRSystemInfoHelper-watchOSTests */ = {
+		AD3913C01CB9BD81001A31F6 /* CSSystemInfoHelper-watchOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD3913C91CB9BD81001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-watchOSTests" */;
+			buildConfigurationList = AD3913C91CB9BD81001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-watchOSTests" */;
 			buildPhases = (
 				AD3913BD1CB9BD81001A31F6 /* Sources */,
 				AD3913BE1CB9BD81001A31F6 /* Frameworks */,
@@ -326,14 +326,14 @@
 			dependencies = (
 				AD3913C81CB9BD81001A31F6 /* PBXTargetDependency */,
 			);
-			name = "CRSystemInfoHelper-watchOSTests";
-			productName = "CRSystemInfoHelper-watchOSTests";
-			productReference = AD3913C11CB9BD81001A31F6 /* CRSystemInfoHelper-watchOSTests.xctest */;
+			name = "CSSystemInfoHelper-watchOSTests";
+			productName = "CSSystemInfoHelper-watchOSTests";
+			productReference = AD3913C11CB9BD81001A31F6 /* CSSystemInfoHelper.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AD3913D31CB9C003001A31F6 /* CRSystemInfoHelper-tvOS */ = {
+		AD3913D31CB9C003001A31F6 /* CSSystemInfoHelper-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD3913E51CB9C003001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-tvOS" */;
+			buildConfigurationList = AD3913E51CB9C003001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-tvOS" */;
 			buildPhases = (
 				AD3913CF1CB9C003001A31F6 /* Sources */,
 				AD3913D01CB9C003001A31F6 /* Frameworks */,
@@ -344,14 +344,14 @@
 			);
 			dependencies = (
 			);
-			name = "CRSystemInfoHelper-tvOS";
-			productName = "CRSystemInfoHelper-tvOS";
-			productReference = AD3913D41CB9C003001A31F6 /* CRSystemInfoHelper.framework */;
+			name = "CSSystemInfoHelper-tvOS";
+			productName = "CSSystemInfoHelper-tvOS";
+			productReference = AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AD3913DC1CB9C003001A31F6 /* CRSystemInfoHelper-tvOSTests */ = {
+		AD3913DC1CB9C003001A31F6 /* CSSystemInfoHelper-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD3913E81CB9C003001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-tvOSTests" */;
+			buildConfigurationList = AD3913E81CB9C003001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-tvOSTests" */;
 			buildPhases = (
 				AD3913D91CB9C003001A31F6 /* Sources */,
 				AD3913DA1CB9C003001A31F6 /* Frameworks */,
@@ -362,14 +362,14 @@
 			dependencies = (
 				AD3913E01CB9C003001A31F6 /* PBXTargetDependency */,
 			);
-			name = "CRSystemInfoHelper-tvOSTests";
-			productName = "CRSystemInfoHelper-tvOSTests";
-			productReference = AD3913DD1CB9C003001A31F6 /* CRSystemInfoHelper-tvOSTests.xctest */;
+			name = "CSSystemInfoHelper-tvOSTests";
+			productName = "CSSystemInfoHelper-tvOSTests";
+			productReference = AD3913DD1CB9C003001A31F6 /* CSSystemInfoHelper.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		ADC2E7941CB9772F00B27191 /* CRSystemInfoHelper-OSX */ = {
+		ADC2E7941CB9772F00B27191 /* CSSystemInfoHelper-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADC2E7A91CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-OSX" */;
+			buildConfigurationList = ADC2E7A91CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-OSX" */;
 			buildPhases = (
 				ADC2E7901CB9772F00B27191 /* Sources */,
 				ADC2E7911CB9772F00B27191 /* Frameworks */,
@@ -380,14 +380,14 @@
 			);
 			dependencies = (
 			);
-			name = "CRSystemInfoHelper-OSX";
-			productName = CRSystemInfoHelper;
-			productReference = ADC2E7951CB9772F00B27191 /* CRSystemInfoHelper.framework */;
+			name = "CSSystemInfoHelper-OSX";
+			productName = CSSystemInfoHelper;
+			productReference = ADC2E7951CB9772F00B27191 /* CSSystemInfoHelper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ADC2E79E1CB9772F00B27191 /* CRSystemInfoHelper-OSXTests */ = {
+		ADC2E79E1CB9772F00B27191 /* CSSystemInfoHelper-OSXTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADC2E7AC1CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-OSXTests" */;
+			buildConfigurationList = ADC2E7AC1CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-OSXTests" */;
 			buildPhases = (
 				ADC2E79B1CB9772F00B27191 /* Sources */,
 				ADC2E79C1CB9772F00B27191 /* Frameworks */,
@@ -398,9 +398,9 @@
 			dependencies = (
 				ADC2E7A21CB9772F00B27191 /* PBXTargetDependency */,
 			);
-			name = "CRSystemInfoHelper-OSXTests";
-			productName = CRSystemInfoHelperTests;
-			productReference = ADC2E79F1CB9772F00B27191 /* CRSystemInfoHelper-OSXTests.xctest */;
+			name = "CSSystemInfoHelper-OSXTests";
+			productName = CSSystemInfoHelperTests;
+			productReference = ADC2E79F1CB9772F00B27191 /* CSSystemInfoHelper.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -409,6 +409,7 @@
 		ADC2E78C1CB9772F00B27191 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CS;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Cătălin Stan";
 				TargetAttributes = {
@@ -438,7 +439,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ADC2E78F1CB9772F00B27191 /* Build configuration list for PBXProject "CRSystemInfoHelper" */;
+			buildConfigurationList = ADC2E78F1CB9772F00B27191 /* Build configuration list for PBXProject "CSSystemInfoHelper" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -450,30 +451,30 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = AD990E661CB9AC45005746CE /* Products */;
-					ProjectRef = AD990E571CB99F77005746CE /* CRSystemInfoHelperApp.xcodeproj */;
+					ProductGroup = ADFD12C81CBB9915009A2E16 /* Products */;
+					ProjectRef = AD990E571CB99F77005746CE /* CSSystemInfoHelperApp.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				ADC2E7941CB9772F00B27191 /* CRSystemInfoHelper-OSX */,
-				ADC2E79E1CB9772F00B27191 /* CRSystemInfoHelper-OSXTests */,
-				AD3913881CB9B7EA001A31F6 /* CRSystemInfoHelper-iOS */,
-				AD3913911CB9B7EA001A31F6 /* CRSystemInfoHelper-iOSTests */,
-				AD3913B41CB9BD5A001A31F6 /* CRSystemInfoHelper-watchOS */,
-				AD3913C01CB9BD81001A31F6 /* CRSystemInfoHelper-watchOSTests */,
-				AD3913D31CB9C003001A31F6 /* CRSystemInfoHelper-tvOS */,
-				AD3913DC1CB9C003001A31F6 /* CRSystemInfoHelper-tvOSTests */,
+				ADC2E7941CB9772F00B27191 /* CSSystemInfoHelper-OSX */,
+				ADC2E79E1CB9772F00B27191 /* CSSystemInfoHelper-OSXTests */,
+				AD3913881CB9B7EA001A31F6 /* CSSystemInfoHelper-iOS */,
+				AD3913911CB9B7EA001A31F6 /* CSSystemInfoHelper-iOSTests */,
+				AD3913B41CB9BD5A001A31F6 /* CSSystemInfoHelper-watchOS */,
+				AD3913C01CB9BD81001A31F6 /* CSSystemInfoHelper-watchOSTests */,
+				AD3913D31CB9C003001A31F6 /* CSSystemInfoHelper-tvOS */,
+				AD3913DC1CB9C003001A31F6 /* CSSystemInfoHelper-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		AD990E6A1CB9AC45005746CE /* CRSystemInfoHelperApp */ = {
+		ADFD12CC1CBB9915009A2E16 /* CSSystemInfoHelperApp */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
-			path = CRSystemInfoHelperApp;
-			remoteRef = AD990E691CB9AC45005746CE /* PBXContainerItemProxy */;
+			path = CSSystemInfoHelperApp;
+			remoteRef = ADFD12CB1CBB9915009A2E16 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -542,7 +543,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913AC1CB9BA59001A31F6 /* CRSystemInfoHelper.m in Sources */,
+				AD3913AC1CB9BA59001A31F6 /* CSSystemInfoHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +551,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913AF1CB9BC37001A31F6 /* CRSystemInfoHelperTests.m in Sources */,
+				AD3913AF1CB9BC37001A31F6 /* CSSystemInfoHelperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +559,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913CD1CB9BE23001A31F6 /* CRSystemInfoHelper.m in Sources */,
+				AD3913CD1CB9BE23001A31F6 /* CSSystemInfoHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,7 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913CE1CB9BE3E001A31F6 /* CRSystemInfoHelperTests.m in Sources */,
+				AD3913CE1CB9BE3E001A31F6 /* CSSystemInfoHelperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,7 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913EC1CB9C187001A31F6 /* CRSystemInfoHelper.m in Sources */,
+				AD3913EC1CB9C187001A31F6 /* CSSystemInfoHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +583,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913ED1CB9C18B001A31F6 /* CRSystemInfoHelperTests.m in Sources */,
+				AD3913ED1CB9C18B001A31F6 /* CSSystemInfoHelperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD990E421CB97D99005746CE /* CRSystemInfoHelper.m in Sources */,
+				AD990E421CB97D99005746CE /* CSSystemInfoHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,8 +599,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD990E431CB97D99005746CE /* CRSystemInfoHelper.m in Sources */,
-				ADC2E7A51CB9772F00B27191 /* CRSystemInfoHelperTests.m in Sources */,
+				AD990E431CB97D99005746CE /* CSSystemInfoHelper.m in Sources */,
+				ADC2E7A51CB9772F00B27191 /* CSSystemInfoHelperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,22 +609,22 @@
 /* Begin PBXTargetDependency section */
 		AD3913951CB9B7EA001A31F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD3913881CB9B7EA001A31F6 /* CRSystemInfoHelper-iOS */;
+			target = AD3913881CB9B7EA001A31F6 /* CSSystemInfoHelper-iOS */;
 			targetProxy = AD3913941CB9B7EA001A31F6 /* PBXContainerItemProxy */;
 		};
 		AD3913C81CB9BD81001A31F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD3913881CB9B7EA001A31F6 /* CRSystemInfoHelper-iOS */;
+			target = AD3913881CB9B7EA001A31F6 /* CSSystemInfoHelper-iOS */;
 			targetProxy = AD3913C71CB9BD81001A31F6 /* PBXContainerItemProxy */;
 		};
 		AD3913E01CB9C003001A31F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD3913D31CB9C003001A31F6 /* CRSystemInfoHelper-tvOS */;
+			target = AD3913D31CB9C003001A31F6 /* CSSystemInfoHelper-tvOS */;
 			targetProxy = AD3913DF1CB9C003001A31F6 /* PBXContainerItemProxy */;
 		};
 		ADC2E7A21CB9772F00B27191 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ADC2E7941CB9772F00B27191 /* CRSystemInfoHelper-OSX */;
+			target = ADC2E7941CB9772F00B27191 /* CSSystemInfoHelper-OSX */;
 			targetProxy = ADC2E7A11CB9772F00B27191 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -637,11 +638,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
-				PRODUCT_NAME = CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -656,11 +658,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
-				PRODUCT_NAME = CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -672,11 +675,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-iOSTests";
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -685,11 +688,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-iOSTests";
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -703,11 +706,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
-				PRODUCT_NAME = CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -723,11 +726,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
-				PRODUCT_NAME = CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -740,11 +743,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-watchOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-watchOSTests";
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -753,11 +756,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-watchOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-watchOSTests";
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -770,15 +773,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
-				PRODUCT_NAME = CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -789,15 +792,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
-				PRODUCT_NAME = CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -805,10 +808,10 @@
 		AD3913E91CB9C003001A31F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-tvOSTests";
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = appletvos;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -817,10 +820,10 @@
 		AD3913EA1CB9C003001A31F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-tvOSTests";
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = appletvos;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 				VALIDATE_PRODUCT = YES;
@@ -925,11 +928,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
-				PRODUCT_NAME = CRSystemInfoHelper;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -943,11 +947,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
-				PRODUCT_NAME = CRSystemInfoHelper;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
+				PRODUCT_NAME = CSSystemInfoHelper;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -956,10 +961,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-OSXTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-OSXTests";
+				PRODUCT_NAME = CSSystemInfoHelper;
 			};
 			name = Debug;
 		};
@@ -967,17 +972,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-OSXTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-OSXTests";
+				PRODUCT_NAME = CSSystemInfoHelper;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD39139F1CB9B7EA001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-iOS" */ = {
+		AD39139F1CB9B7EA001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD39139A1CB9B7EA001A31F6 /* Debug */,
@@ -986,7 +991,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD3913A01CB9B7EA001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-iOSTests" */ = {
+		AD3913A01CB9B7EA001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD39139C1CB9B7EA001A31F6 /* Debug */,
@@ -995,7 +1000,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD3913BA1CB9BD5A001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-watchOS" */ = {
+		AD3913BA1CB9BD5A001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD3913BB1CB9BD5A001A31F6 /* Debug */,
@@ -1004,7 +1009,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD3913C91CB9BD81001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-watchOSTests" */ = {
+		AD3913C91CB9BD81001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-watchOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD3913CA1CB9BD81001A31F6 /* Debug */,
@@ -1013,7 +1018,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD3913E51CB9C003001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-tvOS" */ = {
+		AD3913E51CB9C003001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD3913E61CB9C003001A31F6 /* Debug */,
@@ -1022,7 +1027,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD3913E81CB9C003001A31F6 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-tvOSTests" */ = {
+		AD3913E81CB9C003001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD3913E91CB9C003001A31F6 /* Debug */,
@@ -1031,7 +1036,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADC2E78F1CB9772F00B27191 /* Build configuration list for PBXProject "CRSystemInfoHelper" */ = {
+		ADC2E78F1CB9772F00B27191 /* Build configuration list for PBXProject "CSSystemInfoHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADC2E7A71CB9772F00B27191 /* Debug */,
@@ -1040,7 +1045,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADC2E7A91CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-OSX" */ = {
+		ADC2E7A91CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADC2E7AA1CB9772F00B27191 /* Debug */,
@@ -1049,7 +1054,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADC2E7AC1CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CRSystemInfoHelper-OSXTests" */ = {
+		ADC2E7AC1CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-OSXTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADC2E7AD1CB9772F00B27191 /* Debug */,

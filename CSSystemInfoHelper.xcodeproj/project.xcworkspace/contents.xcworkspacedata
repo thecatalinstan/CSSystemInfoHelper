@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CRSystemInfoHelper.xcodeproj">
+      location = "self:/Users/catalin/Documents/Criollo/CSSystemInfoHelper/CSSystemInfoHelper.xcodeproj">
    </FileRef>
 </Workspace>
