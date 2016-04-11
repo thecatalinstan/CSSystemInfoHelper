@@ -1,17 +1,17 @@
-[![Version Status](https://img.shields.io/cocoapods/v/CRSystemInfoHelper.svg?style=flat)](http://cocoadocs.org/docsets/CRSystemInfoHelper)  [![Platform](http://img.shields.io/cocoapods/p/CRSystemInfoHelper.svg?style=flat)](http://cocoapods.org/?q=CRSystemInfoHelper) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Version Status](https://img.shields.io/cocoapods/v/CSSystemInfoHelper.svg?style=flat)](http://cocoadocs.org/docsets/CSSystemInfoHelper)  [![Platform](http://img.shields.io/cocoapods/p/CSSystemInfoHelper.svg?style=flat)](http://cocoapods.org/?q=CSSystemInfoHelper) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
  [![MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat)](https://opensource.org/licenses/MIT)
- 
-# CRSystemInfoHelper
+
+# CSSystemInfoHelper
 
 A utility library for getting system info. It’s meant to provide a more straightforward way of accessing information only available through C APIs and to provide shorthands for most common usage scenarios.
 
-## Installation 
+## Installation
 
 Install using [CocoaPods](http://cocoapods.org) by adding this line to your Podfile:
 
 ````ruby
 use_frameworks!
-pod ‘CRSystemInfoHelper’  
+pod ‘CSSystemInfoHelper’
 ````
 
 ## Getting Started
@@ -22,25 +22,25 @@ Install using [CocoaPods](http://cocoapods.org) by adding this line to your Podf
 
 ````ruby
 use_frameworks!
-pod ‘CRSystemInfoHelper’  
+pod ‘CSSystemInfoHelper’
 ````
 
 ### In your Project
 
 ```swift
-import CRSystemInfoHelper
+import CSSystemInfoHelper
 
-print("\(CRSystemInfoHelper.sharedHelper().systemInfoString)"
+print("\(CSSystemInfoHelper.sharedHelper().systemInfoString)"
 ```
 
 ## Examples
 
-Please note that you can also see usage examples in the [example app](https://github.com/thecatalinstan/CRSystemInfoHelper/tree/master/CRSystemInfoHelperApp)
+Please note that you can also see usage examples in the [example app](https://github.com/thecatalinstan/CSSystemInfoHelper/tree/master/CSSystemInfoHelperApp)
 
 ### Getting IPv4 interfaces and addresses
 
 ```swift
-for (ifname, ipaddr) in CRSystemInfoHelper.sharedHelper().AllIPAddresses {
+for (ifname, ipaddr) in CSSystemInfoHelper.sharedHelper().AllIPAddresses {
     print("\(ifname): \(ipaddr)")
 }
 ```
@@ -48,7 +48,7 @@ for (ifname, ipaddr) in CRSystemInfoHelper.sharedHelper().AllIPAddresses {
 ### Getting System Info from `uname(3)`
 
 ```swift
-for (key, value) in CRSystemInfoHelper.sharedHelper().systemInfo {
+for (key, value) in CSSystemInfoHelper.sharedHelper().systemInfo {
     print("\(key): \(value)")
 }
 ```
@@ -56,6 +56,6 @@ for (key, value) in CRSystemInfoHelper.sharedHelper().systemInfo {
 ### Getting Human-readable Memory Usage
 
 ```swift
-print(CRSystemInfoHelper.sharedHelper().memoryUsageString)
+print(CSSystemInfoHelper.sharedHelper().memoryUsageString)
 ```
 
