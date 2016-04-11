@@ -1,15 +1,15 @@
 //
 //  main.swift
-//  CRSystemInfoHelperApp
+//  CSSystemInfoHelperApp
 //
 //  Created by Cătălin Stan on 09/04/16.
 //  Copyright © 2016 Cătălin Stan. All rights reserved.
 //
 
 import Foundation
-import CRSystemInfoHelper
+import CSSystemInfoHelper
 
-let helper:CRSystemInfoHelper = CRSystemInfoHelper.sharedHelper()
+let helper:CSSystemInfoHelper = CSSystemInfoHelper.sharedHelper()
 
 // IPv4 Addresses
 print("IPv4 Interfaces")

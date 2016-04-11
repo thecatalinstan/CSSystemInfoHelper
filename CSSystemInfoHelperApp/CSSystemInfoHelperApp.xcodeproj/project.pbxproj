@@ -64,7 +64,7 @@
 				AD990E501CB99F77005746CE /* main.swift */,
 			);
 			name = CSSystemInfoHelperApp;
-			path = CRSystemInfoHelperApp;
+			path = CSSystemInfoHelperApp;
 			sourceTree = "<group>";
 		};
 		AD990E631CB9A81C005746CE /* Frameworks */ = {
@@ -91,7 +91,7 @@
 			dependencies = (
 			);
 			name = CSSystemInfoHelperApp;
-			productName = CRSystemInfoHelperApp;
+			productName = CSSystemInfoHelperApp;
 			productReference = AD990E4D1CB99F77005746CE /* CSSystemInfoHelperApp */;
 			productType = "com.apple.product-type.tool";
 		};

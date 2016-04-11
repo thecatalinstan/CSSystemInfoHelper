@@ -1,21 +1,21 @@
 Pod::Spec.new do |s|
 
-  s.name                        =  "CRSystemInfoHelper"
+  s.name                        =  "CSSystemInfoHelper"
   s.version                     =  "1.1.0"
   s.license                     =  "MIT"
 
   s.summary                     =  "A utility library for getting system info."
 
-  s.homepage                    =  "https://github.com/thecatalinstan/CRSystemInfoHelper"
+  s.homepage                    =  "https://github.com/thecatalinstan/CSSystemInfoHelper"
   s.author                      =   { "Cătălin Stan" => "catalin.stan@me.com" }
   s.social_media_url            =   "http://twitter.com/catalinstan"
 
-  s.source                      =  { :git => "https://github.com/thecatalinstan/CRSystemInfoHelper.git", :tag => s.version }
+  s.source                      =  { :git => "https://github.com/thecatalinstan/CSSystemInfoHelper.git", :tag => s.version }
 
-  s.module_name                 = "CRSystemInfoHelper"
+  s.module_name                 = "CSSystemInfoHelper"
 
-  s.source_files                = "CRSystemInfoHelper/CRSystemInfoHelper.{h,m}"
-  s.public_header_files         = "CRSystemInfoHelper/CRSystemInfoHelper.h"
+  s.source_files                = "CSSystemInfoHelper/CSSystemInfoHelper.{h,m}"
+  s.public_header_files         = "CSSystemInfoHelper/CSSystemInfoHelper.h"
 
   s.ios.deployment_target       = "6.0"
   s.ios.frameworks              = "Foundation"

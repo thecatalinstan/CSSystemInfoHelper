@@ -32,28 +32,35 @@
 			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AD3913881CB9B7EA001A31F6;
-			remoteInfo = "CRSystemInfoHelper-iOS";
+			remoteInfo = "CSSystemInfoHelper-iOS";
 		};
 		AD3913C71CB9BD81001A31F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AD3913881CB9B7EA001A31F6;
-			remoteInfo = "CRSystemInfoHelper-iOS";
+			remoteInfo = "CSSystemInfoHelper-iOS";
 		};
 		AD3913DF1CB9C003001A31F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AD3913D31CB9C003001A31F6;
-			remoteInfo = "CRSystemInfoHelper-tvOS";
+			remoteInfo = "CSSystemInfoHelper-tvOS";
 		};
 		ADC2E7A11CB9772F00B27191 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = ADC2E7941CB9772F00B27191;
-			remoteInfo = CRSystemInfoHelper;
+			remoteInfo = CSSystemInfoHelper;
+		};
+		ADFD12CB1CBB9915009A2E16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD990E571CB99F77005746CE /* CSSystemInfoHelperApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AD990E4D1CB99F77005746CE;
+			remoteInfo = CSSystemInfoHelperApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -67,7 +74,7 @@
 		AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3913DD1CB9C003001A31F6 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelper.m; sourceTree = "<group>"; };
-		AD990E571CB99F77005746CE /* CSSystemInfoHelperApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CSSystemInfoHelperApp.xcodeproj; path = CRSystemInfoHelperApp/CSSystemInfoHelperApp.xcodeproj; sourceTree = SOURCE_ROOT; };
+		AD990E571CB99F77005746CE /* CSSystemInfoHelperApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CSSystemInfoHelperApp.xcodeproj; path = CSSystemInfoHelperApp/CSSystemInfoHelperApp.xcodeproj; sourceTree = SOURCE_ROOT; };
 		ADC2E7951CB9772F00B27191 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSystemInfoHelper.h; sourceTree = "<group>"; };
 		ADC2E79F1CB9772F00B27191 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,8 +152,7 @@
 				AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */,
 				AD3913A61CB9B9F3001A31F6 /* Supporting Files */,
 			);
-			name = CSSystemInfoHelper;
-			path = CRSystemInfoHelper;
+			path = CSSystemInfoHelper;
 			sourceTree = "<group>";
 		};
 		AD3913A61CB9B9F3001A31F6 /* Supporting Files */ = {
@@ -204,8 +210,15 @@
 				ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */,
 				AD3913AB1CB9BA09001A31F6 /* Supporting Files */,
 			);
-			name = CSSystemInfoHelperTests;
-			path = CRSystemInfoHelperTests;
+			path = CSSystemInfoHelperTests;
+			sourceTree = "<group>";
+		};
+		ADFD12C81CBB9915009A2E16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADFD12CC1CBB9915009A2E16 /* CSSystemInfoHelperApp */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +273,7 @@
 			dependencies = (
 			);
 			name = "CSSystemInfoHelper-iOS";
-			productName = "CRSystemInfoHelper-iOS";
+			productName = "CSSystemInfoHelper-iOS";
 			productReference = AD3913891CB9B7EA001A31F6 /* CSSystemInfoHelper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -278,7 +291,7 @@
 				AD3913951CB9B7EA001A31F6 /* PBXTargetDependency */,
 			);
 			name = "CSSystemInfoHelper-iOSTests";
-			productName = "CRSystemInfoHelper-iOSTests";
+			productName = "CSSystemInfoHelper-iOSTests";
 			productReference = AD3913921CB9B7EA001A31F6 /* CSSystemInfoHelper.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -296,7 +309,7 @@
 			dependencies = (
 			);
 			name = "CSSystemInfoHelper-watchOS";
-			productName = "CRSystemInfoHelper-watchOS";
+			productName = "CSSystemInfoHelper-watchOS";
 			productReference = AD3913B51CB9BD5A001A31F6 /* CSSystemInfoHelper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -314,7 +327,7 @@
 				AD3913C81CB9BD81001A31F6 /* PBXTargetDependency */,
 			);
 			name = "CSSystemInfoHelper-watchOSTests";
-			productName = "CRSystemInfoHelper-watchOSTests";
+			productName = "CSSystemInfoHelper-watchOSTests";
 			productReference = AD3913C11CB9BD81001A31F6 /* CSSystemInfoHelper.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -332,7 +345,7 @@
 			dependencies = (
 			);
 			name = "CSSystemInfoHelper-tvOS";
-			productName = "CRSystemInfoHelper-tvOS";
+			productName = "CSSystemInfoHelper-tvOS";
 			productReference = AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -350,7 +363,7 @@
 				AD3913E01CB9C003001A31F6 /* PBXTargetDependency */,
 			);
 			name = "CSSystemInfoHelper-tvOSTests";
-			productName = "CRSystemInfoHelper-tvOSTests";
+			productName = "CSSystemInfoHelper-tvOSTests";
 			productReference = AD3913DD1CB9C003001A31F6 /* CSSystemInfoHelper.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -368,7 +381,7 @@
 			dependencies = (
 			);
 			name = "CSSystemInfoHelper-OSX";
-			productName = CRSystemInfoHelper;
+			productName = CSSystemInfoHelper;
 			productReference = ADC2E7951CB9772F00B27191 /* CSSystemInfoHelper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -386,7 +399,7 @@
 				ADC2E7A21CB9772F00B27191 /* PBXTargetDependency */,
 			);
 			name = "CSSystemInfoHelper-OSXTests";
-			productName = CRSystemInfoHelperTests;
+			productName = CSSystemInfoHelperTests;
 			productReference = ADC2E79F1CB9772F00B27191 /* CSSystemInfoHelper.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -436,6 +449,12 @@
 			mainGroup = ADC2E78B1CB9772F00B27191;
 			productRefGroup = ADC2E7961CB9772F00B27191 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ADFD12C81CBB9915009A2E16 /* Products */;
+					ProjectRef = AD990E571CB99F77005746CE /* CSSystemInfoHelperApp.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				ADC2E7941CB9772F00B27191 /* CSSystemInfoHelper-OSX */,
@@ -449,6 +468,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		ADFD12CC1CBB9915009A2E16 /* CSSystemInfoHelperApp */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = CSSystemInfoHelperApp;
+			remoteRef = ADFD12CB1CBB9915009A2E16 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AD3913871CB9B7EA001A31F6 /* Resources */ = {
@@ -609,10 +638,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -628,10 +657,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -644,10 +673,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-iOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-iOSTests";
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = iphoneos;
 			};
@@ -657,10 +686,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-iOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-iOSTests";
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -675,10 +704,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -695,10 +724,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -712,10 +741,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-watchOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-watchOSTests";
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = iphoneos;
 			};
@@ -725,10 +754,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-watchOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-watchOSTests";
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -742,10 +771,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -761,10 +790,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -777,9 +806,9 @@
 		AD3913E91CB9C003001A31F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-tvOSTests";
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = appletvos;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
@@ -789,9 +818,9 @@
 		AD3913EA1CB9C003001A31F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-tvOSTests";
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SDKROOT = appletvos;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
@@ -897,10 +926,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SKIP_INSTALL = YES;
 			};
@@ -915,10 +944,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CRSystemInfoHelper/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CRSystemInfoHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
 				PRODUCT_NAME = CSSystemInfoHelper;
 				SKIP_INSTALL = YES;
 			};
@@ -928,9 +957,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-OSXTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-OSXTests";
 				PRODUCT_NAME = CSSystemInfoHelper;
 			};
 			name = Debug;
@@ -939,9 +968,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CRSystemInfoHelperTests/Info.plist;
+				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CRSystemInfoHelper-OSXTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-OSXTests";
 				PRODUCT_NAME = CSSystemInfoHelper;
 			};
 			name = Release;
