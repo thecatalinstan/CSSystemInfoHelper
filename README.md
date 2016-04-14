@@ -2,7 +2,9 @@
 
 # CSSystemInfoHelper
 
-A utility library for getting system info. It’s meant to provide a more straightforward way of accessing information only available through C APIs and to provide shorthands for most common usage scenarios.
+A utility library for getting system info. It’s meant to provide a more straightforward way of accessing information only available through C APIs and to provide shorthands for the most common usage scenarios.
+
+I’ve used this library when making the [criollo.io](https://criollo.io) website in order to display the system the app is running on.
 
 ## Getting Started
 
@@ -54,5 +56,5 @@ print(CSSystemInfoHelper.sharedHelper().memoryUsageString)
 
 ## What’s Next
 
-Check out the complete documentation on [CocoaDOcs](http://cocoadocs.org/docsets/CSSystemInfoHelper/1.2.0/Classes/CSSystemInfoHelper.html).
+Check out the complete documentation on [CocoaDocs](http://cocoadocs.org/docsets/CSSystemInfoHelper).
 
