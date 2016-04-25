@@ -6,6 +6,13 @@ This file includes all notable changes to CSSystemInfoHelper.
 
 ---
 
+## [1.3.0](https://github.com/thecatalinstan/CSSystemInfoHelper/releases/tag/1.3.0) (04/25/2016)
+
+**Released on Monday, April 25, 2016**.
+
+### Changed
+Got rid of the lazy init of the shared helper, because of the speed penalty that `dispatch_once` carries. Read more about [the secrets of `dispatch_once`](https://www.mikeash.com/pyblog/friday-qa-2014-06-06-secrets-of-dispatch_once.html) 
+
 ## [1.2.0](https://github.com/thecatalinstan/CSSystemInfoHelper/releases/tag/1.2.0) (04/11/2016)
 
 **Released on Monday, April 11, 2016**.
