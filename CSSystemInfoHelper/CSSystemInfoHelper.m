@@ -28,12 +28,13 @@ NSString * const CSSystemInfoMachineKey = @"CSSystemInfoMachine";
 
 @implementation CSSystemInfoHelper
 
+static CSSystemInfoHelper* sharedHelper;
+
++ (void)initialize {
+    sharedHelper = [[CSSystemInfoHelper alloc] init];
+}
+
 + (instancetype)sharedHelper {
-    static CSSystemInfoHelper* sharedHelper;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedHelper = [[CSSystemInfoHelper alloc] init];
-    });
     return sharedHelper;
 }
 

@@ -11,16 +11,15 @@
 		AD3913AC1CB9BA59001A31F6 /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
 		AD3913AD1CB9BA62001A31F6 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD3913AF1CB9BC37001A31F6 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */; };
-		AD3913C61CB9BD81001A31F6 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3913891CB9B7EA001A31F6 /* CSSystemInfoHelper.framework */; };
 		AD3913CC1CB9BE1D001A31F6 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD3913CD1CB9BE23001A31F6 /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
-		AD3913CE1CB9BE3E001A31F6 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */; };
 		AD3913DE1CB9C003001A31F6 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */; };
 		AD3913EB1CB9C17D001A31F6 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD3913EC1CB9C187001A31F6 /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
 		AD3913ED1CB9C18B001A31F6 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */; };
 		AD990E421CB97D99005746CE /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
 		AD990E431CB97D99005746CE /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
+		ADA545291CCE40DE00257621 /* CSSystemInfoHelper.podspec in Resources */ = {isa = PBXBuildFile; fileRef = ADA545281CCE40DE00257621 /* CSSystemInfoHelper.podspec */; };
 		ADC2E7991CB9772F00B27191 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ADC2E7A01CB9772F00B27191 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC2E7951CB9772F00B27191 /* CSSystemInfoHelper.framework */; };
 		ADC2E7A51CB9772F00B27191 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */; };
@@ -28,13 +27,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		AD3913941CB9B7EA001A31F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD3913881CB9B7EA001A31F6;
-			remoteInfo = "CSSystemInfoHelper-iOS";
-		};
-		AD3913C71CB9BD81001A31F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
 			proxyType = 1;
@@ -70,11 +62,11 @@
 		AD3913891CB9B7EA001A31F6 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3913921CB9B7EA001A31F6 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3913B51CB9BD5A001A31F6 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD3913C11CB9BD81001A31F6 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3913DD1CB9C003001A31F6 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelper.m; sourceTree = "<group>"; };
 		AD990E571CB99F77005746CE /* CSSystemInfoHelperApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CSSystemInfoHelperApp.xcodeproj; path = CSSystemInfoHelperApp/CSSystemInfoHelperApp.xcodeproj; sourceTree = SOURCE_ROOT; };
+		ADA545281CCE40DE00257621 /* CSSystemInfoHelper.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CSSystemInfoHelper.podspec; sourceTree = SOURCE_ROOT; };
 		ADC2E7951CB9772F00B27191 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSystemInfoHelper.h; sourceTree = "<group>"; };
 		ADC2E79F1CB9772F00B27191 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,14 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3913BE1CB9BD81001A31F6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD3913C61CB9BD81001A31F6 /* CSSystemInfoHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +142,7 @@
 		AD3913A61CB9B9F3001A31F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ADA545281CCE40DE00257621 /* CSSystemInfoHelper.podspec */,
 				AD2A9E4D1CB9C3C0000A4432 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -197,7 +182,6 @@
 				AD3913891CB9B7EA001A31F6 /* CSSystemInfoHelper.framework */,
 				AD3913921CB9B7EA001A31F6 /* CSSystemInfoHelper.xctest */,
 				AD3913B51CB9BD5A001A31F6 /* CSSystemInfoHelper.framework */,
-				AD3913C11CB9BD81001A31F6 /* CSSystemInfoHelper.xctest */,
 				AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */,
 				AD3913DD1CB9C003001A31F6 /* CSSystemInfoHelper.xctest */,
 			);
@@ -313,24 +297,6 @@
 			productReference = AD3913B51CB9BD5A001A31F6 /* CSSystemInfoHelper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AD3913C01CB9BD81001A31F6 /* CSSystemInfoHelper-watchOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD3913C91CB9BD81001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-watchOSTests" */;
-			buildPhases = (
-				AD3913BD1CB9BD81001A31F6 /* Sources */,
-				AD3913BE1CB9BD81001A31F6 /* Frameworks */,
-				AD3913BF1CB9BD81001A31F6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD3913C81CB9BD81001A31F6 /* PBXTargetDependency */,
-			);
-			name = "CSSystemInfoHelper-watchOSTests";
-			productName = "CSSystemInfoHelper-watchOSTests";
-			productReference = AD3913C11CB9BD81001A31F6 /* CSSystemInfoHelper.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		AD3913D31CB9C003001A31F6 /* CSSystemInfoHelper-tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD3913E51CB9C003001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-tvOS" */;
@@ -422,9 +388,6 @@
 					AD3913B41CB9BD5A001A31F6 = {
 						CreatedOnToolsVersion = 7.3;
 					};
-					AD3913C01CB9BD81001A31F6 = {
-						CreatedOnToolsVersion = 7.3;
-					};
 					AD3913D31CB9C003001A31F6 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -461,10 +424,9 @@
 				ADC2E79E1CB9772F00B27191 /* CSSystemInfoHelper-OSXTests */,
 				AD3913881CB9B7EA001A31F6 /* CSSystemInfoHelper-iOS */,
 				AD3913911CB9B7EA001A31F6 /* CSSystemInfoHelper-iOSTests */,
-				AD3913B41CB9BD5A001A31F6 /* CSSystemInfoHelper-watchOS */,
-				AD3913C01CB9BD81001A31F6 /* CSSystemInfoHelper-watchOSTests */,
 				AD3913D31CB9C003001A31F6 /* CSSystemInfoHelper-tvOS */,
 				AD3913DC1CB9C003001A31F6 /* CSSystemInfoHelper-tvOSTests */,
+				AD3913B41CB9BD5A001A31F6 /* CSSystemInfoHelper-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -501,13 +463,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD3913BF1CB9BD81001A31F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AD3913D21CB9C003001A31F6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA545291CCE40DE00257621 /* CSSystemInfoHelper.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,14 +516,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD3913CD1CB9BE23001A31F6 /* CSSystemInfoHelper.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3913BD1CB9BD81001A31F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD3913CE1CB9BE3E001A31F6 /* CSSystemInfoHelperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,11 +559,6 @@
 			isa = PBXTargetDependency;
 			target = AD3913881CB9B7EA001A31F6 /* CSSystemInfoHelper-iOS */;
 			targetProxy = AD3913941CB9B7EA001A31F6 /* PBXContainerItemProxy */;
-		};
-		AD3913C81CB9BD81001A31F6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD3913881CB9B7EA001A31F6 /* CSSystemInfoHelper-iOS */;
-			targetProxy = AD3913C71CB9BD81001A31F6 /* PBXContainerItemProxy */;
 		};
 		AD3913E01CB9C003001A31F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -736,33 +679,6 @@
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Release;
-		};
-		AD3913CA1CB9BD81001A31F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-watchOSTests";
-				PRODUCT_NAME = CSSystemInfoHelper;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		AD3913CB1CB9BD81001A31F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-watchOSTests";
-				PRODUCT_NAME = CSSystemInfoHelper;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1005,15 +921,6 @@
 			buildConfigurations = (
 				AD3913BB1CB9BD5A001A31F6 /* Debug */,
 				AD3913BC1CB9BD5A001A31F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD3913C91CB9BD81001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-watchOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD3913CA1CB9BD81001A31F6 /* Debug */,
-				AD3913CB1CB9BD81001A31F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
