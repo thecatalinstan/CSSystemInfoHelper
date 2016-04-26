@@ -29,26 +29,9 @@ NSString * const CSSystemInfoMachineKey = @"CSSystemInfoMachine";
 @implementation CSSystemInfoHelper
 
 static CSSystemInfoHelper* sharedHelper;
-static NSMutableDictionary<NSString *, NSString *> * allIPAddresses;
 
-+ (void)load {
++ (void)initialize {
     sharedHelper = [[CSSystemInfoHelper alloc] init];
-    allIPAddresses = [NSMutableDictionary dictionary];
-
-    struct ifaddrs * interfaces = NULL;
-    struct ifaddrs * addr = NULL;
-    int success = 0;
-    success = getifaddrs(&interfaces);
-    if (success == 0) {
-        addr = interfaces;
-        while(addr != NULL) {
-            if(addr->ifa_addr->sa_family == AF_INET) {
-                allIPAddresses[[NSString stringWithUTF8String:addr->ifa_name]] = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)addr->ifa_addr)->sin_addr)];
-            }
-            addr = addr->ifa_next;
-        }
-    }
-    freeifaddrs(interfaces);
 }
 
 + (instancetype)sharedHelper {
@@ -61,12 +44,25 @@ static NSMutableDictionary<NSString *, NSString *> * allIPAddresses;
         NSString* isolationQueueLabel = [NSString stringWithFormat:@"%@-isolationQueue-%@", NSStringFromClass(self.class), @(self.hash)];
         _isolationQueue = dispatch_queue_create(isolationQueueLabel.UTF8String, DISPATCH_QUEUE_SERIAL);
         dispatch_set_target_queue(_isolationQueue, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0));
+
+        NSMutableDictionary<NSString *, NSString *> * allIPAddresses = [NSMutableDictionary dictionary];
+        struct ifaddrs * interfaces = NULL;
+        struct ifaddrs * addr = NULL;
+        int success = 0;
+        success = getifaddrs(&interfaces);
+        if (success == 0) {
+            addr = interfaces;
+            while(addr != NULL) {
+                if(addr->ifa_addr->sa_family == AF_INET) {
+                    allIPAddresses[[NSString stringWithUTF8String:addr->ifa_name]] = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)addr->ifa_addr)->sin_addr)];
+                }
+                addr = addr->ifa_next;
+            }
+        }
+        freeifaddrs(interfaces);
+        _AllIPAddresses = allIPAddresses.copy;
     }
     return self;
-}
-
-- (NSDictionary<NSString *,NSString *> *)AllIPAddresses {
-    return allIPAddresses;
 }
 
 - (NSString *)IPAddress {
