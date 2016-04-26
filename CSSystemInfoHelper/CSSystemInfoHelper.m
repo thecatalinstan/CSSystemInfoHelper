@@ -29,9 +29,26 @@ NSString * const CSSystemInfoMachineKey = @"CSSystemInfoMachine";
 @implementation CSSystemInfoHelper
 
 static CSSystemInfoHelper* sharedHelper;
+static NSMutableDictionary<NSString *, NSString *> * allIPAddresses;
 
-+ (void)initialize {
++ (void)load {
     sharedHelper = [[CSSystemInfoHelper alloc] init];
+    allIPAddresses = [NSMutableDictionary dictionary];
+
+    struct ifaddrs * interfaces = NULL;
+    struct ifaddrs * addr = NULL;
+    int success = 0;
+    success = getifaddrs(&interfaces);
+    if (success == 0) {
+        addr = interfaces;
+        while(addr != NULL) {
+            if(addr->ifa_addr->sa_family == AF_INET) {
+                allIPAddresses[[NSString stringWithUTF8String:addr->ifa_name]] = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)addr->ifa_addr)->sin_addr)];
+            }
+            addr = addr->ifa_next;
+        }
+    }
+    freeifaddrs(interfaces);
 }
 
 + (instancetype)sharedHelper {
@@ -49,26 +66,6 @@ static CSSystemInfoHelper* sharedHelper;
 }
 
 - (NSDictionary<NSString *,NSString *> *)AllIPAddresses {
-    static NSMutableDictionary<NSString *,NSString *> *allIPAddresses;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        allIPAddresses = [NSMutableDictionary dictionary];
-
-        struct ifaddrs *interfaces = NULL;
-        struct ifaddrs *temp_addr = NULL;
-        int success = 0;
-        success = getifaddrs(&interfaces);
-        if (success == 0) {
-            temp_addr = interfaces;
-            while(temp_addr != NULL) {
-                if(temp_addr->ifa_addr->sa_family == AF_INET) {
-                    allIPAddresses[[NSString stringWithUTF8String:temp_addr->ifa_name]] = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
-                }
-                temp_addr = temp_addr->ifa_next;
-            }
-        }
-        freeifaddrs(interfaces);
-    });
     return allIPAddresses;
 }
 
@@ -118,83 +115,5 @@ static CSSystemInfoHelper* sharedHelper;
 - (NSString *)memoryUsageString {
     return [NSByteCountFormatter stringFromByteCount:self.memoryUsage countStyle:NSByteCountFormatterCountStyleMemory];
 }
-
-//+ (NSTimeInterval *)processRunningTime {
-//    NSTimeInterval processRunningTime = processStartTime.timeIntervalSinceNow;
-//    NSString* processRunningTimeString;
-//
-//    static NSDateComponentsFormatter *formatter;
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        formatter = [[NSDateComponentsFormatter alloc] init];
-//        formatter.unitsStyle = NSDateComponentsFormatterUnitsStyleAbbreviated;
-//        formatter.includesApproximationPhrase = YES;
-//        formatter.includesTimeRemainingPhrase = NO;
-//        formatter.allowedUnits = NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond|NSCalendarUnitDay|NSCalendarUnitMonth|NSCalendarUnitYear;
-//    });
-//
-//    processRunningTimeString = [formatter stringFromTimeInterval:fabs(processRunningTime)];
-//    return processRunningTimeString.lowercaseString;
-//}
-//
-//
-//+ (void)addRequest {
-//    dispatch_async(backgroundQueue, ^{
-//        requestsServed++;
-//    });
-//}
-//
-//+ (NSString *)requestsServed {
-//    static NSNumberFormatter* formatter;
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        formatter = [[NSNumberFormatter alloc] init];
-//        formatter.numberStyle = NSNumberFormatterDecimalStyle;
-//        formatter.maximumFractionDigits = 1;
-//    });
-//    NSArray<NSString *> * units = @[@"", @"K", @"M", @"B", @"trillion", @"quadrillion", @"quintillion", @"quintillion", @"sextilion", @"septillion", @"octillion", @"nonillion", @"decillion", @"undecillion", @"duodecillion", @"tredecillion", @"quatttuor-decillion", @"quindecillion", @"sexdecillion", @"septen-decillion", @"octodecillion", @"novemdecillion", @"vigintillion"];
-//
-//    __block double requestCount = requestsServed;
-//    //    __block double requestCount = INT64_MAX;
-//    __block NSString *unit = @"";
-//
-//    if ( requestCount >= pow(1000, units.count) ) {
-//        requestCount = requestCount / pow(1000, units.count - 1);
-//        unit = units.lastObject;
-//    } else {
-//        [units enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//            unit = obj;
-//            if ( requestCount < pow(1000, idx + 1) ) {
-//                requestCount = requestCount / pow(1000, idx);
-//                *stop = YES;
-//            }
-//        }];
-//    }
-//
-//    return [NSString stringWithFormat:@"about %@%@%@", [formatter stringFromNumber:@(requestCount)], unit.length > 0 ? @" " : @"", unit];
-//}
-//
-//+ (NSString *)criolloVersion {
-//    static NSString* criolloVersion;
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        NSBundle *criolloBundle = [NSBundle bundleWithIdentifier:CRBundleIdentifier];
-//        criolloVersion = [criolloBundle objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
-//        if ( criolloVersion == nil ) {
-//            criolloVersion = CRCriolloVersionFallback;
-//        }
-//    });
-//    return criolloVersion;
-//}
-//
-//+ (NSString *)bundleVersion {
-//    static NSString* bundleVersion;
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        NSBundle *bundle = [NSBundle mainBundle];
-//        bundleVersion = [bundle objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
-//    });
-//    return bundleVersion;
-//}
 
 @end
