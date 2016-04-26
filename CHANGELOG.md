@@ -6,6 +6,12 @@ This file includes all notable changes to CSSystemInfoHelper.
 
 ---
 
+## [1.3.1](https://github.com/thecatalinstan/CSSystemInfoHelper/releases/tag/1.3.1) (04/26/2016)
+
+**Released on Tuesday, April 26, 2016**.
+
+`AllIPAddresses` is pre-initialized inside the class’ `+ initialize` method. 
+
 ## [1.3.0](https://github.com/thecatalinstan/CSSystemInfoHelper/releases/tag/1.3.0) (04/25/2016)
 
 **Released on Monday, April 25, 2016**.
