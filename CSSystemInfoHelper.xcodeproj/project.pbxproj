@@ -47,13 +47,6 @@
 			remoteGlobalIDString = ADC2E7941CB9772F00B27191;
 			remoteInfo = CSSystemInfoHelper;
 		};
-		ADFD12CB1CBB9915009A2E16 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD990E571CB99F77005746CE /* CSSystemInfoHelperApp.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AD990E4D1CB99F77005746CE;
-			remoteInfo = CSSystemInfoHelperApp;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +58,6 @@
 		AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3913DD1CB9C003001A31F6 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelper.m; sourceTree = "<group>"; };
-		AD990E571CB99F77005746CE /* CSSystemInfoHelperApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CSSystemInfoHelperApp.xcodeproj; path = CSSystemInfoHelperApp/CSSystemInfoHelperApp.xcodeproj; sourceTree = SOURCE_ROOT; };
 		ADA545281CCE40DE00257621 /* CSSystemInfoHelper.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CSSystemInfoHelper.podspec; sourceTree = SOURCE_ROOT; };
 		ADC2E7951CB9772F00B27191 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSystemInfoHelper.h; sourceTree = "<group>"; };
@@ -156,20 +148,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AD3913AE1CB9BBED001A31F6 /* Apps */ = {
-			isa = PBXGroup;
-			children = (
-				AD990E571CB99F77005746CE /* CSSystemInfoHelperApp.xcodeproj */,
-			);
-			name = Apps;
-			sourceTree = "<group>";
-		};
 		ADC2E78B1CB9772F00B27191 = {
 			isa = PBXGroup;
 			children = (
 				AD3913A11CB9B8C2001A31F6 /* CSSystemInfoHelper */,
 				ADC2E7A31CB9772F00B27191 /* CSSystemInfoHelperTests */,
-				AD3913AE1CB9BBED001A31F6 /* Apps */,
 				ADC2E7961CB9772F00B27191 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -195,14 +178,6 @@
 				AD3913AB1CB9BA09001A31F6 /* Supporting Files */,
 			);
 			path = CSSystemInfoHelperTests;
-			sourceTree = "<group>";
-		};
-		ADFD12C81CBB9915009A2E16 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ADFD12CC1CBB9915009A2E16 /* CSSystemInfoHelperApp */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,12 +387,6 @@
 			mainGroup = ADC2E78B1CB9772F00B27191;
 			productRefGroup = ADC2E7961CB9772F00B27191 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = ADFD12C81CBB9915009A2E16 /* Products */;
-					ProjectRef = AD990E571CB99F77005746CE /* CSSystemInfoHelperApp.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				ADC2E7941CB9772F00B27191 /* CSSystemInfoHelper-OSX */,
@@ -430,16 +399,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		ADFD12CC1CBB9915009A2E16 /* CSSystemInfoHelperApp */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = CSSystemInfoHelperApp;
-			remoteRef = ADFD12CB1CBB9915009A2E16 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AD3913871CB9B7EA001A31F6 /* Resources */ = {
