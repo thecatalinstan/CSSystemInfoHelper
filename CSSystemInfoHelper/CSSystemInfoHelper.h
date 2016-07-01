@@ -112,6 +112,11 @@ FOUNDATION_EXPORT NSString * const CSSystemInfoMachineKey;
  */
 @property (nonatomic, readonly, strong) NSString * memoryUsageString;
 
+/**
+ Get the UUID of the current device
+ */
+@property (nonatomic, readonly, strong) NSString * platformUUID;
+
 @end
 
 NS_ASSUME_NONNULL_END
