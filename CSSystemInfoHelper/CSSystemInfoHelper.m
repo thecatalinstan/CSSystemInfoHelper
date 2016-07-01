@@ -14,6 +14,10 @@
 #import <sys/utsname.h>
 #import <mach/mach.h>
 
+#if TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
+#endif
+
 NSString * const CSSystemInfoSysnameKey = @"CSSystemInfoSysname";
 NSString * const CSSystemInfoNodenameKey = @"CSSystemInfoNodename";
 NSString * const CSSystemInfoReleaseKey = @"CSSystemInfoRelease";
@@ -110,6 +114,25 @@ static CSSystemInfoHelper* sharedHelper;
 
 - (NSString *)memoryUsageString {
     return [NSByteCountFormatter stringFromByteCount:self.memoryUsage countStyle:NSByteCountFormatterCountStyleMemory];
+}
+
+- (NSString *)platformUUID {
+
+    static NSString* platformUUID;
+
+    if ( platformUUID == nil ) {
+#if TARGET_OS_IPHONE
+        platformUUID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+#else
+        io_registry_entry_t ioRegistryRoot = IORegistryEntryFromPath(kIOMasterPortDefault, "IOService:/");
+        CFStringRef uuidCf = (CFStringRef) IORegistryEntryCreateCFProperty(ioRegistryRoot, CFSTR(kIOPlatformUUIDKey), kCFAllocatorDefault, 0);
+        IOObjectRelease(ioRegistryRoot);
+        platformUUID = CFBridgingRelease(uuidCf);
+#endif
+    }
+
+    return platformUUID;
+
 }
 
 @end
