@@ -81,4 +81,10 @@
     XCTAssertGreaterThan([CSSystemInfoHelper sharedHelper].memoryUsageString.length, 0);
 }
 
+- (void)testPlatformUUID {
+    XCTAssertNoThrow([CSSystemInfoHelper sharedHelper].platformUUID);
+    XCTAssertNotNil([CSSystemInfoHelper sharedHelper].platformUUID);
+    XCTAssertGreaterThan([CSSystemInfoHelper sharedHelper].platformUUID.length, 0);
+}
+
 @end
