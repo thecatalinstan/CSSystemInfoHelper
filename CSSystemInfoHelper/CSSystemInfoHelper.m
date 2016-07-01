@@ -14,7 +14,9 @@
 #import <sys/utsname.h>
 #import <mach/mach.h>
 
-#if TARGET_OS_IPHONE
+#if TARGET_OS_WATCH
+#import <WatchKit/WatchKit.h>
+#elif TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
 #endif
 
@@ -121,7 +123,11 @@ static CSSystemInfoHelper* sharedHelper;
     static NSString* platformUUID;
 
     if ( platformUUID == nil ) {
-#if TARGET_OS_IPHONE
+
+#if TARGET_OS_WATCH
+#warning platformUUID is generated on-the-fly for watchOS 
+        platformUUID = [NSUUID UUID].UUIDString;
+#elif TARGET_OS_IPHONE
         platformUUID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
 #else
         io_registry_entry_t ioRegistryRoot = IORegistryEntryFromPath(kIOMasterPortDefault, "IOService:/");
