@@ -54,6 +54,14 @@ for (key, value) in CSSystemInfoHelper.sharedHelper().systemInfo {
 print(CSSystemInfoHelper.sharedHelper().memoryUsageString)
 ```
 
+### Getting the device UUID
+
+```swift
+print(CSSystemInfoHelper.sharedHelper().platformUUID)
+```
+
+*on watchOS this cannot yet be done programmatically, so the returned UUID is generated on-the-fly.*
+
 ## What’s Next
 
 Check out the complete documentation on [CocoaDocs](http://cocoadocs.org/docsets/CSSystemInfoHelper).
