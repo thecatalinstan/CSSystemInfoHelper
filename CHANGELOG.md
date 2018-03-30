@@ -6,6 +6,12 @@ This file includes all notable changes to CSSystemInfoHelper.
 
 ---
 
+## [1.4.2](https://github.com/thecatalinstan/CSSystemInfoHelper/releases/tag/1.4.2) (03/30/2018)
+
+**Released on Friday, March 30, 2018**.
+
+This is a service release, upgrading to the latest Xcode.
+
 ## [1.4.1](https://github.com/thecatalinstan/CSSystemInfoHelper/releases/tag/1.4.1) (07/01/2016)
 
 **Released on Friday, July 1, 2016**.
