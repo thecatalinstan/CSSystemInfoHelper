@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                        =  "CSSystemInfoHelper"
-  s.version                     =  "1.4.1"
+  s.version                     =  "1.4.2"
   s.license                     =  "MIT"
 
   s.summary                     =  "A utility library for getting system info."
