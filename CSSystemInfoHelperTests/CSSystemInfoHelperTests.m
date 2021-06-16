@@ -15,76 +15,129 @@
 
 @implementation CSSystemInfoHelperTests
 
-- (void)setUp {
-    [super setUp];
-}
-
-- (void)tearDown {
-    [super tearDown];
-}
-
-- (void)testSharedHelper {
+- (void)test_sharedHelper_ShouldNotBeNil {
     XCTAssertNotNil([CSSystemInfoHelper sharedHelper]);
 }
 
-- (void)testSharedHelperSigleton {
+- (void)test_sharedHelper_IsSigleton {
     CSSystemInfoHelper* helper1 = [CSSystemInfoHelper sharedHelper];
     CSSystemInfoHelper* helper2 = [CSSystemInfoHelper sharedHelper];
     XCTAssertEqual(helper1.hash, helper2.hash);
 }
 
-- (void)testAllIPAddresses {
-    XCTAssertNotNil([CSSystemInfoHelper sharedHelper].AllIPAddresses);
-    XCTAssertGreaterThan([CSSystemInfoHelper sharedHelper].AllIPAddresses.count, 0);
+- (void)test_AllIPAddresses_ShouldNotBeNil {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertNotNil(helper.AllIPAddresses);
 }
 
-- (void)testIPAddress {
-    XCTAssertNoThrow([CSSystemInfoHelper sharedHelper].IPAddress);
+- (void)test_AllIPAddresses_ShouldContainAtLeastOneEntry {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertGreaterThan(helper.AllIPAddresses.count, 0);
 }
 
-- (void)testSystemInfo {
-    XCTAssertNoThrow([CSSystemInfoHelper sharedHelper].systemInfo);
-
-    XCTAssertNotNil([CSSystemInfoHelper sharedHelper].systemInfo[CSSystemInfoSysnameKey], @"The key CSSystemInfoSysnameKey is not pressent");
-    XCTAssertNotNil([CSSystemInfoHelper sharedHelper].systemInfo[CSSystemInfoNodenameKey], @"The key CSSystemInfoNodenameKey is not pressent");
-    XCTAssertNotNil([CSSystemInfoHelper sharedHelper].systemInfo[CSSystemInfoReleaseKey], @"The key CSSystemInfoReleaseKey is not pressent");
-    XCTAssertNotNil([CSSystemInfoHelper sharedHelper].systemInfo[CSSystemInfoVersionKey], @"The key CSSystemInfoVersionKey is not pressent");
-    XCTAssertNotNil([CSSystemInfoHelper sharedHelper].systemInfo[CSSystemInfoMachineKey], @"The key CSSystemInfoMachineKey is not pressent");
-
-    XCTAssertGreaterThan([CSSystemInfoHelper sharedHelper].systemInfo[CSSystemInfoSysnameKey].length, 0, @"The key CSSystemInfoSysnameKey is empty");
-    XCTAssertGreaterThan([CSSystemInfoHelper sharedHelper].systemInfo[CSSystemInfoNodenameKey].length, 0, @"The key CSSystemInfoNodenameKey is empty");
-    XCTAssertGreaterThan([CSSystemInfoHelper sharedHelper].systemInfo[CSSystemInfoReleaseKey].length, 0, @"The key CSSystemInfoReleaseKey is empty");
-    XCTAssertGreaterThan([CSSystemInfoHelper sharedHelper].systemInfo[CSSystemInfoVersionKey].length, 0, @"The key CSSystemInfoVersionKey is empty");
-    XCTAssertGreaterThan([CSSystemInfoHelper sharedHelper].systemInfo[CSSystemInfoMachineKey].length, 0, @"The key CSSystemInfoMachineKey is empty");
+- (void)test_IPAddress_DoesNotThrow {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertNoThrow(helper.IPAddress);
 }
 
-- (void)testSystemInfoString {
-    XCTAssertNoThrow([CSSystemInfoHelper sharedHelper].systemInfoString);
-    XCTAssertNotNil([CSSystemInfoHelper sharedHelper].systemInfoString);
-    XCTAssertGreaterThan([CSSystemInfoHelper sharedHelper].systemInfoString.length, 0);
+- (void)test_IPAddress_ShouldNotBeNil {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertNotNil(helper.IPAddress);
 }
 
-- (void)testSystemVersionString {
-    XCTAssertNoThrow([CSSystemInfoHelper sharedHelper].systemVersionString);
-    XCTAssertNotNil([CSSystemInfoHelper sharedHelper].systemVersionString);
-    XCTAssertGreaterThan([CSSystemInfoHelper sharedHelper].systemVersionString.length, 0);
+- (void)test_SystemInfo_DoesNotThow {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertNoThrow(helper.systemInfo);
 }
 
-- (void)testMemoryUsage {
-    XCTAssertNoThrow([CSSystemInfoHelper sharedHelper].memoryUsage);
-    XCTAssertGreaterThan([CSSystemInfoHelper sharedHelper].memoryUsage, 0);
+- (void)test_SystemInfo_AllKeys_ShouldNotBeNil {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+
+    XCTAssertNotNil(helper.systemInfo[CSSystemInfoSysnameKey], @"The key CSSystemInfoSysnameKey is not pressent");
+    XCTAssertNotNil(helper.systemInfo[CSSystemInfoNodenameKey], @"The key CSSystemInfoNodenameKey is not pressent");
+    XCTAssertNotNil(helper.systemInfo[CSSystemInfoReleaseKey], @"The key CSSystemInfoReleaseKey is not pressent");
+    XCTAssertNotNil(helper.systemInfo[CSSystemInfoVersionKey], @"The key CSSystemInfoVersionKey is not pressent");
+    XCTAssertNotNil(helper.systemInfo[CSSystemInfoMachineKey], @"The key CSSystemInfoMachineKey is not pressent");
 }
 
-- (void)testMemoryUsageString {
-    XCTAssertNoThrow([CSSystemInfoHelper sharedHelper].memoryUsageString);
-    XCTAssertNotNil([CSSystemInfoHelper sharedHelper].memoryUsageString);
-    XCTAssertGreaterThan([CSSystemInfoHelper sharedHelper].memoryUsageString.length, 0);
+- (void)test_SystemInfo_AllKeys_ShouldNotBeEmpty {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+
+    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoSysnameKey].length, 0, @"The key CSSystemInfoSysnameKey is empty");
+    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoNodenameKey].length, 0, @"The key CSSystemInfoNodenameKey is empty");
+    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoReleaseKey].length, 0, @"The key CSSystemInfoReleaseKey is empty");
+    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoVersionKey].length, 0, @"The key CSSystemInfoVersionKey is empty");
+    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoMachineKey].length, 0, @"The key CSSystemInfoMachineKey is empty");
 }
 
-- (void)testPlatformUUID {
-    XCTAssertNoThrow([CSSystemInfoHelper sharedHelper].platformUUID);
-    XCTAssertNotNil([CSSystemInfoHelper sharedHelper].platformUUID);
-    XCTAssertGreaterThan([CSSystemInfoHelper sharedHelper].platformUUID.length, 0);
+- (void)test_SystemInfoString_DoesNotThrow {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertNoThrow(helper.systemInfoString);
+}
+
+- (void)test_SystemInfoString_ShouldNotBeNil {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertNotNil(helper.systemInfoString);
+}
+
+- (void)test_SystemInfoString_ShouldNotBeEmpty {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertGreaterThan(helper.systemInfoString.length, 0);
+}
+
+- (void)test_SystemVersionString_DoesNotThrow {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertNoThrow(helper.systemVersionString);
+}
+
+- (void)test_SystemVersionString_ShouldNotBeNil {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertNotNil(helper.systemVersionString);
+}
+
+- (void)test_SystemVersionString_ShouldNotBeEmpty {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertGreaterThan(helper.systemVersionString.length, 0);
+}
+
+- (void)test_MemoryUsage_DoesNotThrow {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertNoThrow(helper.memoryUsage);
+}
+
+- (void)test_MemoryUsage_IsGreaterThan0 {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertGreaterThan(helper.memoryUsage, 0);
+}
+
+- (void)test_MemoryUsageString_DoesNotThrow {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertNoThrow(helper.memoryUsageString);
+}
+
+- (void)test_MemoryUsageString_ShouldNotBeNil {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertNotNil(helper.memoryUsageString);
+}
+
+- (void)test_MemoryUsageString_ShouldNotBeEmpty {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertGreaterThan(helper.memoryUsageString.length, 0);
+}
+
+- (void)test_PlatformUUID_DoesNotThrow {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertNoThrow(helper.platformUUID);
+}
+
+- (void)test_PlatformUUID_ShouldNotBeNil {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertNotNil(helper.platformUUID);
+}
+
+- (void)test_PlatformUUID_ShouldNotBeEmpty {
+    CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
+    XCTAssertGreaterThan(helper.platformUUID.length, 0);
 }
 
 @end
