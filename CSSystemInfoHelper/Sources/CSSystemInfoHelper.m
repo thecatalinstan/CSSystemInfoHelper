@@ -6,7 +6,7 @@
 //  Copyright © 2016 Cătălin Stan. All rights reserved.
 //
 
-#import "CSSystemInfoHelper.h"
+#import <CSSystemInfoHelper/CSSystemInfoHelper.h>
 
 #import <stdio.h>
 #import <ifaddrs.h>
@@ -125,7 +125,7 @@ static CSSystemInfoHelper* sharedHelper;
     if ( platformUUID == nil ) {
 
 #if TARGET_OS_WATCH
-#warning platformUUID is generated on-the-fly for watchOS 
+#warning platformUUID is generated on-the-fly for watchOS
         platformUUID = [NSUUID UUID].UUIDString;
 #elif TARGET_OS_IPHONE
         platformUUID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];

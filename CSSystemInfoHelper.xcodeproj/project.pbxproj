@@ -3,449 +3,210 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD3913931CB9B7EA001A31F6 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3913891CB9B7EA001A31F6 /* CSSystemInfoHelper.framework */; };
-		AD3913AC1CB9BA59001A31F6 /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
-		AD3913AD1CB9BA62001A31F6 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD3913AF1CB9BC37001A31F6 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */; };
-		AD3913CC1CB9BE1D001A31F6 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD3913CD1CB9BE23001A31F6 /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
-		AD3913DE1CB9C003001A31F6 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */; };
-		AD3913EB1CB9C17D001A31F6 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD3913EC1CB9C187001A31F6 /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
-		AD3913ED1CB9C18B001A31F6 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */; };
-		AD990E421CB97D99005746CE /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
-		AD990E431CB97D99005746CE /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */; };
-		ADA545291CCE40DE00257621 /* CSSystemInfoHelper.podspec in Resources */ = {isa = PBXBuildFile; fileRef = ADA545281CCE40DE00257621 /* CSSystemInfoHelper.podspec */; };
-		ADC2E7991CB9772F00B27191 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADC2E7A01CB9772F00B27191 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC2E7951CB9772F00B27191 /* CSSystemInfoHelper.framework */; };
-		ADC2E7A51CB9772F00B27191 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */; };
+		AD3BFDF0267AA56600FF8076 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3BFDE6267AA56600FF8076 /* CSSystemInfoHelper.framework */; };
+		AD3BFDF5267AA56600FF8076 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3BFDF4267AA56600FF8076 /* CSSystemInfoHelperTests.m */; };
+		AD3BFE07267AA5BD00FF8076 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AD3BFE03267AA5BD00FF8076 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD3BFE08267AA5BD00FF8076 /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3BFE05267AA5BD00FF8076 /* CSSystemInfoHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AD3913941CB9B7EA001A31F6 /* PBXContainerItemProxy */ = {
+		AD3BFDF1267AA56600FF8076 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
+			containerPortal = AD3BFDDD267AA56600FF8076 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AD3913881CB9B7EA001A31F6;
-			remoteInfo = "CSSystemInfoHelper-iOS";
-		};
-		AD3913DF1CB9C003001A31F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD3913D31CB9C003001A31F6;
-			remoteInfo = "CSSystemInfoHelper-tvOS";
-		};
-		ADC2E7A11CB9772F00B27191 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ADC2E78C1CB9772F00B27191 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ADC2E7941CB9772F00B27191;
+			remoteGlobalIDString = AD3BFDE5267AA56600FF8076;
 			remoteInfo = CSSystemInfoHelper;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AD2A9E4D1CB9C3C0000A4432 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD2A9E4F1CB9C3C7000A4432 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD3913891CB9B7EA001A31F6 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD3913921CB9B7EA001A31F6 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD3913B51CB9BD5A001A31F6 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD3913DD1CB9C003001A31F6 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelper.m; sourceTree = "<group>"; };
-		ADA545281CCE40DE00257621 /* CSSystemInfoHelper.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CSSystemInfoHelper.podspec; sourceTree = SOURCE_ROOT; };
-		ADC2E7951CB9772F00B27191 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSystemInfoHelper.h; sourceTree = "<group>"; };
-		ADC2E79F1CB9772F00B27191 /* CSSystemInfoHelper.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelper.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelperTests.m; sourceTree = "<group>"; };
+		AD3BFDE6267AA56600FF8076 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3BFDEF267AA56600FF8076 /* CSSystemInfoHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3BFDF4267AA56600FF8076 /* CSSystemInfoHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelperTests.m; sourceTree = "<group>"; };
+		AD3BFDF6267AA56600FF8076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD3BFE03267AA5BD00FF8076 /* CSSystemInfoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSystemInfoHelper.h; sourceTree = "<group>"; };
+		AD3BFE05267AA5BD00FF8076 /* CSSystemInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelper.m; sourceTree = "<group>"; };
+		AD3BFE06267AA5BD00FF8076 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AD3913851CB9B7EA001A31F6 /* Frameworks */ = {
+		AD3BFDE3267AA56600FF8076 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD39138F1CB9B7EA001A31F6 /* Frameworks */ = {
+		AD3BFDEC267AA56600FF8076 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913931CB9B7EA001A31F6 /* CSSystemInfoHelper.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3913B11CB9BD5A001A31F6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3913D01CB9C003001A31F6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3913DA1CB9C003001A31F6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD3913DE1CB9C003001A31F6 /* CSSystemInfoHelper.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADC2E7911CB9772F00B27191 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADC2E79C1CB9772F00B27191 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADC2E7A01CB9772F00B27191 /* CSSystemInfoHelper.framework in Frameworks */,
+				AD3BFDF0267AA56600FF8076 /* CSSystemInfoHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD3913A11CB9B8C2001A31F6 /* CSSystemInfoHelper */ = {
+		AD3BFDDC267AA56600FF8076 = {
 			isa = PBXGroup;
 			children = (
-				ADC2E7981CB9772F00B27191 /* CSSystemInfoHelper.h */,
-				AD990E411CB97D99005746CE /* CSSystemInfoHelper.m */,
-				AD3913A61CB9B9F3001A31F6 /* Supporting Files */,
-			);
-			path = CSSystemInfoHelper;
-			sourceTree = "<group>";
-		};
-		AD3913A61CB9B9F3001A31F6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				ADA545281CCE40DE00257621 /* CSSystemInfoHelper.podspec */,
-				AD2A9E4D1CB9C3C0000A4432 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AD3913AB1CB9BA09001A31F6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD2A9E4F1CB9C3C7000A4432 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		ADC2E78B1CB9772F00B27191 = {
-			isa = PBXGroup;
-			children = (
-				AD3913A11CB9B8C2001A31F6 /* CSSystemInfoHelper */,
-				ADC2E7A31CB9772F00B27191 /* CSSystemInfoHelperTests */,
-				ADC2E7961CB9772F00B27191 /* Products */,
+				AD3BFE00267AA5BD00FF8076 /* CSSystemInfoHelper */,
+				AD3BFDF3267AA56600FF8076 /* CSSystemInfoHelperTests */,
+				AD3BFDE7267AA56600FF8076 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ADC2E7961CB9772F00B27191 /* Products */ = {
+		AD3BFDE7267AA56600FF8076 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADC2E7951CB9772F00B27191 /* CSSystemInfoHelper.framework */,
-				ADC2E79F1CB9772F00B27191 /* CSSystemInfoHelper.xctest */,
-				AD3913891CB9B7EA001A31F6 /* CSSystemInfoHelper.framework */,
-				AD3913921CB9B7EA001A31F6 /* CSSystemInfoHelper.xctest */,
-				AD3913B51CB9BD5A001A31F6 /* CSSystemInfoHelper.framework */,
-				AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */,
-				AD3913DD1CB9C003001A31F6 /* CSSystemInfoHelper.xctest */,
+				AD3BFDE6267AA56600FF8076 /* CSSystemInfoHelper.framework */,
+				AD3BFDEF267AA56600FF8076 /* CSSystemInfoHelperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ADC2E7A31CB9772F00B27191 /* CSSystemInfoHelperTests */ = {
+		AD3BFDF3267AA56600FF8076 /* CSSystemInfoHelperTests */ = {
 			isa = PBXGroup;
 			children = (
-				ADC2E7A41CB9772F00B27191 /* CSSystemInfoHelperTests.m */,
-				AD3913AB1CB9BA09001A31F6 /* Supporting Files */,
+				AD3BFDF4267AA56600FF8076 /* CSSystemInfoHelperTests.m */,
+				AD3BFDF6267AA56600FF8076 /* Info.plist */,
 			);
 			path = CSSystemInfoHelperTests;
+			sourceTree = "<group>";
+		};
+		AD3BFE00267AA5BD00FF8076 /* CSSystemInfoHelper */ = {
+			isa = PBXGroup;
+			children = (
+				AD3BFE01267AA5BD00FF8076 /* Headers */,
+				AD3BFE04267AA5BD00FF8076 /* Sources */,
+				AD3BFE06267AA5BD00FF8076 /* Info.plist */,
+			);
+			path = CSSystemInfoHelper;
+			sourceTree = "<group>";
+		};
+		AD3BFE01267AA5BD00FF8076 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				AD3BFE02267AA5BD00FF8076 /* CSSystemInfoHelper */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		AD3BFE02267AA5BD00FF8076 /* CSSystemInfoHelper */ = {
+			isa = PBXGroup;
+			children = (
+				AD3BFE03267AA5BD00FF8076 /* CSSystemInfoHelper.h */,
+			);
+			path = CSSystemInfoHelper;
+			sourceTree = "<group>";
+		};
+		AD3BFE04267AA5BD00FF8076 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AD3BFE05267AA5BD00FF8076 /* CSSystemInfoHelper.m */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AD3913861CB9B7EA001A31F6 /* Headers */ = {
+		AD3BFDE1267AA56600FF8076 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913AD1CB9BA62001A31F6 /* CSSystemInfoHelper.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3913B21CB9BD5A001A31F6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD3913CC1CB9BE1D001A31F6 /* CSSystemInfoHelper.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3913D11CB9C003001A31F6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD3913EB1CB9C17D001A31F6 /* CSSystemInfoHelper.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADC2E7921CB9772F00B27191 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADC2E7991CB9772F00B27191 /* CSSystemInfoHelper.h in Headers */,
+				AD3BFE07267AA5BD00FF8076 /* CSSystemInfoHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AD3913881CB9B7EA001A31F6 /* CSSystemInfoHelper-iOS */ = {
+		AD3BFDE5267AA56600FF8076 /* CSSystemInfoHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD39139F1CB9B7EA001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-iOS" */;
+			buildConfigurationList = AD3BFDFA267AA56600FF8076 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper" */;
 			buildPhases = (
-				AD3913841CB9B7EA001A31F6 /* Sources */,
-				AD3913851CB9B7EA001A31F6 /* Frameworks */,
-				AD3913861CB9B7EA001A31F6 /* Headers */,
-				AD3913871CB9B7EA001A31F6 /* Resources */,
+				AD3BFDE1267AA56600FF8076 /* Headers */,
+				AD3BFDE2267AA56600FF8076 /* Sources */,
+				AD3BFDE3267AA56600FF8076 /* Frameworks */,
+				AD3BFDE4267AA56600FF8076 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "CSSystemInfoHelper-iOS";
-			productName = "CSSystemInfoHelper-iOS";
-			productReference = AD3913891CB9B7EA001A31F6 /* CSSystemInfoHelper.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AD3913911CB9B7EA001A31F6 /* CSSystemInfoHelper-iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD3913A01CB9B7EA001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-iOSTests" */;
-			buildPhases = (
-				AD39138E1CB9B7EA001A31F6 /* Sources */,
-				AD39138F1CB9B7EA001A31F6 /* Frameworks */,
-				AD3913901CB9B7EA001A31F6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD3913951CB9B7EA001A31F6 /* PBXTargetDependency */,
-			);
-			name = "CSSystemInfoHelper-iOSTests";
-			productName = "CSSystemInfoHelper-iOSTests";
-			productReference = AD3913921CB9B7EA001A31F6 /* CSSystemInfoHelper.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		AD3913B41CB9BD5A001A31F6 /* CSSystemInfoHelper-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD3913BA1CB9BD5A001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-watchOS" */;
-			buildPhases = (
-				AD3913B01CB9BD5A001A31F6 /* Sources */,
-				AD3913B11CB9BD5A001A31F6 /* Frameworks */,
-				AD3913B21CB9BD5A001A31F6 /* Headers */,
-				AD3913B31CB9BD5A001A31F6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "CSSystemInfoHelper-watchOS";
-			productName = "CSSystemInfoHelper-watchOS";
-			productReference = AD3913B51CB9BD5A001A31F6 /* CSSystemInfoHelper.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AD3913D31CB9C003001A31F6 /* CSSystemInfoHelper-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD3913E51CB9C003001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-tvOS" */;
-			buildPhases = (
-				AD3913CF1CB9C003001A31F6 /* Sources */,
-				AD3913D01CB9C003001A31F6 /* Frameworks */,
-				AD3913D11CB9C003001A31F6 /* Headers */,
-				AD3913D21CB9C003001A31F6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "CSSystemInfoHelper-tvOS";
-			productName = "CSSystemInfoHelper-tvOS";
-			productReference = AD3913D41CB9C003001A31F6 /* CSSystemInfoHelper.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AD3913DC1CB9C003001A31F6 /* CSSystemInfoHelper-tvOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD3913E81CB9C003001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-tvOSTests" */;
-			buildPhases = (
-				AD3913D91CB9C003001A31F6 /* Sources */,
-				AD3913DA1CB9C003001A31F6 /* Frameworks */,
-				AD3913DB1CB9C003001A31F6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD3913E01CB9C003001A31F6 /* PBXTargetDependency */,
-			);
-			name = "CSSystemInfoHelper-tvOSTests";
-			productName = "CSSystemInfoHelper-tvOSTests";
-			productReference = AD3913DD1CB9C003001A31F6 /* CSSystemInfoHelper.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		ADC2E7941CB9772F00B27191 /* CSSystemInfoHelper-OSX */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ADC2E7A91CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-OSX" */;
-			buildPhases = (
-				ADC2E7901CB9772F00B27191 /* Sources */,
-				ADC2E7911CB9772F00B27191 /* Frameworks */,
-				ADC2E7921CB9772F00B27191 /* Headers */,
-				ADC2E7931CB9772F00B27191 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "CSSystemInfoHelper-OSX";
+			name = CSSystemInfoHelper;
 			productName = CSSystemInfoHelper;
-			productReference = ADC2E7951CB9772F00B27191 /* CSSystemInfoHelper.framework */;
+			productReference = AD3BFDE6267AA56600FF8076 /* CSSystemInfoHelper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ADC2E79E1CB9772F00B27191 /* CSSystemInfoHelper-OSXTests */ = {
+		AD3BFDEE267AA56600FF8076 /* CSSystemInfoHelperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADC2E7AC1CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-OSXTests" */;
+			buildConfigurationList = AD3BFDFD267AA56600FF8076 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelperTests" */;
 			buildPhases = (
-				ADC2E79B1CB9772F00B27191 /* Sources */,
-				ADC2E79C1CB9772F00B27191 /* Frameworks */,
-				ADC2E79D1CB9772F00B27191 /* Resources */,
+				AD3BFDEB267AA56600FF8076 /* Sources */,
+				AD3BFDEC267AA56600FF8076 /* Frameworks */,
+				AD3BFDED267AA56600FF8076 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				ADC2E7A21CB9772F00B27191 /* PBXTargetDependency */,
+				AD3BFDF2267AA56600FF8076 /* PBXTargetDependency */,
 			);
-			name = "CSSystemInfoHelper-OSXTests";
+			name = CSSystemInfoHelperTests;
 			productName = CSSystemInfoHelperTests;
-			productReference = ADC2E79F1CB9772F00B27191 /* CSSystemInfoHelper.xctest */;
+			productReference = AD3BFDEF267AA56600FF8076 /* CSSystemInfoHelperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ADC2E78C1CB9772F00B27191 /* Project object */ = {
+		AD3BFDDD267AA56600FF8076 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = CS;
 				LastUpgradeCheck = 1250;
-				ORGANIZATIONNAME = "Cătălin Stan";
 				TargetAttributes = {
-					AD3913881CB9B7EA001A31F6 = {
-						CreatedOnToolsVersion = 7.3;
+					AD3BFDE5267AA56600FF8076 = {
+						CreatedOnToolsVersion = 12.5;
 					};
-					AD3913911CB9B7EA001A31F6 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					AD3913B41CB9BD5A001A31F6 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					AD3913D31CB9C003001A31F6 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					AD3913DC1CB9C003001A31F6 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					ADC2E7941CB9772F00B27191 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					ADC2E79E1CB9772F00B27191 = {
-						CreatedOnToolsVersion = 7.3;
+					AD3BFDEE267AA56600FF8076 = {
+						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
-			buildConfigurationList = ADC2E78F1CB9772F00B27191 /* Build configuration list for PBXProject "CSSystemInfoHelper" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = AD3BFDE0267AA56600FF8076 /* Build configuration list for PBXProject "CSSystemInfoHelper" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = ADC2E78B1CB9772F00B27191;
-			productRefGroup = ADC2E7961CB9772F00B27191 /* Products */;
+			mainGroup = AD3BFDDC267AA56600FF8076;
+			productRefGroup = AD3BFDE7267AA56600FF8076 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADC2E7941CB9772F00B27191 /* CSSystemInfoHelper-OSX */,
-				ADC2E79E1CB9772F00B27191 /* CSSystemInfoHelper-OSXTests */,
-				AD3913881CB9B7EA001A31F6 /* CSSystemInfoHelper-iOS */,
-				AD3913911CB9B7EA001A31F6 /* CSSystemInfoHelper-iOSTests */,
-				AD3913D31CB9C003001A31F6 /* CSSystemInfoHelper-tvOS */,
-				AD3913DC1CB9C003001A31F6 /* CSSystemInfoHelper-tvOSTests */,
-				AD3913B41CB9BD5A001A31F6 /* CSSystemInfoHelper-watchOS */,
+				AD3BFDE5267AA56600FF8076 /* CSSystemInfoHelper */,
+				AD3BFDEE267AA56600FF8076 /* CSSystemInfoHelperTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AD3913871CB9B7EA001A31F6 /* Resources */ = {
+		AD3BFDE4267AA56600FF8076 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD3913901CB9B7EA001A31F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3913B31CB9BD5A001A31F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3913D21CB9C003001A31F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3913DB1CB9C003001A31F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADC2E7931CB9772F00B27191 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADA545291CCE40DE00257621 /* CSSystemInfoHelper.podspec in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADC2E79D1CB9772F00B27191 /* Resources */ = {
+		AD3BFDED267AA56600FF8076 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -455,273 +216,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AD3913841CB9B7EA001A31F6 /* Sources */ = {
+		AD3BFDE2267AA56600FF8076 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913AC1CB9BA59001A31F6 /* CSSystemInfoHelper.m in Sources */,
+				AD3BFE08267AA5BD00FF8076 /* CSSystemInfoHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD39138E1CB9B7EA001A31F6 /* Sources */ = {
+		AD3BFDEB267AA56600FF8076 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3913AF1CB9BC37001A31F6 /* CSSystemInfoHelperTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3913B01CB9BD5A001A31F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD3913CD1CB9BE23001A31F6 /* CSSystemInfoHelper.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3913CF1CB9C003001A31F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD3913EC1CB9C187001A31F6 /* CSSystemInfoHelper.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3913D91CB9C003001A31F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD3913ED1CB9C18B001A31F6 /* CSSystemInfoHelperTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADC2E7901CB9772F00B27191 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD990E421CB97D99005746CE /* CSSystemInfoHelper.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADC2E79B1CB9772F00B27191 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD990E431CB97D99005746CE /* CSSystemInfoHelper.m in Sources */,
-				ADC2E7A51CB9772F00B27191 /* CSSystemInfoHelperTests.m in Sources */,
+				AD3BFDF5267AA56600FF8076 /* CSSystemInfoHelperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AD3913951CB9B7EA001A31F6 /* PBXTargetDependency */ = {
+		AD3BFDF2267AA56600FF8076 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD3913881CB9B7EA001A31F6 /* CSSystemInfoHelper-iOS */;
-			targetProxy = AD3913941CB9B7EA001A31F6 /* PBXContainerItemProxy */;
-		};
-		AD3913E01CB9C003001A31F6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD3913D31CB9C003001A31F6 /* CSSystemInfoHelper-tvOS */;
-			targetProxy = AD3913DF1CB9C003001A31F6 /* PBXContainerItemProxy */;
-		};
-		ADC2E7A21CB9772F00B27191 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ADC2E7941CB9772F00B27191 /* CSSystemInfoHelper-OSX */;
-			targetProxy = ADC2E7A11CB9772F00B27191 /* PBXContainerItemProxy */;
+			target = AD3BFDE5267AA56600FF8076 /* CSSystemInfoHelper */;
+			targetProxy = AD3BFDF1267AA56600FF8076 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		AD39139A1CB9B7EA001A31F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
-				PRODUCT_NAME = CSSystemInfoHelper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		AD39139B1CB9B7EA001A31F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
-				PRODUCT_NAME = CSSystemInfoHelper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		AD39139C1CB9B7EA001A31F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-iOSTests";
-				PRODUCT_NAME = CSSystemInfoHelper;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		AD39139D1CB9B7EA001A31F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-iOSTests";
-				PRODUCT_NAME = CSSystemInfoHelper;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		AD3913BB1CB9BD5A001A31F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
-				PRODUCT_NAME = CSSystemInfoHelper;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Debug;
-		};
-		AD3913BC1CB9BD5A001A31F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
-				PRODUCT_NAME = CSSystemInfoHelper;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Release;
-		};
-		AD3913E61CB9C003001A31F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
-				PRODUCT_NAME = CSSystemInfoHelper;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
-			};
-			name = Debug;
-		};
-		AD3913E71CB9C003001A31F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
-				PRODUCT_NAME = CSSystemInfoHelper;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		AD3913E91CB9C003001A31F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-tvOSTests";
-				PRODUCT_NAME = CSSystemInfoHelper;
-				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
-			};
-			name = Debug;
-		};
-		AD3913EA1CB9C003001A31F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-tvOSTests";
-				PRODUCT_NAME = CSSystemInfoHelper;
-				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		ADC2E7A71CB9772F00B27191 /* Debug */ = {
+		AD3BFDF8267AA56600FF8076 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -734,15 +273,15 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -756,9 +295,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MARKETING_VERSION = 1.4.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -766,22 +305,24 @@
 			};
 			name = Debug;
 		};
-		ADC2E7A81CB9772F00B27191 /* Release */ = {
+		AD3BFDF9267AA56600FF8076 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -794,15 +335,15 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -810,151 +351,124 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.4.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		ADC2E7AA1CB9772F00B27191 /* Debug */ = {
+		AD3BFDFB267AA56600FF8076 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
-				PRODUCT_NAME = CSSystemInfoHelper;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catalinstan.CSSystemInfoHelper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		ADC2E7AB1CB9772F00B27191 /* Release */ = {
+		AD3BFDFC267AA56600FF8076 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = CSSystemInfoHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_BUNDLE_IDENTIFIER = io.criollo.CSSystemInfoHelper;
-				PRODUCT_NAME = CSSystemInfoHelper;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catalinstan.CSSystemInfoHelper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		ADC2E7AD1CB9772F00B27191 /* Debug */ = {
+		AD3BFDFE267AA56600FF8076 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-OSXTests";
-				PRODUCT_NAME = CSSystemInfoHelper;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.catalinstan.CSSystemInfoHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		ADC2E7AE1CB9772F00B27191 /* Release */ = {
+		AD3BFDFF267AA56600FF8076 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CSSystemInfoHelperTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.criollo.CSSystemInfoHelper-OSXTests";
-				PRODUCT_NAME = CSSystemInfoHelper;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.catalinstan.CSSystemInfoHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD39139F1CB9B7EA001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-iOS" */ = {
+		AD3BFDE0267AA56600FF8076 /* Build configuration list for PBXProject "CSSystemInfoHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD39139A1CB9B7EA001A31F6 /* Debug */,
-				AD39139B1CB9B7EA001A31F6 /* Release */,
+				AD3BFDF8267AA56600FF8076 /* Debug */,
+				AD3BFDF9267AA56600FF8076 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD3913A01CB9B7EA001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-iOSTests" */ = {
+		AD3BFDFA267AA56600FF8076 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD39139C1CB9B7EA001A31F6 /* Debug */,
-				AD39139D1CB9B7EA001A31F6 /* Release */,
+				AD3BFDFB267AA56600FF8076 /* Debug */,
+				AD3BFDFC267AA56600FF8076 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD3913BA1CB9BD5A001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-watchOS" */ = {
+		AD3BFDFD267AA56600FF8076 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelperTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD3913BB1CB9BD5A001A31F6 /* Debug */,
-				AD3913BC1CB9BD5A001A31F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD3913E51CB9C003001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD3913E61CB9C003001A31F6 /* Debug */,
-				AD3913E71CB9C003001A31F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD3913E81CB9C003001A31F6 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-tvOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD3913E91CB9C003001A31F6 /* Debug */,
-				AD3913EA1CB9C003001A31F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ADC2E78F1CB9772F00B27191 /* Build configuration list for PBXProject "CSSystemInfoHelper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADC2E7A71CB9772F00B27191 /* Debug */,
-				ADC2E7A81CB9772F00B27191 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ADC2E7A91CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-OSX" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADC2E7AA1CB9772F00B27191 /* Debug */,
-				ADC2E7AB1CB9772F00B27191 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ADC2E7AC1CB9772F00B27191 /* Build configuration list for PBXNativeTarget "CSSystemInfoHelper-OSXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADC2E7AD1CB9772F00B27191 /* Debug */,
-				ADC2E7AE1CB9772F00B27191 /* Release */,
+				AD3BFDFE267AA56600FF8076 /* Debug */,
+				AD3BFDFF267AA56600FF8076 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ADC2E78C1CB9772F00B27191 /* Project object */;
+	rootObject = AD3BFDDD267AA56600FF8076 /* Project object */;
 }

@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "CSSystemInfoHelper.h"
+#import <CSSystemInfoHelper/CSSystemInfoHelper.h>
 
 @interface CSSystemInfoHelperTests : XCTestCase
 
