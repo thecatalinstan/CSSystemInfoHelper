@@ -20,16 +20,14 @@
 #import <UIKit/UIKit.h>
 #endif
 
-NSString * const CSSystemInfoSysnameKey = @"CSSystemInfoSysname";
-NSString * const CSSystemInfoNodenameKey = @"CSSystemInfoNodename";
-NSString * const CSSystemInfoReleaseKey = @"CSSystemInfoRelease";
-NSString * const CSSystemInfoVersionKey = @"CSSystemInfoVersion";
-NSString * const CSSystemInfoMachineKey = @"CSSystemInfoMachine";
+NSString * const CSSystemInfoKeySysname = @"CSSystemInfoSysname";
+NSString * const CSSystemInfoKeyNodename = @"CSSystemInfoNodename";
+NSString * const CSSystemInfoKeyRelease = @"CSSystemInfoRelease";
+NSString * const CSSystemInfoKeyVersion = @"CSSystemInfoVersion";
+NSString * const CSSystemInfoKeyMachine = @"CSSystemInfoMachine";
 
+__attribute__((objc_direct_members))
 @interface CSSystemInfoHelper ()
-
-@property (nonatomic, readonly, strong) dispatch_queue_t isolationQueue;
-
 @end
 
 @implementation CSSystemInfoHelper
@@ -44,14 +42,10 @@ static CSSystemInfoHelper* sharedHelper;
     return sharedHelper;
 }
 
-- (instancetype)init {
-    self  = [super init];
-    if ( self != nil ) {
-        NSString* isolationQueueLabel = [NSString stringWithFormat:@"%@-isolationQueue-%@", NSStringFromClass(self.class), @(self.hash)];
-        _isolationQueue = dispatch_queue_create(isolationQueueLabel.UTF8String, DISPATCH_QUEUE_SERIAL);
-        dispatch_set_target_queue(_isolationQueue, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0));
-
-        NSMutableDictionary<NSString *, NSString *> * allIPAddresses = [NSMutableDictionary dictionary];
+- (NSDictionary<NSString *,NSString *> *)AllIPAddresses {
+    static NSMutableDictionary<NSString *, NSString *> * allIPAddresses;
+    if (!allIPAddresses) {
+        allIPAddresses = [NSMutableDictionary dictionaryWithCapacity:4];
         struct ifaddrs * interfaces = NULL;
         struct ifaddrs * addr = NULL;
         int success = 0;
@@ -66,49 +60,67 @@ static CSSystemInfoHelper* sharedHelper;
             }
         }
         freeifaddrs(interfaces);
-        _AllIPAddresses = allIPAddresses.copy;
     }
-    return self;
+    return allIPAddresses;
 }
 
 - (NSString *)IPAddress {
-    return self.AllIPAddresses[@"en0"];
+    static NSString *IPAddress;
+    if (!IPAddress) {
+        IPAddress = self.AllIPAddresses[@"en0"];
+    }
+    return IPAddress;
 }
 
-- (NSDictionary<NSString *,NSString *> *)systemInfo {
-    static NSDictionary<NSString *, NSString *> * systemInfo;
-    if ( systemInfo == nil ) {
+- (NSDictionary<CSSystemInfoKey, NSString *> *)systemInfo {
+    static NSDictionary<CSSystemInfoKey, NSString *> * systemInfo;
+    if (!systemInfo) {
         struct utsname unameStruct;
-        if ( uname(&unameStruct) != 0 ) {
+        if (uname(&unameStruct) != 0) {
             @throw [NSException exceptionWithName:NSGenericException reason:[NSString stringWithUTF8String:strerror(errno)] userInfo:nil];
-            return nil;
         }
-        systemInfo = @{CSSystemInfoSysnameKey: @(unameStruct.sysname), CSSystemInfoNodenameKey: @(unameStruct.nodename), CSSystemInfoReleaseKey: @(unameStruct.release), CSSystemInfoVersionKey: @(unameStruct.version), CSSystemInfoMachineKey: @(unameStruct.machine)};
+        
+        systemInfo = @{
+            CSSystemInfoKeySysname: @(unameStruct.sysname),
+            CSSystemInfoKeyNodename: @(unameStruct.nodename),
+            CSSystemInfoKeyRelease: @(unameStruct.release),
+            CSSystemInfoKeyVersion: @(unameStruct.version),
+            CSSystemInfoKeyMachine: @(unameStruct.machine)
+        };
     }
     return systemInfo;
 }
 
 - (NSString *)systemInfoString {
-    static NSString* systemInfoString;
-    if ( systemInfoString == nil ) {
-        systemInfoString = [NSString stringWithFormat:@"%@ %@ %@ %@ %@", self.systemInfo[CSSystemInfoSysnameKey], self.systemInfo[CSSystemInfoNodenameKey], self.systemInfo[CSSystemInfoReleaseKey], self.systemInfo[CSSystemInfoVersionKey], self.systemInfo[CSSystemInfoMachineKey]];
+    static NSString *systemInfoString;
+    if (!systemInfoString) {
+        systemInfoString = [NSString stringWithFormat:@"%@ %@ %@ %@ %@",
+                            self.systemInfo[CSSystemInfoKeySysname],
+                            self.systemInfo[CSSystemInfoKeyNodename],
+                            self.systemInfo[CSSystemInfoKeyRelease],
+                            self.systemInfo[CSSystemInfoKeyVersion],
+                            self.systemInfo[CSSystemInfoKeyMachine]];
     }
     return systemInfoString;
 }
 
 - (NSString *)systemVersionString {
     static NSString* systemVersionString;
-    if ( systemVersionString == nil ) {
-        systemVersionString = [NSString stringWithFormat:@"%@ %@ %@", self.systemInfo[CSSystemInfoSysnameKey], self.systemInfo[CSSystemInfoReleaseKey], self.systemInfo[CSSystemInfoMachineKey]];
+    if (!systemVersionString) {
+        systemVersionString = [NSString stringWithFormat:@"%@ %@ %@",
+                               self.systemInfo[CSSystemInfoKeySysname],
+                               self.systemInfo[CSSystemInfoKeyRelease],
+                               self.systemInfo[CSSystemInfoKeyMachine]];
     }
     return systemVersionString;
 }
 
 - (vm_size_t)memoryUsage {
+    //task_vm_info
     struct task_basic_info info;
     mach_msg_type_number_t size = sizeof(info);
     kern_return_t kerr = task_info(mach_task_self(), TASK_BASIC_INFO, (task_info_t)&info, &size);
-    if( kerr != KERN_SUCCESS ) {
+    if(kerr != KERN_SUCCESS) {
         @throw [NSException exceptionWithName:NSGenericException reason:[NSString stringWithUTF8String:mach_error_string(kerr)] userInfo:nil];
     }
     return info.resident_size;
@@ -119,10 +131,8 @@ static CSSystemInfoHelper* sharedHelper;
 }
 
 - (NSString *)platformUUID {
-
     static NSString* platformUUID;
-
-    if ( platformUUID == nil ) {
+    if (!platformUUID) {
 
 #if TARGET_OS_WATCH
 #warning platformUUID is generated on-the-fly for watchOS
@@ -136,9 +146,7 @@ static CSSystemInfoHelper* sharedHelper;
         platformUUID = CFBridgingRelease(uuidCf);
 #endif
     }
-
     return platformUUID;
-
 }
 
 @end

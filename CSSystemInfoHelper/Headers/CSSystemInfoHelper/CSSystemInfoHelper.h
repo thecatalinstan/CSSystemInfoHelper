@@ -13,108 +13,66 @@ FOUNDATION_EXPORT const unsigned char CSSystemInfoHelperVersionString[];
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- Name of the operating system implementation.
- */
-FOUNDATION_EXPORT NSString * const CSSystemInfoSysnameKey;
+typedef NSString * CSSystemInfoKey NS_TYPED_EXTENSIBLE_ENUM;
 
-/**
- Network name of this machine.
- */
-FOUNDATION_EXPORT NSString * const CSSystemInfoNodenameKey;
+/// Name of the operating system implementation.
+FOUNDATION_EXPORT CSSystemInfoKey const CSSystemInfoKeySysname;
+/// Network name of this machine.
+FOUNDATION_EXPORT CSSystemInfoKey const CSSystemInfoKeyNodename;
+/// Release level of the operating system.
+FOUNDATION_EXPORT CSSystemInfoKey const CSSystemInfoKeyRelease;
+/// Version level of the operating system.
+FOUNDATION_EXPORT CSSystemInfoKey const CSSystemInfoKeyVersion;
+/// Machine hardware platform.
+FOUNDATION_EXPORT CSSystemInfoKey const CSSystemInfoKeyMachine;
 
-/**
- Release level of the operating system.
- */
-FOUNDATION_EXPORT NSString * const CSSystemInfoReleaseKey;
-
-/**
- Version level of the operating system.
- */
-FOUNDATION_EXPORT NSString * const CSSystemInfoVersionKey;
-
-/**
- Machine hardware platform.
- */
-FOUNDATION_EXPORT NSString * const CSSystemInfoMachineKey;
-
-/**
- The CSSystemInfoHelper class provides easy-access to some useful system
- information that would otherwise require some more elaborate code.
- */
+/// The CSSystemInfoHelper class provides easy-access to some useful system
+/// information that would otherwise require some more elaborate code.
 @interface CSSystemInfoHelper : NSObject
 
-/**
- @name Accessing the shared helper instance
- */
+/// @name Accessing the shared helper instance
 
-/**
- The shared helper instance
+/// The shared helper instance
+@property (class, nonatomic, readonly) CSSystemInfoHelper *sharedHelper;
 
- @return A singleton CRSharedHelper object
- */
-+ (instancetype)sharedHelper;
+/// @name Getting IP Addresses
 
-/**
- @name Getting IP Addresses
- */
-
-/**
- A dictionary where the keys are interface names and the values are
- the IP addresses associated with those interfaces.
- 
- Check the `getifaddrs(3)` manual page for more information.
- */
+/// A dictionary where the keys are interface names and the values are
+/// the IP addresses associated with those interfaces.
+/// @note Check the @c getifaddrs(3) manual page for more information.
 @property (nonatomic, readonly, strong) NSDictionary<NSString *, NSString *> * AllIPAddresses;
 
-/**
- The IP Address of "en0".
- 
- This is a convenience method for `AllIPAddresses[@"en0"]`.
- */
-@property (nonatomic, readonly, strong) NSString * IPAddress;
+/// The IP Address of "en0".
+/// @note This is a convenience method for `AllIPAddresses[@"en0"]`.
+@property (nonatomic, readonly, strong) NSString *IPAddress;
 
-/**
- @name Getting `uname` System Information
- */
+/// @name Getting @c uname System Information
 
-/**
- A dictionary containing the results of the 'uname(3)` call.
- */
-@property (nonatomic, readonly, strong) NSDictionary<NSString *, NSString *> * systemInfo;
+/// A dictionary containing the results of the @c uname(3) call.
+@property (nonatomic, readonly, strong) NSDictionary<CSSystemInfoKey, NSString *> *systemInfo;
 
-/**
- A concatenated string representation of all the values in `systemInfo`, in
- the order listed in the `uname(3)` manual page.
- */
-@property (nonatomic, readonly, strong) NSString * systemInfoString;
+/// A concatenated string representation of all the values in `systemInfo`, in
+/// the order listed in the @c uname(3) manual page.
+@property (nonatomic, readonly, strong) NSString *systemInfoString;
 
-/**
- A concatenated string representation of the OS version keys from `systemInfo`,
- the following order: `CSSystemInfoSysnameKey`, `CSSystemInfoReleaseKey`,
- `CSSystemInfoMachineKey`
- */
-@property (nonatomic, readonly, strong) NSString * systemVersionString;
+/// A concatenated string representation of the OS version keys from
+/// @c -systemInfo, in the following order: @c CSSystemInfoKeySysname,
+/// @c CSSystemInfoKeyRelease, @c CSSystemInfoKeyMachine, separated by space.
+@property (nonatomic, readonly, strong) NSString *systemVersionString;
 
-/**
- @name Getting Memory Usage
- */
+/// @name Getting Memory Usage
 
-/**
- Gets the resident memory size of the binary, as reported by
- [`task_info`](https://www.gnu.org/software/hurd/gnumach-doc/Task-Information.html)
- */
+/// Gets the resident memory size of the process, as reported by @c task_info
+/// @see https://www.gnu.org/software/hurd/gnumach-doc/Task-Information.html
 @property (nonatomic, readonly) vm_size_t memoryUsage;
 
-/**
- A human-readable formatted byte count string from the value returned by
- `memoryUsage`
- */
-@property (nonatomic, readonly, strong) NSString * memoryUsageString;
+/// A human-readable, formatted byte count string. from the value returned by
+/// @c -memoryUsage
+@property (nonatomic, readonly, copy) NSString *memoryUsageString;
 
-/**
- Get the UUID of the current device
- */
+/// @name UUID of the current device
+
+/// Get the UUID of the current device
 @property (nonatomic, readonly, strong) NSString * platformUUID;
 
 @end

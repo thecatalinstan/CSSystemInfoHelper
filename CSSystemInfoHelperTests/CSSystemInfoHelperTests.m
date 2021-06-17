@@ -53,21 +53,21 @@
 - (void)test_SystemInfo_AllKeys_ShouldNotBeNil {
     CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
 
-    XCTAssertNotNil(helper.systemInfo[CSSystemInfoSysnameKey], @"The key CSSystemInfoSysnameKey is not pressent");
-    XCTAssertNotNil(helper.systemInfo[CSSystemInfoNodenameKey], @"The key CSSystemInfoNodenameKey is not pressent");
-    XCTAssertNotNil(helper.systemInfo[CSSystemInfoReleaseKey], @"The key CSSystemInfoReleaseKey is not pressent");
-    XCTAssertNotNil(helper.systemInfo[CSSystemInfoVersionKey], @"The key CSSystemInfoVersionKey is not pressent");
-    XCTAssertNotNil(helper.systemInfo[CSSystemInfoMachineKey], @"The key CSSystemInfoMachineKey is not pressent");
+    XCTAssertNotNil(helper.systemInfo[CSSystemInfoKeySysname], @"The key CSSystemInfoKeySysname is not pressent");
+    XCTAssertNotNil(helper.systemInfo[CSSystemInfoKeyNodename], @"The key CSSystemInfoKeyNodename is not pressent");
+    XCTAssertNotNil(helper.systemInfo[CSSystemInfoKeyRelease], @"The key CSSystemInfoKeyRelease is not pressent");
+    XCTAssertNotNil(helper.systemInfo[CSSystemInfoKeyVersion], @"The key CSSystemInfoKeyVersion is not pressent");
+    XCTAssertNotNil(helper.systemInfo[CSSystemInfoKeyMachine], @"The key CSSystemInfoKeyMachine is not pressent");
 }
 
 - (void)test_SystemInfo_AllKeys_ShouldNotBeEmpty {
     CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
 
-    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoSysnameKey].length, 0, @"The key CSSystemInfoSysnameKey is empty");
-    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoNodenameKey].length, 0, @"The key CSSystemInfoNodenameKey is empty");
-    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoReleaseKey].length, 0, @"The key CSSystemInfoReleaseKey is empty");
-    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoVersionKey].length, 0, @"The key CSSystemInfoVersionKey is empty");
-    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoMachineKey].length, 0, @"The key CSSystemInfoMachineKey is empty");
+    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoKeySysname].length, 0, @"The key CSSystemInfoKeySysname is empty");
+    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoKeyNodename].length, 0, @"The key CSSystemInfoKeyNodename is empty");
+    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoKeyRelease].length, 0, @"The key CSSystemInfoKeyRelease is empty");
+    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoKeyVersion].length, 0, @"The key CSSystemInfoKeyVersion is empty");
+    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoKeyMachine].length, 0, @"The key CSSystemInfoKeyMachine is empty");
 }
 
 - (void)test_SystemInfoString_DoesNotThrow {
