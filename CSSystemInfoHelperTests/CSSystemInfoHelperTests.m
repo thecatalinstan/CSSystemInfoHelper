@@ -125,6 +125,7 @@
     XCTAssertGreaterThan(helper.memoryUsageString.length, 0);
 }
 
+#if TARGET_OS_OSX
 - (void)test_PlatformUUID_DoesNotThrow {
     CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
     XCTAssertNoThrow(helper.platformUUID);
@@ -139,5 +140,6 @@
     CSSystemInfoHelper *helper = [CSSystemInfoHelper new];
     XCTAssertGreaterThan(helper.platformUUID.length, 0);
 }
+#endif
 
 @end

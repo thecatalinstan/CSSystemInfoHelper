@@ -8,17 +8,11 @@
 
 #import <CSSystemInfoHelper/CSSystemInfoHelper.h>
 
-#import <stdio.h>
-#import <ifaddrs.h>
 #import <arpa/inet.h>
-#import <sys/utsname.h>
+#import <ifaddrs.h>
 #import <mach/mach.h>
-
-#if TARGET_OS_WATCH
-#import <WatchKit/WatchKit.h>
-#elif TARGET_OS_IPHONE
-#import <UIKit/UIKit.h>
-#endif
+//#import <stdio.h>
+#import <sys/utsname.h>
 
 NSString * const CSSystemInfoKeySysname = @"CSSystemInfoSysname";
 NSString * const CSSystemInfoKeyNodename = @"CSSystemInfoNodename";
@@ -130,23 +124,17 @@ static CSSystemInfoHelper* sharedHelper;
     return [NSByteCountFormatter stringFromByteCount:self.memoryUsage countStyle:NSByteCountFormatterCountStyleMemory];
 }
 
+#if TARGET_OS_OSX
 - (NSString *)platformUUID {
     static NSString* platformUUID;
     if (!platformUUID) {
-
-#if TARGET_OS_WATCH
-#warning platformUUID is generated on-the-fly for watchOS
-        platformUUID = [NSUUID UUID].UUIDString;
-#elif TARGET_OS_IPHONE
-        platformUUID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-#else
         io_registry_entry_t ioRegistryRoot = IORegistryEntryFromPath(kIOMasterPortDefault, "IOService:/");
         CFStringRef uuidCf = (CFStringRef) IORegistryEntryCreateCFProperty(ioRegistryRoot, CFSTR(kIOPlatformUUIDKey), kCFAllocatorDefault, 0);
         IOObjectRelease(ioRegistryRoot);
         platformUUID = CFBridgingRelease(uuidCf);
-#endif
     }
     return platformUUID;
 }
+#endif
 
 @end

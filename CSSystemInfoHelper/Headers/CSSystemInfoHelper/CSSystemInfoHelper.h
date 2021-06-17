@@ -73,7 +73,7 @@ FOUNDATION_EXPORT CSSystemInfoKey const CSSystemInfoKeyMachine;
 /// @name UUID of the current device
 
 /// Get the UUID of the current device
-@property (nonatomic, readonly, strong) NSString * platformUUID;
+@property (nonatomic, readonly, strong) NSString * platformUUID API_UNAVAILABLE(ios, tvos, watchos);
 
 @end
 
