@@ -30,6 +30,7 @@ let package = Package(
             path: "CSSystemInfoHelperTests",
             exclude: ["Info.plist"],
             cSettings: [
-                .headerSearchPath("../CSSystemInfoHelper/Headers")])
+                .headerSearchPath("../CSSystemInfoHelper/Headers"),
+                .headerSearchPath("../CSSystemInfoHelper/Sources")])
     ]
 )

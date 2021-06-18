@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD143BA1267C7D350094D246 /* CSSystemInfoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = AD143B9F267C7D350094D246 /* CSSystemInfoProvider.h */; };
+		AD143BA2267C7D350094D246 /* CSSystemInfoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AD143BA0267C7D350094D246 /* CSSystemInfoProvider.m */; };
+		AD143BA4267C80760094D246 /* CSSystemInfoHelper+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = AD143BA3267C80760094D246 /* CSSystemInfoHelper+Internal.h */; };
+		AD143BA7267C87450094D246 /* CSSystemInfoProviderMock.m in Sources */ = {isa = PBXBuildFile; fileRef = AD143BA6267C87450094D246 /* CSSystemInfoProviderMock.m */; };
+		AD352510267CB84700A3A929 /* CSSystemInfoHelperDeprecatedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35250F267CB84700A3A929 /* CSSystemInfoHelperDeprecatedTests.m */; };
 		AD3BFDF0267AA56600FF8076 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3BFDE6267AA56600FF8076 /* CSSystemInfoHelper.framework */; };
 		AD3BFDF5267AA56600FF8076 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3BFDF4267AA56600FF8076 /* CSSystemInfoHelperTests.m */; };
 		AD3BFE07267AA5BD00FF8076 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AD3BFE03267AA5BD00FF8076 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD3BFE08267AA5BD00FF8076 /* CSSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3BFE05267AA5BD00FF8076 /* CSSystemInfoHelper.m */; };
+		ADB06B24267B5A2400D4F0E3 /* CSNetworkInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB06B22267B5A2400D4F0E3 /* CSNetworkInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADB06B25267B5A2400D4F0E3 /* CSNetworkInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB06B23267B5A2400D4F0E3 /* CSNetworkInterface.m */; };
+		ADB06B27267B5B6E00D4F0E3 /* CSNetworkInterface+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB06B26267B5B6E00D4F0E3 /* CSNetworkInterface+Internal.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD143B9F267C7D350094D246 /* CSSystemInfoProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSystemInfoProvider.h; sourceTree = "<group>"; };
+		AD143BA0267C7D350094D246 /* CSSystemInfoProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoProvider.m; sourceTree = "<group>"; };
+		AD143BA3267C80760094D246 /* CSSystemInfoHelper+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSSystemInfoHelper+Internal.h"; sourceTree = "<group>"; };
+		AD143BA5267C87450094D246 /* CSSystemInfoProviderMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSystemInfoProviderMock.h; sourceTree = "<group>"; };
+		AD143BA6267C87450094D246 /* CSSystemInfoProviderMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoProviderMock.m; sourceTree = "<group>"; };
+		AD35250F267CB84700A3A929 /* CSSystemInfoHelperDeprecatedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelperDeprecatedTests.m; sourceTree = "<group>"; };
 		AD3BFDE6267AA56600FF8076 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3BFDEF267AA56600FF8076 /* CSSystemInfoHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3BFDF4267AA56600FF8076 /* CSSystemInfoHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelperTests.m; sourceTree = "<group>"; };
@@ -31,6 +45,10 @@
 		AD3BFE03267AA5BD00FF8076 /* CSSystemInfoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSystemInfoHelper.h; sourceTree = "<group>"; };
 		AD3BFE05267AA5BD00FF8076 /* CSSystemInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelper.m; sourceTree = "<group>"; };
 		AD3BFE06267AA5BD00FF8076 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADB06B22267B5A2400D4F0E3 /* CSNetworkInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSNetworkInterface.h; sourceTree = "<group>"; };
+		ADB06B23267B5A2400D4F0E3 /* CSNetworkInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSNetworkInterface.m; sourceTree = "<group>"; };
+		ADB06B26267B5B6E00D4F0E3 /* CSNetworkInterface+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSNetworkInterface+Internal.h"; sourceTree = "<group>"; };
+		ADB06B28267B608800D4F0E3 /* Errors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Errors.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,12 +70,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD2D059D267ABDAC006B76EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD3BFDDC267AA56600FF8076 = {
 			isa = PBXGroup;
 			children = (
 				AD3BFE00267AA5BD00FF8076 /* CSSystemInfoHelper */,
 				AD3BFDF3267AA56600FF8076 /* CSSystemInfoHelperTests */,
 				AD3BFDE7267AA56600FF8076 /* Products */,
+				AD2D059D267ABDAC006B76EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +99,10 @@
 		AD3BFDF3267AA56600FF8076 /* CSSystemInfoHelperTests */ = {
 			isa = PBXGroup;
 			children = (
+				AD143BA5267C87450094D246 /* CSSystemInfoProviderMock.h */,
+				AD143BA6267C87450094D246 /* CSSystemInfoProviderMock.m */,
 				AD3BFDF4267AA56600FF8076 /* CSSystemInfoHelperTests.m */,
+				AD35250F267CB84700A3A929 /* CSSystemInfoHelperDeprecatedTests.m */,
 				AD3BFDF6267AA56600FF8076 /* Info.plist */,
 			);
 			path = CSSystemInfoHelperTests;
@@ -101,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				AD3BFE03267AA5BD00FF8076 /* CSSystemInfoHelper.h */,
+				ADB06B22267B5A2400D4F0E3 /* CSNetworkInterface.h */,
 			);
 			path = CSSystemInfoHelper;
 			sourceTree = "<group>";
@@ -108,7 +138,13 @@
 		AD3BFE04267AA5BD00FF8076 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				AD143BA3267C80760094D246 /* CSSystemInfoHelper+Internal.h */,
 				AD3BFE05267AA5BD00FF8076 /* CSSystemInfoHelper.m */,
+				ADB06B26267B5B6E00D4F0E3 /* CSNetworkInterface+Internal.h */,
+				ADB06B23267B5A2400D4F0E3 /* CSNetworkInterface.m */,
+				AD143B9F267C7D350094D246 /* CSSystemInfoProvider.h */,
+				AD143BA0267C7D350094D246 /* CSSystemInfoProvider.m */,
+				ADB06B28267B608800D4F0E3 /* Errors.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -120,7 +156,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB06B27267B5B6E00D4F0E3 /* CSNetworkInterface+Internal.h in Headers */,
+				AD143BA4267C80760094D246 /* CSSystemInfoHelper+Internal.h in Headers */,
 				AD3BFE07267AA5BD00FF8076 /* CSSystemInfoHelper.h in Headers */,
+				AD143BA1267C7D350094D246 /* CSSystemInfoProvider.h in Headers */,
+				ADB06B24267B5A2400D4F0E3 /* CSNetworkInterface.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +209,7 @@
 		AD3BFDDD267AA56600FF8076 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					AD3BFDE5267AA56600FF8076 = {
@@ -220,6 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB06B25267B5A2400D4F0E3 /* CSNetworkInterface.m in Sources */,
+				AD143BA2267C7D350094D246 /* CSSystemInfoProvider.m in Sources */,
 				AD3BFE08267AA5BD00FF8076 /* CSSystemInfoHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD143BA7267C87450094D246 /* CSSystemInfoProviderMock.m in Sources */,
 				AD3BFDF5267AA56600FF8076 /* CSSystemInfoHelperTests.m in Sources */,
+				AD352510267CB84700A3A929 /* CSSystemInfoHelperDeprecatedTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

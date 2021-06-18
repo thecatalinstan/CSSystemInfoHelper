@@ -7,63 +7,61 @@
 //
 
 #import <CSSystemInfoHelper/CSSystemInfoHelper.h>
+#import "CSSystemInfoHelper+Internal.h"
 
-#import <arpa/inet.h>
-#import <ifaddrs.h>
 #import <mach/mach.h>
-//#import <stdio.h>
 #import <sys/utsname.h>
 
-NSString * const CSSystemInfoKeySysname = @"CSSystemInfoSysname";
-NSString * const CSSystemInfoKeyNodename = @"CSSystemInfoNodename";
-NSString * const CSSystemInfoKeyRelease = @"CSSystemInfoRelease";
-NSString * const CSSystemInfoKeyVersion = @"CSSystemInfoVersion";
-NSString * const CSSystemInfoKeyMachine = @"CSSystemInfoMachine";
+#import "CSNetworkInterface+Internal.h"
+#import "CSSystemInfoProvider.h"
+#import "Errors.h"
+
+CSSystemInfoKey const CSSystemInfoKeySysname = @"CSSystemInfoSysname";
+CSSystemInfoKey const CSSystemInfoKeyNodename = @"CSSystemInfoNodename";
+CSSystemInfoKey const CSSystemInfoKeyRelease = @"CSSystemInfoRelease";
+CSSystemInfoKey const CSSystemInfoKeyVersion = @"CSSystemInfoVersion";
+CSSystemInfoKey const CSSystemInfoKeyMachine = @"CSSystemInfoMachine";
+
+NSString * const CSSystemInfoHelperIPAddressNone = @"(none)";
+NSString * const CSSystemInfoHelperDefaultInterface = @"en0";
+
 
 __attribute__((objc_direct_members))
 @interface CSSystemInfoHelper ()
+
+@property (nonatomic, readonly, strong, nullable) id<CSSystemInfoProviderProtocol> systemInfoProvider;
+
 @end
 
 @implementation CSSystemInfoHelper
 
-static CSSystemInfoHelper* sharedHelper;
-
-+ (void)initialize {
-    sharedHelper = [[CSSystemInfoHelper alloc] init];
-}
-
 + (instancetype)sharedHelper {
+    static CSSystemInfoHelper* sharedHelper;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedHelper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:CSSystemInfoProvider.sharedProvider];
+    });
     return sharedHelper;
 }
 
-- (NSDictionary<NSString *,NSString *> *)AllIPAddresses {
-    static NSMutableDictionary<NSString *, NSString *> * allIPAddresses;
-    if (!allIPAddresses) {
-        allIPAddresses = [NSMutableDictionary dictionaryWithCapacity:4];
-        struct ifaddrs * interfaces = NULL;
-        struct ifaddrs * addr = NULL;
-        int success = 0;
-        success = getifaddrs(&interfaces);
-        if (success == 0) {
-            addr = interfaces;
-            while(addr != NULL) {
-                if(addr->ifa_addr->sa_family == AF_INET) {
-                    allIPAddresses[[NSString stringWithUTF8String:addr->ifa_name]] = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)addr->ifa_addr)->sin_addr)];
-                }
-                addr = addr->ifa_next;
-            }
-        }
-        freeifaddrs(interfaces);
+- (instancetype)initWithSystemInfoProvider:(id<CSSystemInfoProviderProtocol>)systemInfoProvider {
+    self = [super init];
+    if (self != nil) {
+        _systemInfoProvider = systemInfoProvider;
     }
-    return allIPAddresses;
+    return self;
 }
 
-- (NSString *)IPAddress {
-    static NSString *IPAddress;
-    if (!IPAddress) {
-        IPAddress = self.AllIPAddresses[@"en0"];
+- (NSArray<CSNetworkInterface *> *)networkInterfaces {
+    NSArray<CSNetworkInterface *> *networkInterfaces;
+    
+    NSError *error;
+    if (!(networkInterfaces = [self.systemInfoProvider queryNetworkInterfaces:&error])) {
+        NSLog(@"Error loading network interfaces: %@. %@.", error.localizedDescription, error.localizedFailureReason);
+        return nil;
     }
-    return IPAddress;
+    
+    return networkInterfaces;
 }
 
 - (NSDictionary<CSSystemInfoKey, NSString *> *)systemInfo {
@@ -136,5 +134,47 @@ static CSSystemInfoHelper* sharedHelper;
     return platformUUID;
 }
 #endif
+
+#pragma mark - Deprecated
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated"
+
+- (NSDictionary<NSString *, NSString *> *)AllIPAddresses {
+    NSArray<CSNetworkInterface *> *networkInterfaces = self.networkInterfaces;
+    NSMutableDictionary<NSString *, NSString *> *allIPAddresses = [NSMutableDictionary dictionaryWithCapacity:networkInterfaces.count];
+    for (CSNetworkInterface *interface in networkInterfaces) {
+        if (interface.family != AF_INET) {
+            continue;
+        }
+        allIPAddresses[interface.name] = interface.address;
+    }
+    return allIPAddresses;
+}
+
+- (NSString *)IPAddress {
+    NSString *firstInterfaceAddress;
+    NSArray<CSNetworkInterface *> *networkInterfaces = self.networkInterfaces;
+    for (CSNetworkInterface *interface in networkInterfaces) {
+        if (interface.family != AF_INET) {
+            continue;
+        }
+        if ([interface.name isEqualToString:CSSystemInfoHelperDefaultInterface]) {
+            return interface.address;
+            break;
+        }
+        if (!firstInterfaceAddress) {
+            firstInterfaceAddress = interface.address;
+        }
+    }
+    
+    NSString *IPAddress;
+    if (!(IPAddress = firstInterfaceAddress)) {
+        IPAddress = CSSystemInfoHelperIPAddressNone;
+    }
+    return IPAddress;
+}
+
+#pragma clang diagnostic pop
 
 @end
