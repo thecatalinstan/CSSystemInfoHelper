@@ -85,9 +85,10 @@
 
 - (BOOL)getResidentSize:(vm_size_t *)residentSize error:(NSError *__autoreleasing  _Nullable *)error {
     struct task_basic_info info = {0};
-    
+    mach_msg_type_number_t size = sizeof(info);
+
     kern_return_t ret;
-    if (KERN_SUCCESS != (ret = task_info(mach_task_self(), TASK_BASIC_INFO, (task_info_t)&info, TASK_BASIC_INFO_COUNT))) {
+    if (KERN_SUCCESS != (ret = task_info(mach_task_self(), TASK_BASIC_INFO, (task_info_t)&info, &size))) {
         if (error) {
             *error = CSMachError(ret, nil, nil);
         }
@@ -103,9 +104,10 @@
 
 - (BOOL)getPhysFootprint:(vm_size_t *)physFootprint error:(NSError *__autoreleasing  _Nullable *)error {
     struct task_vm_info info = {0};
+    mach_msg_type_number_t size = sizeof(info);
     
     kern_return_t ret;
-    if (KERN_SUCCESS != (ret = task_info(mach_task_self(), TASK_VM_INFO, (task_info_t)&info, TASK_VM_INFO_COUNT))) {
+    if (KERN_SUCCESS != (ret = task_info(mach_task_self(), TASK_VM_INFO, (task_info_t)&info, &size))) {
         if (error) {
             *error = CSMachError(ret, nil, nil);
         }
