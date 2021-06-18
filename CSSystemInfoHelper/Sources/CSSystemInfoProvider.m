@@ -101,4 +101,22 @@
     return YES;
 }
 
+- (BOOL)getPhysFootprint:(vm_size_t *)physFootprint error:(NSError *__autoreleasing  _Nullable *)error {
+    struct task_vm_info info = {0};
+    
+    kern_return_t ret;
+    if (KERN_SUCCESS != (ret = task_info(mach_task_self(), TASK_VM_INFO, (task_info_t)&info, TASK_VM_INFO_COUNT))) {
+        if (error) {
+            *error = CSMachError(ret, nil, nil);
+        }
+        return NO;
+    }
+    
+    if (physFootprint) {
+        *physFootprint = info.phys_footprint;
+    }
+    
+    return YES;
+}
+
 @end

@@ -71,6 +71,15 @@ FOUNDATION_EXPORT NSString * const CSSystemInfoHelperIPAddressNone DEPRECATED_AT
 /// @c -memoryUsage
 @property (nonatomic, readonly, copy) NSString *memoryUsageString;
 
+/// Gets the physical memory footprint size of the process, as reported by
+/// @c task_info
+// @see https://www.gnu.org/software/hurd/gnumach-doc/Task-Information.html
+@property (nonatomic, readonly) vm_size_t memotyPhysicalFootprint;
+
+/// A human-readable, formatted byte count string. from the value returned by
+/// @c -memotyPhysicalFootprint
+@property (nonatomic, readonly, copy) NSString *memotyPhysicalFootprintString;
+
 /// @name UUID of the current device
 
 /// Get the UUID of the current device

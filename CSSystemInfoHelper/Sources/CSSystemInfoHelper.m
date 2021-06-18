@@ -107,7 +107,7 @@ __attribute__((objc_direct_members))
 - (vm_size_t)memoryUsage {
     NSError *error;
     vm_size_t memoryUsage = 0;
-    if (!([self.systemInfoProvider getResidentSize:&memoryUsage error:&error])) {
+    if (![self.systemInfoProvider getResidentSize:&memoryUsage error:&error]) {
         NSLog(@"Error getting resident size: %@. %@.", error.localizedDescription, error.localizedFailureReason);
         return 0;
     }
@@ -116,6 +116,20 @@ __attribute__((objc_direct_members))
 
 - (NSString *)memoryUsageString {
     return [self formatByteCount:self.memoryUsage];
+}
+
+- (vm_size_t)memotyPhysicalFootprint {
+    NSError *error;
+    vm_size_t memotyPhysicalFootprint = 0;
+    if (![self.systemInfoProvider getPhysFootprint:&memotyPhysicalFootprint error:&error]) {
+        NSLog(@"Error getting physical memory footprint: %@. %@.", error.localizedDescription, error.localizedFailureReason);
+        return 0;
+    }
+    return memotyPhysicalFootprint;
+}
+
+- (NSString *)memotyPhysicalFootprintString {
+    return [self formatByteCount:self.memotyPhysicalFootprint];
 }
 
 #if TARGET_OS_OSX
