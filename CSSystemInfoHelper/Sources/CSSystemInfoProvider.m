@@ -7,12 +7,14 @@
 
 #import "CSSystemInfoProvider.h"
 
-#include <arpa/inet.h>
-#include <netinet/in.h>
-#include <sys/socket.h>
-#include <sys/types.h>
+#import <arpa/inet.h>
+#import <netinet/in.h>
+#import <sys/socket.h>
+#import <sys/types.h>
+#import <sys/utsname.h>
 
 #import "CSNetworkInterface+Internal.h"
+#import "CSSystemInfo+Internal.h"
 #import "Errors.h"
 
 @implementation CSSystemInfoProvider
@@ -82,6 +84,19 @@
     freeifaddrs(interfaces);
     return result;
 }
+
+- (CSSystemInfo *)quertSystemInfo:(NSError *__autoreleasing  _Nullable *)error {
+    struct utsname utsnameStruct = {0};
+    if (uname(&utsnameStruct)) {
+        if (error) {
+            *error = NSPosixError(errno, nil, nil);
+        }
+        return nil;
+    }
+    
+    return [[CSSystemInfo alloc] initWithUtsnameStruct:&utsnameStruct];
+}
+
 
 - (BOOL)getResidentSize:(vm_size_t *)residentSize error:(NSError *__autoreleasing  _Nullable *)error {
     struct task_basic_info info = {0};

@@ -13,6 +13,9 @@
 		AD143BA7267C87450094D246 /* CSSystemInfoProviderMock.m in Sources */ = {isa = PBXBuildFile; fileRef = AD143BA6267C87450094D246 /* CSSystemInfoProviderMock.m */; };
 		AD352510267CB84700A3A929 /* CSSystemInfoHelperDeprecatedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35250F267CB84700A3A929 /* CSSystemInfoHelperDeprecatedTests.m */; };
 		AD352512267CCE0900A3A929 /* Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = AD352511267CCE0900A3A929 /* Errors.m */; };
+		AD35252B267D48FF00A3A929 /* CSSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = AD352529267D48FF00A3A929 /* CSSystemInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD35252C267D48FF00A3A929 /* CSSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35252A267D48FF00A3A929 /* CSSystemInfo.m */; };
+		AD35252E267D4B6300A3A929 /* CSSystemInfo+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = AD35252D267D4B6300A3A929 /* CSSystemInfo+Internal.h */; };
 		AD3BFDF0267AA56600FF8076 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3BFDE6267AA56600FF8076 /* CSSystemInfoHelper.framework */; };
 		AD3BFDF5267AA56600FF8076 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3BFDF4267AA56600FF8076 /* CSSystemInfoHelperTests.m */; };
 		AD3BFE07267AA5BD00FF8076 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AD3BFE03267AA5BD00FF8076 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +43,9 @@
 		AD143BA6267C87450094D246 /* CSSystemInfoProviderMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoProviderMock.m; sourceTree = "<group>"; };
 		AD35250F267CB84700A3A929 /* CSSystemInfoHelperDeprecatedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelperDeprecatedTests.m; sourceTree = "<group>"; };
 		AD352511267CCE0900A3A929 /* Errors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Errors.m; sourceTree = "<group>"; };
+		AD352529267D48FF00A3A929 /* CSSystemInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSystemInfo.h; sourceTree = "<group>"; };
+		AD35252A267D48FF00A3A929 /* CSSystemInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfo.m; sourceTree = "<group>"; };
+		AD35252D267D4B6300A3A929 /* CSSystemInfo+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSSystemInfo+Internal.h"; sourceTree = "<group>"; };
 		AD3BFDE6267AA56600FF8076 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3BFDEF267AA56600FF8076 /* CSSystemInfoHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3BFDF4267AA56600FF8076 /* CSSystemInfoHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelperTests.m; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 			children = (
 				AD3BFE03267AA5BD00FF8076 /* CSSystemInfoHelper.h */,
 				ADB06B22267B5A2400D4F0E3 /* CSNetworkInterface.h */,
+				AD352529267D48FF00A3A929 /* CSSystemInfo.h */,
 			);
 			path = CSSystemInfoHelper;
 			sourceTree = "<group>";
@@ -144,6 +151,8 @@
 				AD3BFE05267AA5BD00FF8076 /* CSSystemInfoHelper.m */,
 				ADB06B26267B5B6E00D4F0E3 /* CSNetworkInterface+Internal.h */,
 				ADB06B23267B5A2400D4F0E3 /* CSNetworkInterface.m */,
+				AD35252D267D4B6300A3A929 /* CSSystemInfo+Internal.h */,
+				AD35252A267D48FF00A3A929 /* CSSystemInfo.m */,
 				AD143B9F267C7D350094D246 /* CSSystemInfoProvider.h */,
 				AD143BA0267C7D350094D246 /* CSSystemInfoProvider.m */,
 				ADB06B28267B608800D4F0E3 /* Errors.h */,
@@ -164,6 +173,8 @@
 				AD3BFE07267AA5BD00FF8076 /* CSSystemInfoHelper.h in Headers */,
 				AD143BA1267C7D350094D246 /* CSSystemInfoProvider.h in Headers */,
 				ADB06B24267B5A2400D4F0E3 /* CSNetworkInterface.h in Headers */,
+				AD35252B267D48FF00A3A929 /* CSSystemInfo.h in Headers */,
+				AD35252E267D4B6300A3A929 /* CSSystemInfo+Internal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +277,7 @@
 			files = (
 				AD352512267CCE0900A3A929 /* Errors.m in Sources */,
 				ADB06B25267B5A2400D4F0E3 /* CSNetworkInterface.m in Sources */,
+				AD35252C267D48FF00A3A929 /* CSSystemInfo.m in Sources */,
 				AD143BA2267C7D350094D246 /* CSSystemInfoProvider.m in Sources */,
 				AD3BFE08267AA5BD00FF8076 /* CSSystemInfoHelper.m in Sources */,
 			);

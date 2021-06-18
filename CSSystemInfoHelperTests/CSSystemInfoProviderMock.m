@@ -13,6 +13,7 @@
 @property BOOL shouldSucceed;
 @property NSError *error;
 @property NSArray<CSNetworkInterface *> *networkInterfaces;
+@property CSSystemInfo *systemInfo;
 @property vm_size_t *residentSize;
 @property vm_size_t *physFootprint;
 
@@ -24,6 +25,22 @@
     CSSystemInfoProviderMock * provider = [CSSystemInfoProviderMock new];
     provider.shouldSucceed = NO;
     provider.error = error;
+    return provider;
+}
+
++ (instancetype)failingProviderWithNetworkInterfaces:(NSArray<CSNetworkInterface *> *)networkInterfaces error:(NSError *)error {
+    CSSystemInfoProviderMock * provider = [CSSystemInfoProviderMock new];
+    provider.shouldSucceed = NO;
+    provider.error = error;
+    provider.networkInterfaces = networkInterfaces;
+    return provider;
+}
+
++ (instancetype)failingProviderWithSystemInfo:(CSSystemInfo *)systemInfo error:(NSError *)error {
+    CSSystemInfoProviderMock * provider = [CSSystemInfoProviderMock new];
+    provider.shouldSucceed = NO;
+    provider.error = error;
+    provider.systemInfo = systemInfo;
     return provider;
 }
 
@@ -48,6 +65,13 @@
     CSSystemInfoProviderMock * provider = [CSSystemInfoProviderMock new];
     provider.shouldSucceed = YES;
     provider.networkInterfaces = networkInterfaces;
+    return provider;
+}
+
++ (instancetype)succeedingProviderWithSystemInfo:(CSSystemInfo *)systemInfo {
+    CSSystemInfoProviderMock * provider = [CSSystemInfoProviderMock new];
+    provider.shouldSucceed = YES;
+    provider.systemInfo = systemInfo;
     return provider;
 }
 
@@ -76,6 +100,17 @@
     }
 
     return self.networkInterfaces;
+}
+
+- (nullable CSSystemInfo *)quertSystemInfo:(NSError *__autoreleasing  _Nullable * _Nullable)error {
+    if (!self.shouldSucceed) {
+        if (error) {
+            *error = self.error;
+        }
+        return nil;
+    }
+
+    return self.systemInfo;
 }
 
 - (BOOL)getResidentSize:(nonnull vm_size_t *)residentSize error:(NSError *__autoreleasing  _Nullable * _Nullable)error {
@@ -107,6 +142,5 @@
 
     return YES;
 }
-
 
 @end

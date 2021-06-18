@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.module_name                 = "CSSystemInfoHelper"
 
   s.source_files                = "CSSystemInfoHelper/Sources/*.{h,m}", "CSSystemInfoHelper/Headers/CSSystemInfoHelper/*.h"
-  s.public_header_files         = "CSSystemInfoHelper/Headers/CSSystemInfoHelper/CSSystemInfoHelper.h", "CSSystemInfoHelper/Headers/CSSystemInfoHelper/CSNetworkInterface.h"
+  s.public_header_files         = "CSSystemInfoHelper/Headers/CSSystemInfoHelper/CSSystemInfoHelper.h", "CSSystemInfoHelper/Headers/CSSystemInfoHelper/CSNetworkInterface.h", "CSSystemInfoHelper/Headers/CSSystemInfoHelper/CSSystemInfo.h"
 
   s.ios.deployment_target       = "9.0"
   s.ios.frameworks              = "Foundation"

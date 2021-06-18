@@ -7,7 +7,7 @@
 
 #import "CSNetworkInterface+Internal.h"
 
-#include <sys/socket.h>
+#import <sys/socket.h>
 
 #import "Errors.h"
 

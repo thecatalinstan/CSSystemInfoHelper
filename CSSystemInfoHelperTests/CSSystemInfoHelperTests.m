@@ -10,6 +10,7 @@
 
 #import "CSSystemInfoProviderMock.h"
 #import "CSSystemInfoHelper+Internal.h"
+#import "CSSystemInfo+Internal.h"
 
 @interface CSSystemInfoHelperTests : XCTestCase
 
@@ -38,6 +39,13 @@
     XCTAssertNil(helper.networkInterfaces);
 }
 
+- (void)test_networkInterfaces_withFailingSystemInfoProviderThatReturnsValue_ShouldBeNil {
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithNetworkInterfaces:NSArray.array error:nil];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertNil(helper.networkInterfaces);
+}
+
 - (void)test_networkInterfaces_withSucceedingSystemInfoProvider_ShouldReturnProvidedInterfaces {
     NSArray<CSNetworkInterface *> *expectedInterfaces = [NSArray array];
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock succeedingProviderWithNetworkInterfaces:expectedInterfaces];
@@ -48,63 +56,27 @@
 
 #pragma mark - systemInfo
 
-- (void)test_SystemInfo_DoesNotThow {
-    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:nil];
-    XCTAssertNoThrow(helper.systemInfo);
-}
-
-- (void)test_SystemInfo_AllKeys_ShouldNotBeNil {
-    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:nil];
+- (void)test_systemInfo_withFailingSystemInfoProvider_ShouldBeNil {
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithError:nil];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
     
-    XCTAssertNotNil(helper.systemInfo[CSSystemInfoKeySysname], @"The key CSSystemInfoKeySysname is not pressent");
-    XCTAssertNotNil(helper.systemInfo[CSSystemInfoKeyNodename], @"The key CSSystemInfoKeyNodename is not pressent");
-    XCTAssertNotNil(helper.systemInfo[CSSystemInfoKeyRelease], @"The key CSSystemInfoKeyRelease is not pressent");
-    XCTAssertNotNil(helper.systemInfo[CSSystemInfoKeyVersion], @"The key CSSystemInfoKeyVersion is not pressent");
-    XCTAssertNotNil(helper.systemInfo[CSSystemInfoKeyMachine], @"The key CSSystemInfoKeyMachine is not pressent");
+    XCTAssertNil(helper.systemInfo);
 }
 
-- (void)test_SystemInfo_AllKeys_ShouldNotBeEmpty {
-    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:nil];
+- (void)test_systemInfo_withFailingSystemInfoProviderThatReturnsValue_ShouldBeNil {
+    CSSystemInfo *systemInfo = [[CSSystemInfo alloc] initWithUtsnameStruct:&((struct utsname){0})];
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithSystemInfo:systemInfo error:nil];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
     
-    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoKeySysname].length, 0, @"The key CSSystemInfoKeySysname is empty");
-    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoKeyNodename].length, 0, @"The key CSSystemInfoKeyNodename is empty");
-    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoKeyRelease].length, 0, @"The key CSSystemInfoKeyRelease is empty");
-    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoKeyVersion].length, 0, @"The key CSSystemInfoKeyVersion is empty");
-    XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoKeyMachine].length, 0, @"The key CSSystemInfoKeyMachine is empty");
+    XCTAssertNil(helper.systemInfo);
 }
 
-#pragma mark - systemInfoString
-
-- (void)test_SystemInfoString_DoesNotThrow {
-    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:nil];
-    XCTAssertNoThrow(helper.systemInfoString);
-}
-
-- (void)test_SystemInfoString_ShouldNotBeNil {
-    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:nil];
-    XCTAssertNotNil(helper.systemInfoString);
-}
-
-- (void)test_SystemInfoString_ShouldNotBeEmpty {
-    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:nil];
-    XCTAssertGreaterThan(helper.systemInfoString.length, 0);
-}
-
-#pragma mark - systemVersionString
-
-- (void)test_SystemVersionString_DoesNotThrow {
-    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:nil];
-    XCTAssertNoThrow(helper.systemVersionString);
-}
-
-- (void)test_SystemVersionString_ShouldNotBeNil {
-    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:nil];
-    XCTAssertNotNil(helper.systemVersionString);
-}
-
-- (void)test_SystemVersionString_ShouldNotBeEmpty {
-    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:nil];
-    XCTAssertGreaterThan(helper.systemVersionString.length, 0);
+- (void)test_systemInfo_withSucceedingSystemInfoProvider_ShouldReturnProvidedInfo {
+    CSSystemInfo *expectedInfo = [[CSSystemInfo alloc] initWithUtsnameStruct:&((struct utsname){0})];
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock succeedingProviderWithSystemInfo:expectedInfo];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertEqual(expectedInfo, helper.systemInfo);
 }
 
 #pragma mark - memoryUsage

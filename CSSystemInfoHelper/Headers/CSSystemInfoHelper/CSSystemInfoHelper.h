@@ -12,24 +12,9 @@ FOUNDATION_EXPORT double CSSystemInfoHelperVersionNumber;
 FOUNDATION_EXPORT const unsigned char CSSystemInfoHelperVersionString[];
 
 #import <CSSystemInfoHelper/CSNetworkInterface.h>
+#import <CSSystemInfoHelper/CSSystemInfo.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
-typedef NSString * CSSystemInfoKey NS_TYPED_EXTENSIBLE_ENUM;
-
-/// Name of the operating system implementation.
-FOUNDATION_EXPORT CSSystemInfoKey const CSSystemInfoKeySysname;
-/// Network name of this machine.
-FOUNDATION_EXPORT CSSystemInfoKey const CSSystemInfoKeyNodename;
-/// Release level of the operating system.
-FOUNDATION_EXPORT CSSystemInfoKey const CSSystemInfoKeyRelease;
-/// Version level of the operating system.
-FOUNDATION_EXPORT CSSystemInfoKey const CSSystemInfoKeyVersion;
-/// Machine hardware platform.
-FOUNDATION_EXPORT CSSystemInfoKey const CSSystemInfoKeyMachine;
-
-/// Constant returned when no IP address could be deternimed
-FOUNDATION_EXPORT NSString * const CSSystemInfoHelperIPAddressNone DEPRECATED_ATTRIBUTE;
 
 /// The CSSystemInfoHelper class provides easy-access to some useful system
 /// information that would otherwise require some more elaborate code.
@@ -49,17 +34,8 @@ FOUNDATION_EXPORT NSString * const CSSystemInfoHelperIPAddressNone DEPRECATED_AT
 
 /// @name Getting @c uname System Information
 
-/// A dictionary containing the results of the @c uname(3) call.
-@property (nonatomic, readonly, strong) NSDictionary<CSSystemInfoKey, NSString *> *systemInfo;
-
-/// A concatenated string representation of all the values in `systemInfo`, in
-/// the order listed in the @c uname(3) manual page.
-@property (nonatomic, readonly, strong) NSString *systemInfoString;
-
-/// A concatenated string representation of the OS version keys from
-/// @c -systemInfo, in the following order: @c CSSystemInfoKeySysname,
-/// @c CSSystemInfoKeyRelease, @c CSSystemInfoKeyMachine, separated by space.
-@property (nonatomic, readonly, strong) NSString *systemVersionString;
+/// A @c CSSystemInfo object populated with the results of the @c uname(3) call.
+@property (nonatomic, readonly, strong, nullable) CSSystemInfo *systemInfo;
 
 /// @name Getting Memory Usage
 
@@ -103,5 +79,8 @@ FOUNDATION_EXPORT NSString * const CSSystemInfoHelperIPAddressNone DEPRECATED_AT
 @property (nonatomic, readonly, strong) NSString *IPAddress DEPRECATED_MSG_ATTRIBUTE("Use 'networkInterfaces' instead.");
 
 @end
+
+/// Constant returned when no IP address could be deternimed
+FOUNDATION_EXPORT NSString * const CSSystemInfoHelperIPAddressNone DEPRECATED_ATTRIBUTE;
 
 NS_ASSUME_NONNULL_END

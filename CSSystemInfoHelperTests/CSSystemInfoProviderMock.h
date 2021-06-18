@@ -13,10 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CSSystemInfoProviderMock : NSObject <CSSystemInfoProviderProtocol>
 
 + (instancetype)failingProviderWithError:(NSError *_Nullable)error;
+
++ (instancetype)failingProviderWithNetworkInterfaces:(NSArray<CSNetworkInterface *> *)networkInterfaces error:(NSError *_Nullable)error;
++ (instancetype)failingProviderWithSystemInfo:(CSSystemInfo *)systemInfo error:(NSError *_Nullable)error;
 + (instancetype)failingProviderWithResidentSize:(vm_size_t * _Nullable)residentSize error:(NSError *_Nullable)error;
 + (instancetype)failingProviderWithPhysFootprint:(vm_size_t * _Nullable)physFootprint error:(NSError *_Nullable)error;
 
 + (instancetype)succeedingProviderWithNetworkInterfaces:(NSArray<CSNetworkInterface *> *)networkInterfaces;
++ (instancetype)succeedingProviderWithSystemInfo:(CSSystemInfo *)systemInfo;
 + (instancetype)succeedingProviderWithResidentSize:(vm_size_t *)residentSize;
 + (instancetype)succeedingProviderWithPhysFootprint:(vm_size_t *)physFootprint;
 

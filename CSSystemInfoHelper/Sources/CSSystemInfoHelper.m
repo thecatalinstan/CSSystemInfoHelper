@@ -9,21 +9,8 @@
 #import <CSSystemInfoHelper/CSSystemInfoHelper.h>
 #import "CSSystemInfoHelper+Internal.h"
 
-#import <sys/utsname.h>
-
-#import "CSNetworkInterface+Internal.h"
 #import "CSSystemInfoProvider.h"
 #import "Errors.h"
-
-CSSystemInfoKey const CSSystemInfoKeySysname = @"CSSystemInfoSysname";
-CSSystemInfoKey const CSSystemInfoKeyNodename = @"CSSystemInfoNodename";
-CSSystemInfoKey const CSSystemInfoKeyRelease = @"CSSystemInfoRelease";
-CSSystemInfoKey const CSSystemInfoKeyVersion = @"CSSystemInfoVersion";
-CSSystemInfoKey const CSSystemInfoKeyMachine = @"CSSystemInfoMachine";
-
-NSString * const CSSystemInfoHelperIPAddressNone = @"(none)";
-NSString * const CSSystemInfoHelperDefaultInterface = @"en0";
-
 
 __attribute__((objc_direct_members))
 @interface CSSystemInfoHelper ()
@@ -61,47 +48,14 @@ __attribute__((objc_direct_members))
     return networkInterfaces;
 }
 
-- (NSDictionary<CSSystemInfoKey, NSString *> *)systemInfo {
-    static NSDictionary<CSSystemInfoKey, NSString *> * systemInfo;
-    if (!systemInfo) {
-        struct utsname unameStruct;
-        if (uname(&unameStruct) != 0) {
-            @throw [NSException exceptionWithName:NSGenericException reason:[NSString stringWithUTF8String:strerror(errno)] userInfo:nil];
-        }
-        
-        systemInfo = @{
-            CSSystemInfoKeySysname: @(unameStruct.sysname),
-            CSSystemInfoKeyNodename: @(unameStruct.nodename),
-            CSSystemInfoKeyRelease: @(unameStruct.release),
-            CSSystemInfoKeyVersion: @(unameStruct.version),
-            CSSystemInfoKeyMachine: @(unameStruct.machine)
-        };
+- (CSSystemInfo *)systemInfo {
+    NSError *error;
+    CSSystemInfo *systemInfo;
+    if (!(systemInfo = [self.systemInfoProvider quertSystemInfo:&error])) {
+        NSLog(@"Error loading system info: %@. %@.", error.localizedDescription, error.localizedFailureReason);
+        return nil;
     }
     return systemInfo;
-}
-
-- (NSString *)systemInfoString {
-    static NSString *systemInfoString;
-    if (!systemInfoString) {
-        systemInfoString = [NSString stringWithFormat:@"%@ %@ %@ %@ %@",
-                            self.systemInfo[CSSystemInfoKeySysname],
-                            self.systemInfo[CSSystemInfoKeyNodename],
-                            self.systemInfo[CSSystemInfoKeyRelease],
-                            self.systemInfo[CSSystemInfoKeyVersion],
-                            self.systemInfo[CSSystemInfoKeyMachine]];
-    }
-    return systemInfoString;
-}
-
-- (NSString *)systemVersionString {
-    static NSString* systemVersionString;
-    if (!systemVersionString) {
-        systemVersionString = [NSString stringWithFormat:@"%@ %@ %@",
-                               self.systemInfo[CSSystemInfoKeySysname],
-                               self.systemInfo[CSSystemInfoKeyRelease],
-                               self.systemInfo[CSSystemInfoKeyMachine]];
-    }
-    return systemVersionString;
 }
 
 - (vm_size_t)memoryUsage {
@@ -145,6 +99,12 @@ __attribute__((objc_direct_members))
 }
 #endif
 
+#pragma mark - Private Helpers
+
+- (NSString *)formatByteCount:(long long)byteCount {
+    return [NSByteCountFormatter stringFromByteCount:byteCount countStyle:NSByteCountFormatterCountStyleMemory];
+}
+
 #pragma mark - Deprecated
 
 #pragma clang diagnostic push
@@ -187,11 +147,8 @@ __attribute__((objc_direct_members))
 
 #pragma clang diagnostic pop
 
-#pragma mark - Private Helpers
-
-- (NSString *)formatByteCount:(long long)byteCount {
-    return [NSByteCountFormatter stringFromByteCount:byteCount countStyle:NSByteCountFormatterCountStyleMemory];
-}
-
-
 @end
+
+NSString * const CSSystemInfoHelperIPAddressNone = @"(none)";
+NSString * const CSSystemInfoHelperDefaultInterface = @"en0";
+
