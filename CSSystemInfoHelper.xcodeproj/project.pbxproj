@@ -12,6 +12,7 @@
 		AD143BA4267C80760094D246 /* CSSystemInfoHelper+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = AD143BA3267C80760094D246 /* CSSystemInfoHelper+Internal.h */; };
 		AD143BA7267C87450094D246 /* CSSystemInfoProviderMock.m in Sources */ = {isa = PBXBuildFile; fileRef = AD143BA6267C87450094D246 /* CSSystemInfoProviderMock.m */; };
 		AD352510267CB84700A3A929 /* CSSystemInfoHelperDeprecatedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35250F267CB84700A3A929 /* CSSystemInfoHelperDeprecatedTests.m */; };
+		AD352512267CCE0900A3A929 /* Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = AD352511267CCE0900A3A929 /* Errors.m */; };
 		AD3BFDF0267AA56600FF8076 /* CSSystemInfoHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3BFDE6267AA56600FF8076 /* CSSystemInfoHelper.framework */; };
 		AD3BFDF5267AA56600FF8076 /* CSSystemInfoHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3BFDF4267AA56600FF8076 /* CSSystemInfoHelperTests.m */; };
 		AD3BFE07267AA5BD00FF8076 /* CSSystemInfoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AD3BFE03267AA5BD00FF8076 /* CSSystemInfoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +39,7 @@
 		AD143BA5267C87450094D246 /* CSSystemInfoProviderMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSystemInfoProviderMock.h; sourceTree = "<group>"; };
 		AD143BA6267C87450094D246 /* CSSystemInfoProviderMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoProviderMock.m; sourceTree = "<group>"; };
 		AD35250F267CB84700A3A929 /* CSSystemInfoHelperDeprecatedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelperDeprecatedTests.m; sourceTree = "<group>"; };
+		AD352511267CCE0900A3A929 /* Errors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Errors.m; sourceTree = "<group>"; };
 		AD3BFDE6267AA56600FF8076 /* CSSystemInfoHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSystemInfoHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3BFDEF267AA56600FF8076 /* CSSystemInfoHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSystemInfoHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3BFDF4267AA56600FF8076 /* CSSystemInfoHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSystemInfoHelperTests.m; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				AD143B9F267C7D350094D246 /* CSSystemInfoProvider.h */,
 				AD143BA0267C7D350094D246 /* CSSystemInfoProvider.m */,
 				ADB06B28267B608800D4F0E3 /* Errors.h */,
+				AD352511267CCE0900A3A929 /* Errors.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD352512267CCE0900A3A929 /* Errors.m in Sources */,
 				ADB06B25267B5A2400D4F0E3 /* CSNetworkInterface.m in Sources */,
 				AD143BA2267C7D350094D246 /* CSSystemInfoProvider.m in Sources */,
 				AD3BFE08267AA5BD00FF8076 /* CSSystemInfoHelper.m in Sources */,

@@ -16,6 +16,8 @@ FOUNDATION_EXPORT NSString * const CSSystemInfoHelperDefaultInterface DEPRECATED
 
 - (instancetype)initWithSystemInfoProvider:(id<CSSystemInfoProviderProtocol> _Nullable)systemInfoProvider NS_DESIGNATED_INITIALIZER;
 
+- (NSString *)formatByteCount:(long long)byteCount;
+
 @end
 
 NS_ASSUME_NONNULL_END

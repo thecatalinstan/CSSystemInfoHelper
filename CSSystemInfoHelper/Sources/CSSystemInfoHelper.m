@@ -9,7 +9,6 @@
 #import <CSSystemInfoHelper/CSSystemInfoHelper.h>
 #import "CSSystemInfoHelper+Internal.h"
 
-#import <mach/mach.h>
 #import <sys/utsname.h>
 
 #import "CSNetworkInterface+Internal.h"
@@ -53,14 +52,12 @@ __attribute__((objc_direct_members))
 }
 
 - (NSArray<CSNetworkInterface *> *)networkInterfaces {
-    NSArray<CSNetworkInterface *> *networkInterfaces;
-    
     NSError *error;
+    NSArray<CSNetworkInterface *> *networkInterfaces;
     if (!(networkInterfaces = [self.systemInfoProvider queryNetworkInterfaces:&error])) {
         NSLog(@"Error loading network interfaces: %@. %@.", error.localizedDescription, error.localizedFailureReason);
         return nil;
     }
-    
     return networkInterfaces;
 }
 
@@ -108,18 +105,17 @@ __attribute__((objc_direct_members))
 }
 
 - (vm_size_t)memoryUsage {
-    //task_vm_info
-    struct task_basic_info info;
-    mach_msg_type_number_t size = sizeof(info);
-    kern_return_t kerr = task_info(mach_task_self(), TASK_BASIC_INFO, (task_info_t)&info, &size);
-    if(kerr != KERN_SUCCESS) {
-        @throw [NSException exceptionWithName:NSGenericException reason:[NSString stringWithUTF8String:mach_error_string(kerr)] userInfo:nil];
+    NSError *error;
+    vm_size_t memoryUsage = 0;
+    if (!([self.systemInfoProvider getResidentSize:&memoryUsage error:&error])) {
+        NSLog(@"Error getting resident size: %@. %@.", error.localizedDescription, error.localizedFailureReason);
+        return 0;
     }
-    return info.resident_size;
+    return memoryUsage;
 }
 
 - (NSString *)memoryUsageString {
-    return [NSByteCountFormatter stringFromByteCount:self.memoryUsage countStyle:NSByteCountFormatterCountStyleMemory];
+    return [self formatByteCount:self.memoryUsage];
 }
 
 #if TARGET_OS_OSX
@@ -176,5 +172,12 @@ __attribute__((objc_direct_members))
 }
 
 #pragma clang diagnostic pop
+
+#pragma mark - Private Helpers
+
+- (NSString *)formatByteCount:(long long)byteCount {
+    return [NSByteCountFormatter stringFromByteCount:byteCount countStyle:NSByteCountFormatterCountStyleMemory];
+}
+
 
 @end

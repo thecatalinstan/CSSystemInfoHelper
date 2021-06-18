@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (nullable NSArray<CSNetworkInterface *> *)queryNetworkInterfaces:(NSError *__autoreleasing *)error NS_WARN_UNUSED_RESULT;
 
+- (BOOL)getResidentSize:(vm_size_t *)residentSize error:(NSError *__autoreleasing *)error NS_WARN_UNUSED_RESULT;
+
 @end
 
 @interface CSSystemInfoProvider : NSObject<CSSystemInfoProviderProtocol>

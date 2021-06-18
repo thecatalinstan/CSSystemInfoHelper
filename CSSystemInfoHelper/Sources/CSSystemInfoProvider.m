@@ -83,4 +83,22 @@
     return result;
 }
 
+- (BOOL)getResidentSize:(vm_size_t *)residentSize error:(NSError *__autoreleasing  _Nullable *)error {
+    struct task_basic_info info = {0};
+    
+    kern_return_t ret;
+    if (KERN_SUCCESS != (ret = task_info(mach_task_self(), TASK_BASIC_INFO, (task_info_t)&info, TASK_BASIC_INFO_COUNT))) {
+        if (error) {
+            *error = CSMachError(ret, nil, nil);
+        }
+        return NO;
+    }
+    
+    if (residentSize) {
+        *residentSize = info.resident_size;
+    }
+    
+    return YES;
+}
+
 @end

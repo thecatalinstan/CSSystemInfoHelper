@@ -74,6 +74,7 @@ FOUNDATION_EXPORT NSString * const CSSystemInfoHelperIPAddressNone DEPRECATED_AT
 /// @name UUID of the current device
 
 /// Get the UUID of the current device
+/// @note This API is only available on macOS
 @property (nonatomic, readonly, strong) NSString * platformUUID API_UNAVAILABLE(ios, tvos, watchos);
 
 - (instancetype)init NS_UNAVAILABLE;
