@@ -118,18 +118,18 @@ __attribute__((objc_direct_members))
     return [self formatByteCount:self.memoryUsage];
 }
 
-- (vm_size_t)memotyPhysicalFootprint {
+- (vm_size_t)memoryPhysicalFootprint {
     NSError *error;
-    vm_size_t memotyPhysicalFootprint = 0;
-    if (![self.systemInfoProvider getPhysFootprint:&memotyPhysicalFootprint error:&error]) {
+    vm_size_t memoryPhysicalFootprint = 0;
+    if (![self.systemInfoProvider getPhysFootprint:&memoryPhysicalFootprint error:&error]) {
         NSLog(@"Error getting physical memory footprint: %@. %@.", error.localizedDescription, error.localizedFailureReason);
         return 0;
     }
-    return memotyPhysicalFootprint;
+    return memoryPhysicalFootprint;
 }
 
-- (NSString *)memotyPhysicalFootprintString {
-    return [self formatByteCount:self.memotyPhysicalFootprint];
+- (NSString *)memoryPhysicalFootprintString {
+    return [self formatByteCount:self.memoryPhysicalFootprint];
 }
 
 #if TARGET_OS_OSX

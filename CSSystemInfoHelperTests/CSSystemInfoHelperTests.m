@@ -17,6 +17,8 @@
 
 @implementation CSSystemInfoHelperTests
 
+#pragma mark - sharedHelper
+
 - (void)test_sharedHelper_ShouldNotBeNil {
     XCTAssertNotNil([CSSystemInfoHelper sharedHelper]);
 }
@@ -26,6 +28,8 @@
     CSSystemInfoHelper* helper2 = [CSSystemInfoHelper sharedHelper];
     XCTAssertEqual(helper1.hash, helper2.hash);
 }
+
+#pragma mark - networkInterfaces
 
 - (void)test_networkInterfaces_withFailingSystemInfoProvider_ShouldBeNil {
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithError:nil];
@@ -41,6 +45,8 @@
     
     XCTAssertEqual(expectedInterfaces, helper.networkInterfaces);
 }
+
+#pragma mark - systemInfo
 
 - (void)test_SystemInfo_DoesNotThow {
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:nil];
@@ -67,6 +73,8 @@
     XCTAssertGreaterThan(helper.systemInfo[CSSystemInfoKeyMachine].length, 0, @"The key CSSystemInfoKeyMachine is empty");
 }
 
+#pragma mark - systemInfoString
+
 - (void)test_SystemInfoString_DoesNotThrow {
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:nil];
     XCTAssertNoThrow(helper.systemInfoString);
@@ -82,6 +90,8 @@
     XCTAssertGreaterThan(helper.systemInfoString.length, 0);
 }
 
+#pragma mark - systemVersionString
+
 - (void)test_SystemVersionString_DoesNotThrow {
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:nil];
     XCTAssertNoThrow(helper.systemVersionString);
@@ -96,6 +106,8 @@
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:nil];
     XCTAssertGreaterThan(helper.systemVersionString.length, 0);
 }
+
+#pragma mark - memoryUsage
 
 - (void)test_memoryUsage_withFailingSystemInfoProvider_ShouldBeZero {
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithError:nil];
@@ -120,35 +132,37 @@
     XCTAssertEqual(helper.memoryUsage, residentSize);
 }
 
-- (void)test_MemoryUsageString_withFailingSystemInfoProvider_DoesNotThrow {
+#pragma mark - memoryUsageString
+
+- (void)test_memoryUsageString_withFailingSystemInfoProvider_DoesNotThrow {
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithError:nil];
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
     
     XCTAssertNoThrow(helper.memoryUsageString);
 }
 
-- (void)test_MemoryUsageString_withFailingSystemInfoProvider_ShouldNotBeNil {
+- (void)test_memoryUsageString_withFailingSystemInfoProvider_ShouldNotBeNil {
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithError:nil];
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
     
     XCTAssertNotNil(helper.memoryUsageString);
 }
 
-- (void)test_MemoryUsageString_withFailingSystemInfoProvider_ShouldNotBeEmpty {
+- (void)test_memoryUsageString_withFailingSystemInfoProvider_ShouldNotBeEmpty {
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithError:nil];
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
     
     XCTAssertGreaterThan(helper.memoryUsageString.length, 0);
 }
 
-- (void)test_MemoryUsageString_withFailingSystemInfoProvider_ShouldEvnaluateTo0 {
+- (void)test_memoryUsageString_withFailingSystemInfoProvider_ShouldEvnaluateTo0 {
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithError:nil];
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
     
     XCTAssertEqual(helper.memoryUsageString.integerValue, 0);
 }
 
-- (void)test_MemoryUsageString_withFailingSystemInfoProviderThatReturnsValue_DoesNotThrow {
+- (void)test_memoryUsageString_withFailingSystemInfoProviderThatReturnsValue_DoesNotThrow {
     vm_size_t residentSize = arc4random();
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithResidentSize:&residentSize error:nil];
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
@@ -156,7 +170,7 @@
     XCTAssertNoThrow(helper.memoryUsageString);
 }
 
-- (void)test_MemoryUsageString_withFailingSystemInfoProviderThatReturnsValue_ShouldNotBeNil {
+- (void)test_memoryUsageString_withFailingSystemInfoProviderThatReturnsValue_ShouldNotBeNil {
     vm_size_t residentSize = arc4random();
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithResidentSize:&residentSize error:nil];
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
@@ -164,7 +178,7 @@
     XCTAssertNotNil(helper.memoryUsageString);
 }
 
-- (void)test_MemoryUsageString_withFailingSystemInfoProviderThatReturnsValue_ShouldNotBeEmpty {
+- (void)test_memoryUsageString_withFailingSystemInfoProviderThatReturnsValue_ShouldNotBeEmpty {
     vm_size_t residentSize = arc4random();
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithResidentSize:&residentSize error:nil];
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
@@ -172,7 +186,7 @@
     XCTAssertGreaterThan(helper.memoryUsageString.length, 0);
 }
 
-- (void)test_MemoryUsageString_withFailingSystemInfoProviderThatReturnsValue_ShouldEvnaluateTo0 {
+- (void)test_memoryUsageString_withFailingSystemInfoProviderThatReturnsValue_ShouldEvnaluateTo0 {
     vm_size_t residentSize = arc4random();
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithResidentSize:&residentSize error:nil];
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
@@ -180,7 +194,7 @@
     XCTAssertEqual(helper.memoryUsageString.integerValue, 0);
 }
 
-- (void)test_MemoryUsageString_withSucceedingSystemInfoProvider_DoesNotThrow {
+- (void)test_memoryUsageString_withSucceedingSystemInfoProvider_DoesNotThrow {
     vm_size_t residentSize = arc4random();
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock succeedingProviderWithResidentSize:&residentSize];
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
@@ -188,7 +202,7 @@
     XCTAssertNoThrow(helper.memoryUsageString);
 }
 
-- (void)test_MemoryUsageString_withSucceedingSystemInfoProvider_ShouldNotBeNil {
+- (void)test_memoryUsageString_withSucceedingSystemInfoProvider_ShouldNotBeNil {
     vm_size_t residentSize = arc4random();
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock succeedingProviderWithResidentSize:&residentSize];
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
@@ -196,7 +210,7 @@
     XCTAssertNotNil(helper.memoryUsageString);
 }
 
-- (void)test_MemoryUsageString_withSucceedingSystemInfoProvider_ShouldNotBeEmpty {
+- (void)test_memoryUsageString_withSucceedingSystemInfoProvider_ShouldNotBeEmpty {
     vm_size_t residentSize = arc4random();
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock succeedingProviderWithResidentSize:&residentSize];
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
@@ -204,7 +218,7 @@
     XCTAssertGreaterThan(helper.memoryUsageString.length, 0);
 }
 
-- (void)test_MemoryUsageString_withSucceedingSystemInfoProvider_ShouldReturnFormattedProvidedValue {
+- (void)test_memoryUsageString_withSucceedingSystemInfoProvider_ShouldReturnFormattedProvidedValue {
     vm_size_t residentSize = arc4random();
     CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock succeedingProviderWithResidentSize:&residentSize];
     CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
@@ -212,6 +226,128 @@
     
     XCTAssertEqualObjects(helper.memoryUsageString, expectedString);
 }
+
+#pragma mark - memoryPhysicalFootprint
+
+- (void)test_memoryPhysicalFootprint_withFailingSystemInfoProvider_ShouldBeZero {
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithError:nil];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertEqual(helper.memoryPhysicalFootprint, 0);
+}
+
+- (void)test_memoryPhysicalFootprint_withFailingSystemInfoProviderThatReturnsValue_ShouldBeZero {
+    vm_size_t physFootprint = arc4random();
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithPhysFootprint:&physFootprint error:nil];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertEqual(helper.memoryPhysicalFootprint, 0);
+}
+
+- (void)test_memoryPhysicalFootprint_withSucceedingSystemInfoProvider_ShouldReturnProvidedValue {
+    vm_size_t physFootprint = arc4random();
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock succeedingProviderWithPhysFootprint:&physFootprint];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertEqual(helper.memoryPhysicalFootprint, physFootprint);
+}
+
+#pragma mark - memoryPhysicalFootprintString
+
+- (void)test_memoryPhysicalFootprintString_withFailingSystemInfoProvider_DoesNotThrow {
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithError:nil];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertNoThrow(helper.memoryPhysicalFootprintString);
+}
+
+- (void)test_memoryPhysicalFootprintString_withFailingSystemInfoProvider_ShouldNotBeNil {
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithError:nil];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertNotNil(helper.memoryPhysicalFootprintString);
+}
+
+- (void)test_memoryPhysicalFootprintString_withFailingSystemInfoProvider_ShouldNotBeEmpty {
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithError:nil];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertGreaterThan(helper.memoryPhysicalFootprintString.length, 0);
+}
+
+- (void)test_memoryPhysicalFootprintString_withFailingSystemInfoProvider_ShouldEvnaluateTo0 {
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithError:nil];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertEqual(helper.memoryPhysicalFootprintString.integerValue, 0);
+}
+
+- (void)test_memoryPhysicalFootprintString_withFailingSystemInfoProviderThatReturnsValue_DoesNotThrow {
+    vm_size_t physFootprint = arc4random();
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithPhysFootprint:&physFootprint error:nil];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertNoThrow(helper.memoryPhysicalFootprintString);
+}
+
+- (void)test_memoryPhysicalFootprintString_withFailingSystemInfoProviderThatReturnsValue_ShouldNotBeNil {
+    vm_size_t physFootprint = arc4random();
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithPhysFootprint:&physFootprint error:nil];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertNotNil(helper.memoryPhysicalFootprintString);
+}
+
+- (void)test_memoryPhysicalFootprintString_withFailingSystemInfoProviderThatReturnsValue_ShouldNotBeEmpty {
+    vm_size_t physFootprint = arc4random();
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithPhysFootprint:&physFootprint error:nil];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertGreaterThan(helper.memoryPhysicalFootprintString.length, 0);
+}
+
+- (void)test_memoryPhysicalFootprintString_withFailingSystemInfoProviderThatReturnsValue_ShouldEvnaluateTo0 {
+    vm_size_t physFootprint = arc4random();
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock failingProviderWithPhysFootprint:&physFootprint error:nil];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertEqual(helper.memoryPhysicalFootprintString.integerValue, 0);
+}
+
+- (void)test_memoryPhysicalFootprintString_withSucceedingSystemInfoProvider_DoesNotThrow {
+    vm_size_t physFootprint = arc4random();
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock succeedingProviderWithPhysFootprint:&physFootprint];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertNoThrow(helper.memoryPhysicalFootprintString);
+}
+
+- (void)test_memoryPhysicalFootprintString_withSucceedingSystemInfoProvider_ShouldNotBeNil {
+    vm_size_t physFootprint = arc4random();
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock succeedingProviderWithPhysFootprint:&physFootprint];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertNotNil(helper.memoryPhysicalFootprintString);
+}
+
+- (void)test_memoryPhysicalFootprintString_withSucceedingSystemInfoProvider_ShouldNotBeEmpty {
+    vm_size_t physFootprint = arc4random();
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock succeedingProviderWithPhysFootprint:&physFootprint];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    
+    XCTAssertGreaterThan(helper.memoryPhysicalFootprintString.length, 0);
+}
+
+- (void)test_memoryPhysicalFootprintString_withSucceedingSystemInfoProvider_ShouldReturnFormattedProvidedValue {
+    vm_size_t physFootprint = arc4random();
+    CSSystemInfoProviderMock *provider = [CSSystemInfoProviderMock succeedingProviderWithPhysFootprint:&physFootprint];
+    CSSystemInfoHelper *helper = [[CSSystemInfoHelper alloc] initWithSystemInfoProvider:provider];
+    NSString *expectedString = [helper formatByteCount:physFootprint];
+    
+    XCTAssertEqualObjects(helper.memoryPhysicalFootprintString, expectedString);
+}
+
+#pragma mark - platformUUID
 
 #if TARGET_OS_OSX
 - (void)test_PlatformUUID_DoesNotThrow {
