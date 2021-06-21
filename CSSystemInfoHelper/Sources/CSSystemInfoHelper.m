@@ -51,7 +51,7 @@ __attribute__((objc_direct_members))
 - (CSSystemInfo *)systemInfo {
     NSError *error;
     CSSystemInfo *systemInfo;
-    if (!(systemInfo = [self.systemInfoProvider quertSystemInfo:&error])) {
+    if (!(systemInfo = [self.systemInfoProvider querySystemInfo:&error])) {
         NSLog(@"Error loading system info: %@. %@.", error.localizedDescription, error.localizedFailureReason);
         return nil;
     }

@@ -31,8 +31,8 @@
         _versionLevel = versionLevel;
         _machine = machine;
         
-        _string = [NSString stringWithFormat:@"%@ %@ %@ %@ %@", _sysName, _nodeName, _releaseLevel, _versionLevel, _machine];
-        _versionString = [NSString stringWithFormat:@"%@ %@ %@", _sysName, _releaseLevel, _machine];
+        _string = [[NSString stringWithFormat:@"%@ %@ %@ %@ %@", _sysName, _nodeName, _releaseLevel, _versionLevel, _machine] stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceCharacterSet];
+        _versionString = [[NSString stringWithFormat:@"%@ %@ %@", _sysName, _releaseLevel, _machine] stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceCharacterSet];
     }
     return self;
 }

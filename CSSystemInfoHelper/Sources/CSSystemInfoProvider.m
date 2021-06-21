@@ -85,7 +85,7 @@
     return result;
 }
 
-- (CSSystemInfo *)quertSystemInfo:(NSError *__autoreleasing  _Nullable *)error {
+- (CSSystemInfo *)querySystemInfo:(NSError *__autoreleasing  _Nullable *)error {
     struct utsname utsnameStruct = {0};
     if (uname(&utsnameStruct)) {
         if (error) {

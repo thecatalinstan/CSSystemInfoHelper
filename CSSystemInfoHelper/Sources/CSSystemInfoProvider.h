@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (nullable NSArray<CSNetworkInterface *> *)queryNetworkInterfaces:(NSError *__autoreleasing *)error NS_WARN_UNUSED_RESULT;
 
-- (nullable CSSystemInfo *)quertSystemInfo:(NSError *__autoreleasing *)error;
+- (nullable CSSystemInfo *)querySystemInfo:(NSError *__autoreleasing *)error;
 
 - (BOOL)getResidentSize:(vm_size_t *)residentSize error:(NSError *__autoreleasing *)error NS_WARN_UNUSED_RESULT;
 - (BOOL)getPhysFootprint:(vm_size_t *)physFootprint error:(NSError *__autoreleasing *)error NS_WARN_UNUSED_RESULT;

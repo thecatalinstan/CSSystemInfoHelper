@@ -102,7 +102,7 @@
     return self.networkInterfaces;
 }
 
-- (nullable CSSystemInfo *)quertSystemInfo:(NSError *__autoreleasing  _Nullable * _Nullable)error {
+- (nullable CSSystemInfo *)querySystemInfo:(NSError *__autoreleasing  _Nullable * _Nullable)error {
     if (!self.shouldSucceed) {
         if (error) {
             *error = self.error;
