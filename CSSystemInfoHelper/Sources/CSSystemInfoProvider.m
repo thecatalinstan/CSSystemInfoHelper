@@ -130,7 +130,7 @@
     }
     
     if (physFootprint) {
-        *physFootprint = info.phys_footprint;
+        *physFootprint = (vm_size_t)info.phys_footprint;
     }
     
     return YES;
