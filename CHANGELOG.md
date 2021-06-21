@@ -23,7 +23,7 @@ This file includes all notable changes to CSSystemInfoHelper.
 
 ### Added
 
-- Added the `memoryPhysicalFootprint` and `memoryPhysicalFootprintString` properties to `CSSystemInfoHelper`, that extract and format the `phys_footprint` member of the `vm_task_info` struct. [2c6943f`](https://github.com/thecatalinstan/CSSystemInfoHelper/commit/2c6943f)
+- Added the `memoryPhysicalFootprint` and `memoryPhysicalFootprintString` properties to `CSSystemInfoHelper`, that extract and format the `phys_footprint` member of the `vm_task_info` struct. [``2c6943f``](https://github.com/thecatalinstan/CSSystemInfoHelper/commit/2c6943f)
 
 ### Closed Issues
 
