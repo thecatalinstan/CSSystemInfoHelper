@@ -5,6 +5,30 @@ This file includes all notable changes to CSSystemInfoHelper.
 `CSSystemInfoHelper` uses [Semantic Versioning](http://semver.org/).
 
 ---
+## [2.0.0](https://github.com/thecatalinstan/CSSystemInfoHelper/releases/tag/2.0.0) (06/22/2021)
+
+**Released on Tuesday, June 22, 2021**. This release introduces SPM support, extends and refactors the info interface, removes caching of most information snippets retrieved and improves overall code quality and test coverage.
+
+> ***Important!*** This release breaks API compatibility in a number of ways, so please read the changes below carefully, before upgrading an existing installation, as this may require some refactoring.
+
+### Changed
+
+- Deprecate `AllIPAddresses` and `IPAddress` in favor of a new property named `networkInterfaces` which now returns an array of `CSNetworkInterface` objects. This array now also contains IPv6 interfaces, as well as IPv4. [`898069b`](https://github.com/thecatalinstan/CSSystemInfoHelper/commit/898069b)
+- The `systemInfo` dictionary has been converted to a class where the previous keys are now instance properties. The `systemInfoString` and `systemVersionString` are now instance properties of the `CSSystemInfo` object, `string` and `versionString` respectively. [`b156e26`](https://github.com/thecatalinstan/CSSystemInfoHelper/commit/b156e26)
+- The `platformUUID` property is now only available on macOS [`3d9127a`](https://github.com/thecatalinstan/CSSystemInfoHelper/commit/3d9127a)
+
+### Added
+
+- Added the `memoryPhysicalFootprint` and `memoryPhysicalFootprintString` properties to `CSSystemInfoHelper`, that extract and format the `phys_footprint` member of the `vm_task_info` struct. [2c6943f`](https://github.com/thecatalinstan/CSSystemInfoHelper/commit/2c6943f)
+
+### Closed Issues
+
+- Issue [#1](https://github.com/thecatalinstan/CSSystemInfoHelper/issues/1) is closed as a result of `systemInfo` being computed on demand, instead of cached on the first call.
+
+### Improvements
+
+- Adds Swift Package Manager support. [`1291d76`](https://github.com/thecatalinstan/CSSystemInfoHelper/commit/1291d76)
+- The project now generates one multi-platform target, instead of multiple platform-specific targets.  [`1e82472`](https://github.com/thecatalinstan/CSSystemInfoHelper/commit/1e82472)
 
 ## [1.4.2](https://github.com/thecatalinstan/CSSystemInfoHelper/releases/tag/1.4.2) (03/30/2018)
 

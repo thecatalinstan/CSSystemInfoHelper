@@ -2,21 +2,33 @@
 
 # CSSystemInfoHelper
 
-A utility library for getting system info. It’s meant to provide a more straightforward way of accessing information only available through C APIs and to provide shorthands for the most common usage scenarios.
+A utility library for getting system info, meant to provide a safe and straightforward way of accessing system information only available through C APIs.
 
-I’ve used this library when making the [criollo.io](https://criollo.io) website in order to display the system the app is running on.
+I’ve used this library when making the [criollo.io](https://criollo.io) website in order to display the system the app is running on and various other projects over the years.
 
 ## Getting Started
 
+### Installation using Swift Package Manager
+
+### Swift Package Manager
+
+Add the package to your project's dependencies. If you have a `Package.swift`, it should look similar to this:
+
+```swift
+dependencies: [
+    .package(name: "CSSystemInfoHelper", url: "https://github.com/thecatalinstan/CSSystemInfoHelper", from: "2.0.0"),
+]
+```
+
 ### Installation through CocoaPods
 
-Install using [CocoaPods](http://cocoapods.org) by adding this line to your Podfile:
+Install using [CocoaPods](http://cocoapods.org) by adding this line to your `Podfile`:
 
 ````ruby
 use_frameworks!
 
 target 'MyApp' do
-  pod 'CSSystemInfoHelper', '~> 1.2'
+  pod 'CSSystemInfoHelper', '~> 2.0'
 end
 ````
 
@@ -25,42 +37,40 @@ end
 ```swift
 import CSSystemInfoHelper
 
-print("\(CSSystemInfoHelper.sharedHelper().systemInfoString)"
+print("\(CSSystemInfoHelper.shared.systemInfo.string)"
 ```
 
 ## Examples
 
-Please note that you can also see usage examples in the [example app](https://github.com/thecatalinstan/CSSystemInfoHelper/tree/master/CSSystemInfoHelperApp)
-
 ### Getting IPv4 interfaces and addresses
 
 ```swift
-for (ifname, ipaddr) in CSSystemInfoHelper.sharedHelper().AllIPAddresses {
-    print("\(ifname): \(ipaddr)")
+let networkInterfaces = CSSystemInfoHelper.shared.networkInterfaces!
+for nif in networkInterfaces {
+	print("\(nif.name): \(nif.address) (\(nif.familyName))")
 }
 ```
 
 ### Getting System Info from `uname(3)`
 
 ```swift
-for (key, value) in CSSystemInfoHelper.sharedHelper().systemInfo {
-    print("\(key): \(value)")
-}
+let systemInfo = h.systemInfo!
+print(systemInfo.string)
+print(systemInfo.versionString)
 ```
 
 ### Getting Human-readable Memory Usage
 
 ```swift
-print(CSSystemInfoHelper.sharedHelper().memoryUsageString)
+print(CSSystemInfoHelper.shared.memoryUsageString)
+print(CSSystemInfoHelper.shared.memoryPhysicalFootprintString)
 ```
 
-### Getting the device UUID
+### Getting the device UUID (macOS only)
 
 ```swift
-print(CSSystemInfoHelper.sharedHelper().platformUUID)
+print(CSSystemInfoHelper.shared.platformUUID)
 ```
-
-*on watchOS this cannot yet be done programmatically, so the returned UUID is generated on-the-fly.*
 
 ## What’s Next
 
