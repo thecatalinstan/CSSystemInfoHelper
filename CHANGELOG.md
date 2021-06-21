@@ -5,6 +5,10 @@ This file includes all notable changes to CSSystemInfoHelper.
 `CSSystemInfoHelper` uses [Semantic Versioning](http://semver.org/).
 
 ---
+## [2.0.1](https://github.com/thecatalinstan/CSSystemInfoHelper/releases/tag/2.0.1) (06/22/2021)
+
+**Released on Tuesday, June 22, 2021**. Silences an outstanding compiler warning
+
 ## [2.0.0](https://github.com/thecatalinstan/CSSystemInfoHelper/releases/tag/2.0.0) (06/22/2021)
 
 **Released on Tuesday, June 22, 2021**. This release introduces SPM support, extends and refactors the info interface, removes caching of most information snippets retrieved and improves overall code quality and test coverage.
